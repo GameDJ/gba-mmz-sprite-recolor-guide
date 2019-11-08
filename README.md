@@ -8,4 +8,5 @@ Coming soon:
 -Ability to input an entire block of codes at once  
 -Click a pixel to highlight its color control (right now it just outlines all equivalent pixels and cant be unoutlined)  
 -RGB sliders for selected color  
+-Inputted colors adjust to nearest GBA-supported color on the display
 -Different sprites (weapons mainly)
