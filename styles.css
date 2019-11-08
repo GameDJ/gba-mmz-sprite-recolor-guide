@@ -1,0 +1,44 @@
+#sprite-container {
+    width: 680px;
+    height: 780px;
+    padding: 0;
+    float: left;
+}
+
+#sprite-canvas {
+    width: 680px;
+    height: 780px;
+    padding: 0;
+    margin: 0;
+}
+
+.sprite-pixel {
+//    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    float: left;
+}
+
+.sprite-pixel:hover {
+    cursor: pointer;
+}
+
+#color-controls-container {
+    float: left;
+    background-color: #ddd;
+    width: calc(100% - 680px);
+    height: 780px;
+}
+
+#color-controls {
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+#color-controls th {
+    width: 25%;
+}

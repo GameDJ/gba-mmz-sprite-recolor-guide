@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>GBA sprite color picker GUI</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/x-icon" href=""/>
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+	<header><a href="#" onclick="showZero()">Zero</a></header>
+	<main>
+        <div id="sprite-container"></div>
+        <div id="color-controls-container">
+            <table id="color-controls">
+                <caption><button onclick="refreshAllPixels()">Update All</button></caption>
+                <tr>
+                    <th>Address</th>
+                    <th>Color</th>
+                    <th>New Color</th>
+                    <th></th>
+                </tr>
+            </table>
+            <hr>
+            <div><button onclick="outputCodes('codes-output')" style="display: block; margin: auto;">Output codes</button></div>
+            <p id="codes-output"></p>
+        </div>
+    </main>
+	<footer></footer>
+</body>
+
+</html>
