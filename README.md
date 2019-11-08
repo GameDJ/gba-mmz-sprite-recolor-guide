@@ -9,4 +9,6 @@ Coming soon:
 -Click a pixel to highlight its color control (right now it just outlines all equivalent pixels and cant be unoutlined)  
 -RGB sliders for selected color  
 -Inputted colors adjust to nearest GBA-supported color  
--Different sprites (weapons mainly)
+-Different sprites (weapons mainly)  
+-options to convert color codes in input boxes between hex, rgb, and gba  
+-option for color swatch to show original color, inputted color, or both
