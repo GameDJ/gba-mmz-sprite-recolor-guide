@@ -70,22 +70,31 @@ var zero_sprite_addresses = ['83002CC2', // 1 dark gray/brown
                              '83002CD2' // 13 skin color
                             ];
 
-function resetCanvas() {
+function resetElement(elementId, recreateBool, containerId, elementType, height, bgColor) {
     // deletes canvas if already open and returns new canvas element
-    var container = document.getElementById('sprite-container');
-    var canvas = document.getElementsByClassName('sprite-canvas')[0];
-    if (canvas)
-        canvas.parentNode.removeChild(canvas);
-    var canvas = document.createElement("DIV");
-    canvas.className = "sprite-canvas";
-    canvas.style.backgroundColor = "gray";
-    canvas.style.height = '780px';
-    container.appendChild(canvas);
-    return canvas;
+    var element = document.getElementById(elementId);
+    if (!element)
+        element = document.getElementsByClassName(elementId);
+    if (element) {
+        if (element instanceof HTMLCollection)
+            while (element.length > 0)
+                element[0].parentNode.removeChild(element[0]);
+        else
+            element.parentNode.removeChild(element);
+    }
+    if (recreateBool) {
+        var container = document.getElementById(containerId);
+        var element = document.createElement(elementType) || document.createElement('DIV');
+        element.id = elementId;
+        element.style.height = height || '0px';
+        element.style.backgroundColor = bgColor || '';
+        container.appendChild(element);
+        return element;
+    }
 }
 
 function showZero() {
-    var canvas = resetCanvas();
+    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '780px', 'gray');
     for (var i = 0; i < zero_sprite.length; i++) {
         for (var j = 0; j < zero_sprite[i].length; j++) {
             var pixel = document.createElement("DIV");
@@ -101,9 +110,11 @@ function showZero() {
         }
     }
     populateColorControls(zero_sprite_rgb, zero_sprite_addresses);
+    // resetElement(targetID, true, 'color-controls-container', 'P'); // optional
 }
 
 function populateColorControls(rgb_colors, color_addresses) {
+    resetElement('color-control-row', false, 'color-controls');
     var table = document.getElementById('color-controls');
     var rowArr = []; // holds arrays of each row's TDs [row][column]
     var rows = []; // holds actual row elements (TRs)
@@ -113,7 +124,7 @@ function populateColorControls(rgb_colors, color_addresses) {
             rowArr[i][j] = document.createElement("TD");
         rowArr[i][0].innerHTML = color_addresses[i]; // first row displays address
         rowArr[i][1].style.backgroundColor = 'rgb' + rgb_colors[i]; // 2nd, colors
-        var inputBox = document.createElement("INPUT") // 3rd is color input box
+        var inputBox = document.createElement("INPUT"); // 3rd is color input box
         inputBox.setAttribute('type', 'text');
         inputBox.setAttribute('id', 'input' + (i+1)); // eg id="input4" is 4th row
         inputBox.setAttribute('size', '4');
@@ -124,7 +135,8 @@ function populateColorControls(rgb_colors, color_addresses) {
         updateButton.innerHTML = "Update";
         rowArr[i][3].appendChild(updateButton);
 
-        rows[i] = document.createElement("TR")
+        rows[i] = document.createElement("TR");
+        rows[i].className = 'color-control-row';
     }
     // place the rows into the table, then place all the TDs into their rows
     for (var i = 0; i < rowArr.length; i++) {
@@ -144,11 +156,17 @@ function selectPixel(pix) {
 
 // refresh corresponding pixel with inputted color value
 function refreshPixel(num) {
-    var newColor = document.getElementById('input' + num.toString());
+    var newColor = document.getElementById('input' + num.toString()).value;
     var matching = document.getElementsByClassName('pix' + num.toString());
-    for (var i = 0; i < matching.length; i++) {
-        if (newColor.value)
-            matching[i].style.backgroundColor = newColor.value;
+    if (newColor) {
+        if (isRGB(newColor)) {
+            newColor = 'rgb(' + isRGB(newColor) + ')';
+        }
+        if (isHex(newColor))
+            newColor = '#' + isHex(newColor);
+        for (var i = 0; i < matching.length; i++) {
+                matching[i].style.backgroundColor = newColor;
+        }
     }
 }
 
@@ -158,7 +176,8 @@ function refreshAllPixels() {
 }
 
 function outputCodes(targetID) {
-    var target = document.getElementById(targetID);
+    var target = resetElement(targetID, true, 'color-controls-container', 'P');
+    //var target = document.getElementById(targetID);
     var colorArr = [];
     for (var i = 0; i < zero_sprite_addresses.length; i++) {
         var input = document.getElementById('input' + (i+1));
@@ -168,25 +187,21 @@ function outputCodes(targetID) {
 }
 
 function convertToGBA(color) {
-    if (isHex(color)) {
-        color = color.trim();
-        if (color.charAt(0) === '#')
-            color = color.slice(1);
-        color = color.toUpperCase();
-        if (isHex(color) === 4)
+    color = isHex(color);
+    if (color) {
+        if (isHex(color).length === 4)
             return color;
         else {
-            if (isHex(color) === 8)
+            if (isHex(color).length === 8)
                 color = color.substr(0, 6);
             var arrRGB = [];
             var finalCode = '';
             for (var i = 0; i < 3; i++) {
-                arrRGB[i] = parseInt(color.substr(i*(isHex(color)/3), isHex(color)/3), 16);
+                arrRGB[i] = parseInt(color.substr(i * (isHex(color).length / 3), isHex(color).length / 3), 16);
                 arrRGB[i] = (Math.floor(parseInt(arrRGB[i]) / 8)).toString(2); // converts each 8bit hex to 5bit hex-sized binary eg FF -> 11111
                 while (arrRGB[i].length < 5)
                     arrRGB[i] = '0' + arrRGB[i];
                 finalCode = arrRGB[i] + finalCode;
-                console.log(finalCode);
             }
             finalCode = parseInt(finalCode, 2).toString(16);
             while (finalCode.length < 4)
@@ -195,33 +210,34 @@ function convertToGBA(color) {
         }
         return finalCode;
     }
+}
     
-    function isHex(code) {
-        code = code.trim();
-        if (code.charAt(0) === '#')
-            code = code.slice(1);
-        code = code.toUpperCase();
-        var hexDigits = '0123456789ABCDEF'; //['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
-        for (var i = 0; i < code.length; i++)
-            //for (var j = 0; j < hexDigits.length; j++)
-            if (hexDigits.indexOf(code.charAt(i)) === -1)
-                return false; // not hex if a character isnt a hex numeral
-        if (code.length === 8 || code.length === 6 || code.length === 4 || code.length === 3) // 8: Hex with alpha (RGBA), 6: 6digit hex eg #F2F2F2, 4: GBA, 3: 3digit hex eg #DDD
-            return code.length;
-        else return false;
-    }
-    
-    function isRGB(code) {
-        code = code.trim();
-        code = code.replace(/(/g, '');
-        code = code.replace(/)/g, '');
-        code = code.replace(/ /g, '');
-        var arrRGB = code.split(',');
-        for (var i = 0; i < arrRGB.length; i++)
-            if (arrRGB[i] <= 0 || arrRGB >= 255)
-                return false
-        if (arrRGB.length === 3 || arrRGB.length === 4)
-            return arrRGB.length;
-        else return false;
-    }
+function isHex(code) {
+    code = code.trim();
+    if (code.charAt(0) === '#')
+        code = code.slice(1);
+    code = code.toUpperCase();
+    var hexDigits = '0123456789ABCDEF'; //['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
+    for (var i = 0; i < code.length; i++)
+        //for (var j = 0; j < hexDigits.length; j++)
+        if (hexDigits.indexOf(code.charAt(i)) === -1)
+            return false; // not hex if a character isnt a hex numeral
+    if (code.length === 8 || code.length === 6 || code.length === 4 || code.length === 3) // 8: Hex with alpha (RGBA), 6: 6digit hex eg #F2F2F2, 4: GBA, 3: 3digit hex eg #DDD
+        return code;
+    else return false;
+}
+
+function isRGB(code) {
+    code = code.trim();
+    code = code.replace(/rgb/g, '');
+    code = code.replace(/\(/g, '');
+    code = code.replace(/\)/g, '');
+    code = code.replace(/ /g, '');
+    var arrRGB = code.split(',');
+    for (var i = 0; i < arrRGB.length; i++)
+        if (arrRGB[i] < 0 || arrRGB[i] > 255)
+            return false;
+    if (arrRGB.length === 3 || arrRGB.length === 4)
+        return arrRGB.join();
+    else return false;
 }
