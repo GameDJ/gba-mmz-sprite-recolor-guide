@@ -1,6 +1,6 @@
 # gba-mmz-sprite-recolor-guide
 PLEASE READ:
-This is still VERY MUCH in development, there are a lot of incomplete things. Right now all you can do is input 6 digit RGB hex codes (must include the # at the start) and output them to GBA codebreaker codes.
+This is still VERY MUCH in development, there are a lot of incomplete things. Right now you can just do the basics of inputting a color, previewing it, and outputting codebreaker codes.
 
 Coming soon:  
 -decimal RGB (0-255, 0-255, 0-255) able to be converted into GBA  
