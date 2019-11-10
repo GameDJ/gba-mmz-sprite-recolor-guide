@@ -3,12 +3,11 @@ PLEASE READ:
 This is still VERY MUCH in development, there are a lot of incomplete things. Right now all you can do is input 6 digit RGB hex codes (must include the # at the start) and output them to GBA codebreaker codes.
 
 Coming soon:  
--Previous codes disappear when output button is pressed again & color controls disappear when sprite selected again  
--Support for entering decimal RGB (0-255, 0-255, 0-255) and hex GBA (0000-7FFF)  
+-decimal RGB (0-255, 0-255, 0-255) able to be converted into GBA  
 -Ability to input an entire block of codes at once  
 -Click a pixel to highlight its color control (right now it just outlines all equivalent pixels and cant be unoutlined)  
 -RGB sliders for selected color  
 -Inputted colors adjust to nearest GBA-supported color  
--Different sprites (weapons mainly)  
+-Different sprites (weapons, dash)  
 -options to convert color codes in input boxes between hex, rgb, and gba  
--option for color swatch to show original color, inputted color, or both
+-option for color swatches to show original color, inputted color, or both
