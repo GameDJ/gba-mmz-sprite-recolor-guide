@@ -42,3 +42,7 @@
 #color-controls th {
     width: 25%;
 }
+
+#codes-output {
+    text-align: center;
+}
