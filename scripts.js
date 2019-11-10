@@ -129,8 +129,16 @@ function populateColorControls(rgb_colors, color_addresses) {
         inputBox.setAttribute('id', 'input' + (i+1)); // eg id="input4" is 4th row
         inputBox.setAttribute('size', '4');
         inputBox.setAttribute('maxLength', '13');
+        inputBox.addEventListener('keyup', function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                console.log(this.id.replace('input', 'update'));
+                document.getElementById(this.id.replace('input', 'update')).click();
+            }
+        });
         rowArr[i][2].appendChild(inputBox); // puts inputBox into the TD
         var updateButton = document.createElement("BUTTON"); // update from input
+        updateButton.setAttribute('id', 'update' + (i+1));
         updateButton.setAttribute('onclick', 'refreshPixel('+(i+1)+')');
         updateButton.innerHTML = "Update";
         rowArr[i][3].appendChild(updateButton);
