@@ -156,10 +156,13 @@ function populateColorControls(rgb_colors, color_addresses) {
 
 // select all matching 'pixels'; takes an element of class pix#
 function selectPixel(pix) {
-    var matching = document.getElementsByClassName(pix.className);
+    var control = document.getElementById('input' + pix.className.replace('sprite-pixel pix', ''));
+    control.focus();
+    control.select();
+    /*var matching = document.getElementsByClassName(pix.className);
     for (var i = 0; i < matching.length; i++) {
         matching[i].style.outline = '1px solid white';
-    }
+    }*/
 }
 
 // refresh corresponding pixel with inputted color value
