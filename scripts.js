@@ -1,43 +1,43 @@
 var zero_sprite = [
-[,,,,,,,,,,,,,,,,,,11,,,,,10,,,,,,,,,,,],
-[,,,,,,,,,,,,,,,,,,10,11,,,,10,10,,,,,,,,,,],
-[,,,,,,,,,,,,,,,,,,9,10,11,,,9,10,10,,,,,,,,,],
-[,,,,,,,,,,,,,,,,,,9,9,12,11,2,2,9,10,,,,,,,,,],
-[,,,,,,,,,,,,,,,,,,2,9,10,12,11,3,2,9,10,,,,,,,,],
-[,,,,,,,,,,,,,,,,,2,3,2,9,11,13,10,3,2,10,,,,,,,,],
-[,,,,,,,,,,,,,,,,3,2,3,2,9,10,12,13,11,2,9,10,,,,,,,],
-[,,,,,,,,,,,,,,,3,5,4,2,2,2,9,10,12,11,4,5,10,,,,,,,],
-[,,,,,,,,,,,,,,7,3,4,5,4,2,2,1,1,9,12,11,4,10,,,,,,,],
-[,,,,,10,10,10,,,,,2,2,2,9,3,5,12,11,1,6,4,1,9,12,11,9,,,,,,,],
-[,,,,10,11,11,11,2,2,2,2,3,4,3,2,9,4,11,12,5,6,5,1,13,1,,,,,,,,,],
-[,,,,10,11,12,11,2,2,3,3,3,3,3,2,10,9,10,4,5,5,13,13,13,6,,,,,,,,,],
-[,,,10,11,11,12,11,2,2,2,2,2,2,2,11,12,11,9,1,3,4,13,9,6,,,,,,,,,,],
-[,,,10,11,12,12,11,10,2,2,2,9,9,10,7,8,12,11,10,9,1,6,6,,,,,,,,,,,],
-[,,,10,11,12,12,11,10,7,8,9,9,9,10,8,11,12,11,7,10,2,2,,,,,,,2,3,3,,,],
-[,,9,7,8,8,8,7,9,8,8,9,10,10,10,10,10,11,11,7,10,3,2,,,,,2,2,3,4,5,3,,],
-[,,9,6,2,2,2,6,9,8,7,9,9,10,11,11,11,10,10,9,2,2,3,2,,,9,6,5,5,3,4,3,,],
-[,,2,2,3,3,3,2,7,8,6,6,2,2,2,9,10,11,11,10,2,2,2,3,2,9,7,7,3,4,2,5,5,2],
-[,,2,3,3,3,3,3,2,7,6,2,4,3,2,2,2,2,,,,2,2,2,9,10,7,7,2,3,2,3,4,2],
-[,2,4,3,3,3,2,4,5,2,6,2,4,5,4,2,3,2,,,,,2,9,10,10,6,7,2,2,4,5,2,,],
-[,2,4,5,3,5,3,2,4,2,6,2,3,3,5,3,4,3,2,,,,9,9,10,10,10,6,6,2,3,2,,,],
-[,,2,4,3,4,3,7,2,6,2,2,3,3,3,4,4,2,3,2,2,,9,9,9,9,9,9,1,2,2,,,,],
-[,,,2,2,4,2,7,7,6,2,3,3,3,2,4,3,2,2,3,3,2,,9,9,9,9,,,,,,,,],
-[,,,,,2,6,7,7,2,2,3,3,2,2,1,1,2,2,2,3,3,2,,,,,,,,,,,,],
-[,,,,,,6,10,9,2,3,4,3,2,2,,,1,1,2,2,2,3,2,9,,,,,,,,,,],
-[,,,,,,10,11,11,2,2,3,3,2,,,,,,1,2,2,2,2,11,9,,,,,,,,,],
-[,,,,,,10,12,12,11,2,2,2,6,,,,,,,1,2,10,11,10,9,,,,,,,,,],
-[,,,,,10,11,12,12,12,11,9,2,6,,,,,,,9,10,10,10,10,9,,,,,,,,,],
-[,,,,9,10,12,12,12,11,11,9,7,6,,,,,,,9,10,10,10,9,,,,,,,,,,],
-[,,,6,7,6,12,12,11,10,9,,6,6,6,,,,,,9,10,10,10,9,,,,,,,,,,],
-[,,6,7,8,8,7,6,10,9,,,,6,6,,,,,,,9,10,10,9,9,,,,,,,,,],
-[,,10,6,7,7,8,8,9,,,,,,,,,,,,9,9,10,6,6,7,9,,,,,,,,],
-[,,9,10,11,6,7,7,9,,,,,,,,,,,,9,6,7,7,7,6,9,,,,,,,,],
-[,9,10,11,11,11,10,6,9,,,,,,,,,,,,9,6,6,6,6,9,10,10,9,,,,,,],
-[1,10,11,12,12,12,10,9,,,,,,,,,,,,3,4,9,9,10,10,11,11,11,10,9,,,,,],
-[1,10,11,12,13,12,10,9,,,,,,,,,,,,3,3,3,10,10,10,10,11,11,11,9,,,,,],
-[2,10,11,11,11,11,10,2,,,,,,,,,,,,2,3,3,9,9,3,3,4,4,3,2,,,,,],
-[2,3,4,4,4,4,3,2,,,,,,,,,,,,,2,2,2,2,2,2,2,2,2,2,,,,,],
-[,2,2,2,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
+    [,,,,,,,,,,,,,,,,,,12,,,,,11,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,11,12,,,,11,11,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,10,11,12,,,10,11,11,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,10,10,13,12,2,2,10,11,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,2,10,11,13,12,3,2,10,11,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,2,3,2,10,12,9,11,3,2,11,,,,,,,,],
+    [,,,,,,,,,,,,,,,,3,2,3,2,10,11,13,9,12,2,10,11,,,,,,,],
+    [,,,,,,,,,,,,,,,3,5,4,2,2,2,10,11,13,12,4,5,11,,,,,,,],
+    [,,,,,,,,,,,,,,7,3,4,5,4,2,2,1,1,10,13,12,4,11,,,,,,,],
+    [,,,,,11,11,11,,,,,2,2,2,10,3,5,13,12,1,6,4,1,10,13,12,10,,,,,,,],
+    [,,,,11,12,12,12,2,2,2,2,3,4,3,2,10,4,12,13,5,6,5,1,9,1,,,,,,,,,],
+    [,,,,11,12,13,12,2,2,3,3,3,3,3,2,11,10,11,4,5,5,9,9,9,6,,,,,,,,,],
+    [,,,11,12,12,13,12,2,2,2,2,2,2,2,12,13,12,10,1,3,4,9,10,6,,,,,,,,,,],
+    [,,,11,12,13,13,12,11,2,2,2,10,10,11,7,8,13,12,11,10,1,6,6,,,,,,,,,,,],
+    [,,,11,12,13,13,12,11,7,8,10,10,10,11,8,12,13,12,7,11,2,2,,,,,,,2,3,3,,,],
+    [,,10,7,8,8,8,7,10,8,8,10,11,11,11,11,11,12,12,7,11,3,2,,,,,2,2,3,4,5,3,,],
+    [,,10,6,2,2,2,6,10,8,7,10,10,11,12,12,12,11,11,10,2,2,3,2,,,10,6,5,5,3,4,3,,],
+    [,,2,2,3,3,3,2,7,8,6,6,2,2,2,10,11,12,12,11,2,2,2,3,2,10,7,7,3,4,2,5,5,2],
+    [,,2,3,3,3,3,3,2,7,6,2,4,3,2,2,2,2,,,,2,2,2,10,11,7,7,2,3,2,3,4,2],
+    [,2,4,3,3,3,2,4,5,2,6,2,4,5,4,2,3,2,,,,,2,10,11,11,6,7,2,2,4,5,2,,],
+    [,2,4,5,3,5,3,2,4,2,6,2,3,3,5,3,4,3,2,,,,10,10,11,11,11,6,6,2,3,2,,,],
+    [,,2,4,3,4,3,7,2,6,2,2,3,3,3,4,4,2,3,2,2,,10,10,10,10,10,10,1,2,2,,,,],
+    [,,,2,2,4,2,7,7,6,2,3,3,3,2,4,3,2,2,3,3,2,,10,10,10,10,,,,,,,,],
+    [,,,,,2,6,7,7,2,2,3,3,2,2,1,1,2,2,2,3,3,2,,,,,,,,,,,,],
+    [,,,,,,6,11,10,2,3,4,3,2,2,,,1,1,2,2,2,3,2,10,,,,,,,,,,],
+    [,,,,,,11,12,12,2,2,3,3,2,,,,,,1,2,2,2,2,12,10,,,,,,,,,],
+    [,,,,,,11,13,13,12,2,2,2,6,,,,,,,1,2,11,12,11,10,,,,,,,,,],
+    [,,,,,11,12,13,13,13,12,10,2,6,,,,,,,10,11,11,11,11,10,,,,,,,,,],
+    [,,,,10,11,13,13,13,12,12,10,7,6,,,,,,,10,11,11,11,10,,,,,,,,,,],
+    [,,,6,7,6,13,13,12,11,10,,6,6,6,,,,,,10,11,11,11,10,,,,,,,,,,],
+    [,,6,7,8,8,7,6,11,10,,,,6,6,,,,,,,10,11,11,10,10,,,,,,,,,],
+    [,,11,6,7,7,8,8,10,,,,,,,,,,,,10,10,11,6,6,7,10,,,,,,,,],
+    [,,10,11,12,6,7,7,10,,,,,,,,,,,,10,6,7,7,7,6,10,,,,,,,,],
+    [,10,11,12,12,12,11,6,10,,,,,,,,,,,,10,6,6,6,6,10,11,11,10,,,,,,],
+    [1,11,12,13,13,13,11,10,,,,,,,,,,,,3,4,10,10,11,11,12,12,12,11,10,,,,,],
+    [1,11,12,13,9,13,11,10,,,,,,,,,,,,3,3,3,11,11,11,11,12,12,12,10,,,,,],
+    [2,11,12,12,12,12,11,2,,,,,,,,,,,,2,3,3,10,10,3,3,4,4,3,2,,,,,],
+    [2,3,4,4,4,4,3,2,,,,,,,,,,,,,2,2,2,2,2,2,2,2,2,2,,,,,],
+    [,2,2,2,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
 ];
 
 var zero_sprite_rgb = ['(64, 72, 64)', // 1 dark gray/brown
@@ -48,11 +48,11 @@ var zero_sprite_rgb = ['(64, 72, 64)', // 1 dark gray/brown
                        '(216, 128, 16)', // 6 dark yellow
                        '(248, 184, 0)', // 7 mid yellow
                        '(248, 232, 128)', // 8 light yellow
-                       '(152, 16, 64)', // 9 dark red
-                       '(208, 32, 88)', // 10 middark red
-                       '(248, 80, 96)', // 11 midlight red
-                       '(248, 160, 136)', // 12 light red
-                       '(248, 208, 168)' // 13 skin color
+                       '(248, 208, 168)', // 9 skin color
+                       '(152, 16, 64)', // 10 dark red
+                       '(208, 32, 88)', // 11 middark red
+                       '(248, 80, 96)', // 12 midlight red
+                       '(248, 160, 136)' // 13 light red
                       ];
 
 var zero_sprite_addresses = ['83002CC2', // 1 dark gray/brown
@@ -63,12 +63,27 @@ var zero_sprite_addresses = ['83002CC2', // 1 dark gray/brown
                              '83002CCC', // 6 dark yellow
                              '83002CCE', // 7 mid yellow
                              '83002CD0', // 8 light yellow
-                             '83002CD4', // 9 dark red
-                             '83002CD6', // 10 middark red
-                             '83002CD8', // 11 midlight red
-                             '83002CDA', // 12 light red
-                             '83002CD2' // 13 skin color
+                             '83002CD2', // 9 skin color
+                             '83002CD4', // 10 dark red
+                             '83002CD6', // 11 middark red
+                             '83002CD8', // 12 midlight red
+                             '83002CDA' // 13 light red
                             ];
+
+/******************************************************************************************
+ ****** TO-DO ******
+ * main input, RGB sliders, and RGB inputs all affect each other for selected pixel
+ * hex and rgb codes round to nearest gba
+ * THEN implement conversion between hex rgb gba from radio buttons
+ */
+
+//------------------------- INITIALIZATION -------------------------//
+
+var selected;
+var colorType = 'rgb';
+
+
+//------------------------------------------------------------------//
 
 function resetElement(elementId, recreateBool, containerId, elementType, height, bgColor) {
     // deletes canvas if already open and returns new canvas element
@@ -122,17 +137,48 @@ function populateColorControls(rgb_colors, color_addresses) {
         rowArr[i] = []; // define current row as a matrix
         for (var j = 0; j < 4; j++) // populate current row with 4 TDs
             rowArr[i][j] = document.createElement("TD");
-        rowArr[i][0].innerHTML = color_addresses[i]; // first row displays address
-        rowArr[i][1].style.backgroundColor = 'rgb' + rgb_colors[i]; // 2nd, colors
+        rowArr[i][0].innerHTML = '...' + color_addresses[i].replace('83002C', ''); // first row displays address
+        rowArr[i][1].style.height = '100%';
+        var colorBox1 = document.createElement('DIV');
+        colorBox1.style.display = 'inline-block';
+        colorBox1.style.width = '50%';
+        colorBox1.style.height = '20px';
+        colorBox1.style.backgroundColor = 'rgb' + rgb_colors[i]; // 2nd, colors
+        /* static colorbox
+        var colorBox2 = document.createElement('DIV');
+        colorBox2.style.display = 'inline-block';
+        colorBox2.style.width = '50%';
+        colorBox2.style.height = '20px';
+        colorBox2.style.backgroundColor = 'rgb' + rgb_colors[i];
+        */
+        var colorBox2 = document.createElement("INPUT");
+        colorBox2.style.display = 'inline-block';
+        colorBox2.type = 'color';
+        colorBox2.value = '#' + convertAnyToAny(rgb_colors[i], 'hex');
+        //colorBox2.oninput = "document.getElementById('input' + (i+1)).value = this.value";
+        colorBox2.style.width = 'calc(50% - 2px)'; //'18px';
+        colorBox2.style.height = '20px';
+        colorBox2.style.padding = '0px';
+        colorBox2.style.marginTop = '-1px';
+        colorBox2.style.verticalAlign = 'top';
+        colorBox2.setAttribute('id', 'colorBox' + (i+1));
+        colorBox2.addEventListener('input', function(event) {
+            document.getElementById(this.id.replace('colorBox', 'input')).value = this.value.slice(1);
+        });
+        //colorBox2.className = 'colorBox';
+        rowArr[i][1].appendChild(colorBox1);
+        rowArr[i][1].appendChild(colorBox2);
         var inputBox = document.createElement("INPUT"); // 3rd is color input box
+        inputBox.className = 'inputBox';
         inputBox.setAttribute('type', 'text');
         inputBox.setAttribute('id', 'input' + (i+1)); // eg id="input4" is 4th row
         inputBox.setAttribute('size', '4');
         inputBox.setAttribute('maxLength', '13');
+        inputBox.setAttribute('onclick', 'selectInput(this)');
         inputBox.addEventListener('keyup', function(event) {
             if (event.keyCode === 13) {
                 event.preventDefault();
-                console.log(this.id.replace('input', 'update'));
+                //console.log(this.id.replace('input', 'update'));
                 document.getElementById(this.id.replace('input', 'update')).click();
             }
         });
@@ -152,6 +198,14 @@ function populateColorControls(rgb_colors, color_addresses) {
         for (var j = 0; j < 4; j++)
             rows[i].appendChild(rowArr[i][j]);
     }
+    //var colorConvertRow = document.createElement("DIV");
+}
+
+function convertAll(type) {
+    colorType = type;
+    var toConvert = document.getElementsByClassName('inputBox');
+    for (var i = 0; i < toConvert.length; i++)
+        toConvert[i].value = convertAnyToAny(toConvert[i].value, type);
 }
 
 // select all matching 'pixels'; takes an element of class pix#
@@ -159,11 +213,51 @@ function selectPixel(pix) {
     var control = document.getElementById('input' + pix.className.replace('sprite-pixel pix', ''));
     control.focus();
     control.select();
+    selectInput(control);
     /*var matching = document.getElementsByClassName(pix.className);
     for (var i = 0; i < matching.length; i++) {
         matching[i].style.outline = '1px solid white';
     }*/
 }
+
+function selectInput(input) {
+    if (selected)
+        selected.parentElement.parentElement.style.outline = 'none';
+    selected = input;
+    selected.parentElement.parentElement.style.outline = 'solid';
+    /*
+    var baseValue = selected.value;
+    if (!baseValue)
+        baseValue = trimRGB(zero_sprite_rgb[selected.id.replace('input', '') - 1]);
+        //selected.value = trimRGB(zero_sprite_rgb[selected.id.replace('input', '') - 1]);
+    var indivRGBtext = document.getElementsByName('colorInput');
+    //const indivRGBrange = document.getElementsByName('colorRange');
+    if (isRGB(baseValue))
+        var selectedSplit = baseValue.split(',');
+    for (var i = 0; i < 3; i++) {
+        if (isRGB(baseValue)) {
+            indivRGBtext[i].value = selectedSplit[i];
+        }
+        indivRGBtext[i].addEventListener('input', function(event) {
+            //console.log(parseInt(this.id.replace('colorInput', '')) - 1);
+            selectedSplit[parseInt(this.id.replace('colorInput', '')) - 1] = event.target.value;
+            selected.value = selectedSplit.toString();
+            document.getElementById('colorRange' + this.id.replace('colorInput', '')).value = Math.floor(event.target.value / 8);
+        });
+    }
+     */
+}
+
+function updateColorRange(channelNum) {
+    var range = document.getElementById('colorRange' + channelNum);
+    document.getElementById('colorInput' + channelNum).value = range.value * 8;
+    if (isRGB(selected.value))
+        var selectedSplit = selected.value.split(',');
+    selectedSplit[channelNum - 1] = range.value * 8;
+    selected.value = selectedSplit.toString();
+}
+
+
 
 // refresh corresponding pixel with inputted color value
 function refreshPixel(num) {
@@ -178,6 +272,7 @@ function refreshPixel(num) {
         for (var i = 0; i < matching.length; i++) {
                 matching[i].style.backgroundColor = newColor;
         }
+        document.getElementById('colorBox' + num).value = '#' + convertAnyToAny(newColor, 'hex').replace('#', '');
     }
 }
 
@@ -198,17 +293,19 @@ function outputCodes(targetID) {
 }
 
 function convertToGBA(color) {
-    color = isHex(color);
-    if (color) {
-        if (isHex(color).length === 4)
-            return color;
+    var code = isHex(color);
+    if (!code)
+        code = rgbToHex(color);
+    if (code) {
+        if (code.length === 4)
+            return code;
         else {
-            if (isHex(color).length === 8)
-                color = color.substr(0, 6);
+            if (code.length === 8)
+                code = code.substr(0, 6);
             var arrRGB = [];
             var finalCode = '';
             for (var i = 0; i < 3; i++) {
-                arrRGB[i] = parseInt(color.substr(i * (isHex(color).length / 3), isHex(color).length / 3), 16);
+                arrRGB[i] = parseInt(code.substr(i * (code.length / 3), code.length / 3), 16);
                 arrRGB[i] = (Math.floor(parseInt(arrRGB[i]) / 8)).toString(2); // converts each 8bit hex to 5bit hex-sized binary eg FF -> 11111
                 while (arrRGB[i].length < 5)
                     arrRGB[i] = '0' + arrRGB[i];
@@ -220,9 +317,77 @@ function convertToGBA(color) {
             finalCode = finalCode.toUpperCase();
         }
         return finalCode;
+    } else return color;
+}
+
+function convertAnyToAny(color, outputType) {
+    var inputType = false;
+    var code = isHex(color);
+    if (code.length === 6) {
+        inputType = 'hex'; // returns string
+    } else if (code.length === 4) {
+        inputType = 'gba';
+    } else if (!code) {
+        code = isRGB(color); // returns string of channels separated by commas
+        if (code)
+            inputType = 'rgb';
+    }
+    if (!inputType)
+        return color; // If can't figure out inputType, just returns self...
+    if (outputType === inputType)
+        return color; // returns self if color is already the requested type
+    if (outputType === 'hex') {
+        if (inputType === 'rgb') {
+            code = rgbToHex(code);
+        } else if (inputType === 'gba') {
+            code = parseInt(code, 16).toString(2); // converts 4-digit GBA into 15-digit Binary
+            while (code.length < 15)
+                code = '0' + code;
+            code = [code.substr(10, 5), code.substr(5, 5), code.substr(0, 5)]; // separates into 3 5-digit binaries
+            for (var i = 0; i < 3; i++) {
+                code[i] = (parseInt(code[i], 2) * 8).toString(16); // convert to 24-bit hex
+                while (code[i].length < 2)
+                    code[i] = '0' + code[i];
+            }
+            code = code.join(''); // joins array elements into one string without breaks
+            code = code.toUpperCase();
+        }
+        return code;
+    } else if (outputType === 'rgb') {
+        if (inputType === 'hex') {
+            code = [code.substr(0,2), code.substr(2,2), code.substr(4,2)]; // eg ['ff','00','00']
+            for (var i = 0; i < code.length; i++)
+                code[i] = parseInt(code[i], 16).toString(10); // convert each hex value into decimal
+            code = code.join(); // joins; no argument means separated by commas eg '255,0,0'
+        } else if (inputType === 'gba') {
+            code = parseInt(code, 16).toString(2); // converts 4-digit GBA into 15-digit Binary
+            code = [code.substr(10, 5), code.substr(5, 5), code.substr(0, 5)]; // separates into 3 5-digit binaries
+            for (var i = 0; i < 3; i++)
+                code[i] = (parseInt(code[i], 2) * 8).toString(10); // convert to 256 decimal
+            code = code.join(); // joins array elements into one string without breaks
+        }
+        return code;
+    } else if (outputType === 'gba') {
+        return convertToGBA(code);
+    } else return color; // If error, just returns self...
+}
+
+function rgbToHex(color) {
+    var code = isRGB(color);
+    if (code) {
+        code = code.split(',');
+        for (var i = 0; i < code.length; i++) {
+            code[i] = parseInt(code[i]).toString(16);
+            while (code[i].length < 2)
+                code[i] = code[i] + '0';
+        }
+        //code = code.replace(/,/g, '');
+        code = code.join('');
+        code = code.toUpperCase();
+        return code;
     }
 }
-    
+
 function isHex(code) {
     code = code.trim();
     if (code.charAt(0) === '#')
@@ -233,22 +398,40 @@ function isHex(code) {
         //for (var j = 0; j < hexDigits.length; j++)
         if (hexDigits.indexOf(code.charAt(i)) === -1)
             return false; // not hex if a character isnt a hex numeral
-    if (code.length === 8 || code.length === 6 || code.length === 4 || code.length === 3) // 8: Hex with alpha (RGBA), 6: 6digit hex eg #F2F2F2, 4: GBA, 3: 3digit hex eg #DDD
+    if (code.length === 8)
+        code = code.substr(0, 6);
+    if (code.length === 3)
+        code = code.charAt(0) + '0' + code.charAt(1) + '0' +code.charAt(2) + '0';
+    if (code.length === 6 || code.length === 4) // 8: Hex with alpha (RGBA), 6: 6digit hex eg #F2F2F2, 4: GBA, 3: 3digit hex eg #DDD
         return code;
     else return false;
 }
 
 function isRGB(code) {
+    code = trimRGB(code);
+    var arrRGB = code.split(',');
+    for (var i = 0; i < arrRGB.length; i++)
+        if (arrRGB[i] < 0 || arrRGB[i] > 255)
+            return false;
+    if (arrRGB.length === 4)
+        arrRGB.splice(0, 3);
+    if (arrRGB.length === 3)
+        return arrRGB.join();
+    else return false;
+}
+
+function trimRGB(code) {
     code = code.trim();
     code = code.replace(/rgb/g, '');
     code = code.replace(/\(/g, '');
     code = code.replace(/\)/g, '');
     code = code.replace(/ /g, '');
-    var arrRGB = code.split(',');
-    for (var i = 0; i < arrRGB.length; i++)
-        if (arrRGB[i] < 0 || arrRGB[i] > 255)
-            return false;
-    if (arrRGB.length === 3 || arrRGB.length === 4)
-        return arrRGB.join();
-    else return false;
+    return code;
+}
+
+
+function clearRadio(elementName) {
+    var elements = document.getElementsByName(elementName);
+    for (var i = 0; i < elements.length; i++)
+        elements[i].checked = false;
 }
