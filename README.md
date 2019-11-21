@@ -6,4 +6,5 @@ Coming soon:
 -Ability to input an entire block of codes at once  
 -RGB sliders for selected color  
 -Different sprites (weapons, dash)  
--automatically generate colors for variations of a main color (eg. shades of color on forelimbs)
+-automatically generate colors for variations of a main color (eg. shades of color on forelimbs)  
+-support for Mega Man ZX :)
