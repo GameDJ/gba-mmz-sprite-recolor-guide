@@ -225,7 +225,6 @@ function selectInput(input) {
         selected.parentElement.parentElement.style.outline = 'none';
     selected = input;
     selected.parentElement.parentElement.style.outline = 'solid';
-    /*
     var baseValue = selected.value;
     if (!baseValue)
         baseValue = trimRGB(zero_sprite_rgb[selected.id.replace('input', '') - 1]);
@@ -245,16 +244,6 @@ function selectInput(input) {
             document.getElementById('colorRange' + this.id.replace('colorInput', '')).value = Math.floor(event.target.value / 8);
         });
     }
-     */
-}
-
-function updateColorRange(channelNum) {
-    var range = document.getElementById('colorRange' + channelNum);
-    document.getElementById('colorInput' + channelNum).value = range.value * 8;
-    if (isRGB(selected.value))
-        var selectedSplit = selected.value.split(',');
-    selectedSplit[channelNum - 1] = range.value * 8;
-    selected.value = selectedSplit.toString();
 }
 
 
@@ -267,8 +256,12 @@ function refreshPixel(num) {
         if (isRGB(newColor)) {
             newColor = 'rgb(' + isRGB(newColor) + ')';
         }
-        if (isHex(newColor))
-            newColor = '#' + isHex(newColor);
+        if (isHex(newColor)) {
+            if (newColor.length != 4)
+                newColor = '#' + isHex(newColor);
+            else
+                newColor = '#' + convertAnyToAny(newColor, 'hex');
+        }
         for (var i = 0; i < matching.length; i++) {
                 matching[i].style.backgroundColor = newColor;
         }
@@ -379,7 +372,7 @@ function rgbToHex(color) {
         for (var i = 0; i < code.length; i++) {
             code[i] = parseInt(code[i]).toString(16);
             while (code[i].length < 2)
-                code[i] = code[i] + '0';
+                code[i] = '0' + code[i];
         }
         //code = code.replace(/,/g, '');
         code = code.join('');

@@ -4,7 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>GBA sprite color picker GUI</title>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="icon" type="image/x-icon" href=""/>
@@ -31,19 +32,6 @@
                 <input type="radio" id="colorRadioGBA" name="colorConvert" value="GBA" oninput="convertAll('gba')">GBA
                 <button onclick="clearRadio('colorConvert')" style="margin-left: 5px;">Clear</button>
             </div>
-            <!------
-            <div id="color-ranges">
-                R <input type="text" id="colorInput1" name="colorInput" size="1" maxlength="3">
-                <input type="range" id="colorRange1" name="colorRange" min="0" max="31"
-                       oninput="updateColorRange(1)"><br>
-                G <input type="text" id="colorInput2" name="colorInput" size="1" maxlength="3">
-                <input type="range" id="colorRange2" name="colorRange" min="0" max="31"
-                       oninput="updateColorRange(2)"><br>
-                B <input type="text" id="colorInput3" name="colorInput" size="1" maxlength="3">
-                <input type="range" id="colorRange3" name="colorRange" min="0" max="31"
-                       oninput="updateColorRange(3)">
-            </div>
-            --->
             <hr>
             <div><button onclick="outputCodes('codes-output')" style="display: block; margin: auto;">Output codes</button></div>
             <p id="codes-output"></p>
