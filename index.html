@@ -13,14 +13,14 @@
 </head>
 
 <body>
-	<header><a href="#" onclick="showZero()">Zero</a></header>
+	<header><a href="#" onclick="showZero()">Zero</a> <a href="#" onclick="showZX()">Model ZX</a></header>
 	<main>
         <div id="sprite-container"></div>
         <div id="color-controls-container">
             <table id="color-controls">
                 <caption><button onclick="refreshAllPixels()">Update All</button></caption>
                 <tr>
-                    <th>Address<div id="addressTrunc">83002C...</div></th>
+                    <th>Address<div id="addressTrunc"></div></th>
                     <th>Color</th>
                     <th>New Color</th>
                     <th></th>
@@ -32,6 +32,17 @@
                 <input type="radio" id="colorRadioGBA" name="colorConvert" value="GBA" oninput="convertAll('gba')">GBA
                 <button onclick="clearRadio('colorConvert')" style="margin-left: 5px;">Clear</button>
             </div>
+            <!----<div id="color-ranges">
+                R <input type="text" id="colorInput1" name="colorInput" size="1" maxlength="3">
+                <input type="range" id="colorRange1" name="colorRange" min="0" max="31"
+                       oninput="updateColorRange(1)"><br>
+                G <input type="text" id="colorInput2" name="colorInput" size="1" maxlength="3">
+                <input type="range" id="colorRange2" name="colorRange" min="0" max="31"
+                       oninput="updateColorRange(2)"><br>
+                B <input type="text" id="colorInput3" name="colorInput" size="1" maxlength="3">
+                <input type="range" id="colorRange3" name="colorRange" min="0" max="31"
+                       oninput="updateColorRange(3)">
+            </div>---->
             <hr>
             <div><button onclick="outputCodes('codes-output')" style="display: block; margin: auto;">Output codes</button></div>
             <p id="codes-output"></p>
