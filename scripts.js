@@ -337,6 +337,7 @@ function selectInput(input) {
     if (!baseValue)
         baseValue = trimRGB(current_sprite_rgb[selected.id.replace('input', '') - 1]);
         //selected.value = trimRGB(current_sprite_rgb[selected.id.replace('input', '') - 1]);
+    /*
     var indivRGBtext = document.getElementsByName('colorInput');
     //const indivRGBrange = document.getElementsByName('colorRange');
     if (isRGB(baseValue))
@@ -352,8 +353,9 @@ function selectInput(input) {
             document.getElementById('colorRange' + this.id.replace('colorInput', '')).value = Math.floor(event.target.value / 8);
         });
     }
+     */
 }
-
+/*
 function updateColorRange(channelNum) {
     var range = document.getElementById('colorRange' + channelNum);
     document.getElementById('colorInput' + channelNum).value = range.value * 8;
@@ -362,7 +364,7 @@ function updateColorRange(channelNum) {
     selectedSplit[channelNum - 1] = range.value * 8;
     selected.value = selectedSplit.toString();
 }
-
+*/
 
 
 // refresh corresponding pixel with inputted color value
@@ -399,6 +401,13 @@ function outputCodes(targetID) {
         var input = document.getElementById('input' + (i+1));
         if (input.value)
             target.innerHTML = target.innerHTML + current_sprite_addresses[i] + ' ' + convertToGBA(input.value) + '<br>';
+    }
+    if(current_sprite_addresses === zx_sprite_addresses) { //do it again for zx which has them twice
+        for (var i = 0; i < current_sprite_addresses.length; i++) {
+            var input = document.getElementById('input' + (i+1));
+            if (input.value)
+                target.innerHTML = target.innerHTML + (parseInt(current_sprite_addresses[i], 16) + 32).toString(16).toUpperCase() + ' ' + convertToGBA(input.value) + '<br>';
+        }
     }
 }
 
