@@ -110,7 +110,6 @@ var zx_sprite = [
     [,,1,2,3,4,4,3,2,1,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,,,,],
     [,,,1,1,1,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,]
 ];
-
 var zx_sprite_rgb = ['(16, 33, 99)', // 1 darkdark blue
     '(57, 82, 148)', // 2 dark blue
     '(148, 156, 198)', // 3 mid blue
@@ -127,7 +126,6 @@ var zx_sprite_rgb = ['(16, 33, 99)', // 1 darkdark blue
     '(140, 74, 0)', // 14 darkdark yellow
     '(57, 231, 198)' // 15 light gem
 ];
-
 var zx_sprite_addresses = ['120DAA22', // 1 darkdark blue
     '120DAA24', // 2 dark blue
     '120DAA26', // 3 mid blue
@@ -143,6 +141,84 @@ var zx_sprite_addresses = ['120DAA22', // 1 darkdark blue
     '120DAA3A', // 13 middark yellow
     '120DAA3C', // 14 darkdark yellow
     '120DAA3E' // 15 light gem
+];
+
+var hx_sprite = [
+    [,,,,,,,,,,,7,7,,,,,,,6,7,7,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,6,8,7,,,,,,1,6,7,7,,,,,,,,,,,,],
+    [,,,,,,,,,,,,6,7,8,7,,,,,1,6,6,7,,,,,,,,,,,,],
+    [,,,,,,,,,,,,6,7,7,8,7,,,,1,6,6,7,7,,,,,,,,,,,],
+    [,,,,,,,,,,,,6,7,7,7,8,7,,,1,6,6,6,7,7,,,,,,,,,,],
+    [,,,,,,,,,,,,,6,7,7,7,8,7,,,1,6,6,6,7,,,,,,,,,,],
+    [,,,,,,,,,,,,,14,6,7,7,7,8,7,,1,13,6,6,7,7,,,,,,,,,],
+    [,,,,,,,,,,,,,14,13,6,7,7,7,5,1,9,9,9,6,6,7,7,,,,,,,,],
+    [,,,,,,,,,,6,6,6,14,10,13,6,7,7,7,5,1,1,9,15,6,6,7,,,,,,,,],
+    [,,,,,,,,,6,8,8,7,6,14,10,6,7,7,7,11,7,1,1,9,15,6,13,,,,,,,,],
+    [,,,,,,,,6,7,7,8,7,6,,14,10,6,7,7,11,7,7,1,2,9,15,6,,,,,,,,],
+    [,,,,,,,6,7,7,7,7,8,7,6,,14,10,7,10,13,6,8,7,15,15,5,15,,,,,,,,],
+    [,,,,,,6,7,7,13,10,7,8,7,2,2,2,14,10,13,6,7,8,8,7,9,15,6,,,,,,,,],
+    [,,,,,,6,7,13,13,6,6,6,6,2,3,5,7,6,6,14,13,3,1,8,8,6,,,,,,,,,],
+    [,,,,,,6,13,13,13,6,5,5,7,6,2,4,5,8,7,13,12,5,1,13,6,,,,,,,,,,],
+    [,,,,6,6,6,13,13,1,6,7,8,5,7,7,2,3,5,7,6,12,12,12,12,13,6,,,,,,,,,],
+    [,,,6,7,8,7,1,1,2,5,7,7,8,8,7,14,6,6,4,7,6,12,15,13,6,6,,,,,2,,,,],
+    [,,9,15,9,5,7,2,2,1,4,5,7,7,7,6,10,14,1,6,6,6,14,14,14,,,,,,2,5,2,,,],
+    [,,9,5,15,5,8,7,1,1,2,4,3,6,6,8,8,11,1,1,14,13,6,6,6,6,,,,,2,5,2,2,,],
+    [,,14,10,11,10,8,7,6,4,2,2,6,6,7,8,5,13,2,10,13,6,7,7,7,6,,,14,1,3,2,1,4,2,],
+    [,14,10,13,2,2,13,6,5,3,2,,6,7,6,7,7,2,2,8,7,6,7,6,2,1,,14,2,5,5,1,4,2,4,2],
+    [14,13,2,2,5,1,14,5,3,2,,1,6,7,8,1,1,2,6,6,6,6,3,1,,6,13,1,4,2,1,2,3,3,2],
+    [14,2,4,2,5,1,14,4,2,,,1,1,2,2,1,1,1,7,7,6,3,2,1,1,6,10,13,1,3,2,1,2,1,],
+    [,2,3,5,3,2,3,2,3,2,,,2,4,4,2,2,1,3,2,,,1,1,2,1,7,7,10,2,1,1,1,1,,],
+    [,2,5,3,4,1,1,5,2,,,2,3,2,1,15,5,4,9,2,2,,,1,1,6,7,7,6,1,13,14,14,,,],
+    [,,2,4,1,2,1,5,2,,,2,3,5,2,1,5,3,1,3,3,2,2,,6,6,6,6,6,6,6,,,,,],
+    [,,,1,7,6,5,1,2,,2,3,4,5,4,1,4,2,1,3,3,3,3,2,,6,6,6,6,,,,,,,],
+    [,,6,7,7,7,2,2,,,2,3,5,5,4,2,1,1,2,3,3,3,4,3,2,,,7,7,,,,,,,],
+    [,,6,7,7,7,6,6,6,7,2,3,5,4,3,2,,,1,1,2,3,3,5,3,2,7,8,6,,,,,,,],
+    [,,,6,7,6,6,,6,5,7,6,7,7,2,6,,,,,1,1,2,3,2,6,8,7,6,,,,,,,],
+    [,,,6,7,6,6,6,8,5,8,7,5,8,7,,,,,,,6,7,7,7,6,7,7,6,,,,,,,],
+    [,,,,6,6,,6,8,8,7,5,8,8,6,,,,,,,6,8,5,8,6,7,6,,,,,,,,],
+    [,,,,,,,6,7,7,5,8,8,6,6,,,,,,,6,7,7,8,6,6,6,,,,,,,,],
+    [,,,,,,6,7,8,7,8,8,6,6,,,,,,,,,6,6,7,7,6,,,,,,,,,],
+    [,,,,13,6,8,8,7,6,6,6,,,,,,,,,,,6,7,7,6,,,,,,,,,],
+    [,,,,13,10,10,13,7,6,6,,,,,,,,,,,,,6,7,6,14,14,,,,,,,,],
+    [,,,6,13,10,11,11,13,14,,,,,,,,,,,,,14,13,13,13,10,13,14,,,,,,,],
+    [,,,6,6,7,13,13,10,14,,,,,,,,,,,,1,14,13,10,10,14,14,6,6,,,,,,],
+    [,,6,7,7,8,8,7,6,14,,,,,,,,,,,,1,6,14,13,14,7,8,8,8,6,,,,,],
+    [,,6,7,8,5,5,5,8,6,,,,,,,,,,,,1,2,6,14,6,6,7,7,8,7,6,,,,],
+    [,,6,7,7,8,8,5,7,6,,,,,,,,,,,,1,2,3,1,6,2,2,3,3,2,1,,,,],
+    [,,1,2,3,4,4,3,2,1,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,,,,],
+    [,,,1,1,1,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,]
+]
+var hx_sprite_rgb = ['(16, 33, 99)', // 1 darkdark blue
+    '(57, 82, 148)', // 2 dark blue
+    '(148, 156, 198)', // 3 mid blue
+    '(214, 222, 247)', // 4 light blue
+    '(255, 255, 255)', // 5 white
+    '(8, 90, 0)', // 6 dark red
+    '(41, 173, 0)', // 7 mid red
+    '(181, 239, 0)', // 8 light red
+    '(173, 0, 41)', // 9 dark gem
+    '(255, 206, 24)', // 10 midlight yellow
+    '(255, 255, 140)', // 11 light yellow
+    '(255, 214, 165)', // 12 skin
+    '(214, 132, 16)', // 13 middark yellow
+    '(140, 24, 49)', // 14 darkdark yellow
+    '(255, 0, 90)' // 15 light gem
+];
+var hx_sprite_addresses = ['120DAA62', // 1 darkdark blue
+    '120DAA64', // 2 dark blue
+    '120DAA66', // 3 mid blue
+    '120DAA68', // 4 light blue
+    '120DAA6A', // 5 white
+    '120DAA6C', // 6 dark red
+    '120DAA6E', // 7 mid red
+    '120DAA70', // 8 light red
+    '120DAA72', // 9 dark gem
+    '120DAA74', // 10 midlight yellow
+    '120DAA76', // 11  light yellow
+    '120DAA78', // 12 skin
+    '120DAA7A', // 13 middark yellow
+    '120DAA7C', // 14 darkdark yellow
+    '120DAA7E' // 15 light gem
 ];
 
 /******************************************************************************************
@@ -233,6 +309,30 @@ function showZX() {
         }
     }
     populateColorControls(zx_sprite_rgb, zx_sprite_addresses);
+    // resetElement(targetID, true, 'color-controls-container', 'P'); // optional
+}
+function showHX() {
+    current_sprite = hx_sprite;
+    current_sprite_rgb = hx_sprite_rgb;
+    current_sprite_addresses = hx_sprite_addresses;
+    var addressTrunc = document.getElementById("addressTrunc");
+    addressTrunc.innerHTML = current_sprite_addresses[0].substring(0, 6) + "...";
+    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '700px', '860px', 'gray');
+    for (var i = 0; i < current_sprite.length; i++) {
+        for (var j = 0; j < current_sprite[i].length; j++) {
+            var pixel = document.createElement("DIV");
+            pixel.className = "sprite-pixel";
+            if (!current_sprite[i][j]) {
+                pixel.style.visibility = 'hidden';
+            } else {
+                pixel.style.backgroundColor = 'rgb' + current_sprite_rgb[current_sprite[i][j]-1];
+                pixel.className = 'sprite-pixel pix' + current_sprite[i][j].toString();
+                pixel.setAttribute('onclick', 'selectPixel(this)');
+            }
+            canvas.appendChild(pixel);
+        }
+    }
+    populateColorControls(current_sprite_rgb, current_sprite_addresses);
     // resetElement(targetID, true, 'color-controls-container', 'P'); // optional
 }
 
@@ -402,7 +502,7 @@ function outputCodes(targetID) {
         if (input.value)
             target.innerHTML = target.innerHTML + current_sprite_addresses[i] + ' ' + convertToGBA(input.value) + '<br>';
     }
-    if(current_sprite_addresses === zx_sprite_addresses) { //do it again for zx which has them twice
+    if(current_sprite_addresses === zx_sprite_addresses || current_sprite_addresses === hx_sprite_addresses) { //do it again for zx which has them twice
         for (var i = 0; i < current_sprite_addresses.length; i++) {
             var input = document.getElementById('input' + (i+1));
             if (input.value)
