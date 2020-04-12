@@ -13,14 +13,23 @@
 </head>
 
 <body>
-	<header><a href="#" onclick="showZero()">Zero (Z2-4 EN)</a> | <a href="#" onclick="showZX()">Model ZX (ZX JP)</a> | <a href="#" onclick="showHX()">Model HX (ZX JP)</a></header>
+	<header><a href="#" onclick="showZero()" style="color: #e0506b">Zero (Z2-4)</a>
+        | <a href="#" onclick="showVent()" style="color: skyblue">Vent</a>
+        | <a href="#" onclick="showAile()" style="color: skyblue">Aile</a>
+        | <a href="#" onclick="showX()" style="color: dodgerblue">Model X</a>
+        | <a href="#" onclick="showZX()" style="color: lightcoral">Model ZX</a>
+        | <a href="#" onclick="showHX()" style="color: limegreen">Model HX</a>
+        | <a href="#" onclick="showFX()" style="color: #cc8c22">Model FX</a>
+        | <a href="#" onclick="showLX()" style="color: lightblue">Model LX</a>
+        | <a href="#" onclick="showPX()" style="color: mediumpurple">Model PX</a>
+        | <a href="#" onclick="showOX()" style="color: #cc0000">Model OX</a></header>
 	<main>
         <div id="sprite-container"></div>
         <div id="color-controls-container">
             <table id="color-controls">
                 <caption><button onclick="refreshAllPixels()">Update All</button></caption>
                 <tr>
-                    <th>Address<div id="addressTrunc"></div></th>
+                    <th>Address (JP)<div id="addressTrunc"></div></th>
                     <th>Color</th>
                     <th>New Color</th>
                     <th></th>
@@ -44,7 +53,8 @@
                        oninput="updateColorRange(3)">
             </div>---->
             <hr>
-            <div><button onclick="outputCodes('codes-output')" style="display: block; margin: auto;">Output codes</button></div>
+            <div> Output Codes<br><button onclick="outputCodes('codes-output', 'jp')" style="display: inline; margin: auto;">JP</button>
+                <button onclick="outputCodes('codes-output', 'en')" style="display: inline; margin: auto;">EN</button></div>
             <p id="codes-output"></p>
         </div>
     </main>
