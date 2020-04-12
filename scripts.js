@@ -67,6 +67,34 @@ var zero_sprite_addresses = ['83002CC2', // 1 dark gray/brown
     '83002CD8', // 12 midlight red
     '83002CDA' // 13 light red
 ];
+var zero_dash_rgb = ['(96,0,48)', // 1 dark gray/brown
+    '(136,32,56)', // 2 dark blue
+    '(176,64,64)', // 3 mid blue
+    '(216,96,80)', // 4 light blue
+    '(240,144,168)', // 5 white
+    '(152,0,48)', // 6 dark yellow
+    '(184,48,64)', // 7 mid yellow
+    '(216,96,80)', // 8 light yellow
+    '(240,128,120)', // 9 skin color
+    '(112,0,48)', // 10 dark red
+    '(144,32,56)', // 11 middark red
+    '(184,64,64)', // 12 midlight red
+    '(216,96,80)' // 13 light red
+];
+var zero_dash_addresses = ['83002E42', // 1 dark gray/brown
+    '83002E44', // 2 dark blue
+    '83002E46', // 3 mid blue
+    '83002E48', // 4 light blue
+    '83002E4A', // 5 white
+    '83002E4C', // 6 dark yellow
+    '83002E4E', // 7 mid yellow
+    '83002E50', // 8 light yellow
+    '83002E52', // 9 skin color
+    '83002E54', // 10 dark red
+    '83002E56', // 11 middark red
+    '83002E58', // 12 midlight red
+    '83002E5A' // 13 light red
+];
 
 var vent_sprite = [
     [,,,,,,,,,14,14,14,14,,,,,,,,,,,],
@@ -288,6 +316,38 @@ var x_sprite_addresses = ['120DA9E2', // 1 darkdark blue
     '120DA9FC', // 14 darkdark yellow
     '120DA9FE' // 15 light gem
 ];
+var x_dash_rgb = ['(8,57,156)', // 1 darkdark blue
+    '(41,90,198)', // 2 dark blue
+    '(74,123,247)', // 3 mid blue
+    '(132,181,247)', // 4 light blue
+    '(165,214,247)', // 5 white
+    '(16,66,165)', // 6 dark red
+    '(41,90,214)', // 7 mid red
+    '(74,132,231)', // 8 light red
+    '(115,181,239)', // 9 dark gem
+    '(140,173,255)', // 10 midlight yellow
+    '(173,206,255)', // 11 light yellow
+    '(132,189,239)', // 12 skin
+    '(74,132,214)', // 13 middark yellow
+    '(49,82,181)', // 14 darkdark yellow
+    '(66,115,239)' // 15 light gem
+];
+var x_dash_addresses = ['120DA7C2', // 1 darkdark blue
+    '120DA7C4', // 2 dark blue
+    '120DA7C6', // 3 mid blue
+    '120DA7C8', // 4 light blue
+    '120DA7CA', // 5 white
+    '120DA7CC', // 6 dark red
+    '120DA7CE', // 7 mid red
+    '120DA7D0', // 8 light red
+    '120DA7D2', // 9 dark gem
+    '120DA7D4', // 10 midlight yellow
+    '120DA7D6', // 11  light yellow
+    '120DA7D8', // 12 skin
+    '120DA7DA', // 13 middark yellow
+    '120DA7DC', // 12 skin
+    '120DA7DE' // 13 middark yellow
+];
 
 var zx_sprite = [
     [,,,,,,,,,,,,,,7,,,,,,,6,,,,,,,,,,,,,],
@@ -361,6 +421,38 @@ var zx_sprite_addresses = ['120DAA22', // 1 darkdark blue
     '120DAA3A', // 13 middark yellow
     '120DAA3C', // 14 darkdark yellow
     '120DAA3E' // 15 light gem
+];
+var zx_dash_rgb = ['(173,49,57)', // 1 darkdark blue
+    '(206,57,66)', // 2 dark blue
+    '(239,90,107)', // 3 mid blue
+    '(255,132,148)', // 4 light blue
+    '(255,156,165)', // 5 white
+    '(198,57,66)', // 6 dark red
+    '(239,82,82)', // 7 mid red
+    '(239,123,140)', // 8 light red
+    '(214,66,82)', // 9 dark gem
+    '(255,82,99)', // 10 midlight yellow
+    '(255,132,148)', // 11 light yellow
+    '(255,107,132)', // 12 skin
+    '(214,66,74)', // 13 middark yellow
+    '(192,56,64)', // 14 darkdark yellow
+    '(255,107,123)' // 15 light gem
+];
+var zx_dash_addresses = ['120DA7E2', // 1 darkdark blue
+    '120DA7E4', // 2 dark blue
+    '120DA7E6', // 3 mid blue
+    '120DA7E8', // 4 light blue
+    '120DA7EA', // 5 white
+    '120DA7EC', // 6 dark red
+    '120DA7EE', // 7 mid red
+    '120DA7F0', // 8 light red
+    '120DA7F2', // 9 dark gem
+    '120DA7F4', // 10 midlight yellow
+    '120DA7F6', // 11  light yellow
+    '120DA7F8', // 12 skin
+    '120DA7FA', // 13 middark yellow
+    '120DA7FC', // 12 skin
+    '120DA7FE' // 13 middark yellow
 ];
 
 var hx_sprite = [
@@ -440,6 +532,38 @@ var hx_sprite_addresses = ['120DAA62', // 1 darkdark blue
     '120DAA7C', // 14 darkdark yellow
     '120DAA7E' // 15 light gem
 ];
+var hx_dash_rgb = ['(49,99,49)', // 1 darkdark blue
+    '(74,132,49)', // 2 dark blue
+    '(107,165,49)', // 3 mid blue
+    '(140,189,49)', // 4 light blue
+    '(165,231,49)', // 5 white
+    '(49,115,49)', // 6 dark red
+    '(66,132,49)', // 7 mid red
+    '(123,181,49)', // 8 light red
+    '(66,132,49)', // 9 dark gem
+    '(132,181,49)', // 10 midlight yellow
+    '(173,214,49)', // 11 light yellow
+    '(148,198,49)', // 12 skin
+    '(90,148,49)', // 13 middark yellow
+    '(49,99,49)', // 14 darkdark yellow
+    '(90,165,49)' // 15 light gem
+];
+var hx_dash_addresses = ['120DA802', // 1 darkdark blue
+    '120DA804', // 2 dark blue
+    '120DA806', // 3 mid blue
+    '120DA808', // 4 light blue
+    '120DA80A', // 5 white
+    '120DA80C', // 6 dark red
+    '120DA80E', // 7 mid red
+    '120DA810', // 8 light red
+    '120DA812', // 9 dark gem
+    '120DA814', // 10 midlight yellow
+    '120DA816', // 11  light yellow
+    '120DA818', // 12 skin
+    '120DA81A', // 13 middark yellow
+    '120DA81C', // 12 skin
+    '120DA81E' // 13 middark yellow
+];
 
 var fx_sprite = [
     [,,,,,,,,,,,,,,,,,,,14,14,,,,14,14,,,,,,,,,,],
@@ -517,6 +641,38 @@ var fx_sprite_addresses = ['120DAAA2', // 1 darkdark blue
     '120DAABC', // 14 darkdark yellow
     '120DAABE' // 15 light gem
 ];
+var fx_dash_rgb = ['(156,57,0)', // 1 darkdark blue
+    '(198,74,33)', // 2 dark blue
+    '(231,123,74)', // 3 mid blue
+    '(239,156,115)', // 4 light blue
+    '(255,198,156)', // 5 white
+    '(198,74,33)', // 6 dark red
+    '(216,104,64)', // 7 mid red
+    '(247,140,90)', // 8 light red
+    '(214,82,33)', // 9 dark gem
+    '(239,132,90)', // 10 midlight yellow
+    '(247,156,115)', // 11 light yellow
+    '(247,156,115)', // 12 skin
+    '(214,115,66)', // 13 middark yellow
+    '(173,74,24)', // 14 darkdark yellow
+    '(239,140,74)' // 15 light gem
+];
+var fx_dash_addresses = ['120DA822', // 1 darkdark blue
+    '120DA824', // 2 dark blue
+    '120DA826', // 3 mid blue
+    '120DA828', // 4 light blue
+    '120DA82A', // 5 white
+    '120DA82C', // 6 dark red
+    '120DA82E', // 7 mid red
+    '120DA830', // 8 light red
+    '120DA832', // 9 dark gem
+    '120DA834', // 10 midlight yellow
+    '120DA836', // 11  light yellow
+    '120DA838', // 12 skin
+    '120DA83A', // 13 middark yellow
+    '120DA83C', // 12 skin
+    '120DA83E' // 13 middark yellow
+];
 
 lx_sprite = [
     [,,,,,,,,,,,,,6,6,6,6,,,,,,,,,,,,,,,,,,,,,],
@@ -590,6 +746,38 @@ var lx_sprite_addresses = ['120DAAE2', // 1 darkdark blue
     '120DAAFA', // 13 middark yellow
     '120DAAFC', // 14 darkdark yellow
     '120DAAFE' // 15 light gem
+];
+var lx_dash_rgb = ['(57,49,115)', // 1 darkdark blue
+    '(74,74,156)', // 2 dark blue
+    '(156,165,198)', // 3 mid blue
+    '(156,173,247)', // 4 light blue
+    '(198,206,255)', // 5 white
+    '(82,66,181)', // 6 dark red
+    '(115,99,239)', // 7 mid red
+    '(132,140,247)', // 8 light red
+    '(156,165,255)', // 9 dark gem
+    '(148,156,247)', // 10 midlight yellow
+    '(173,189,255)', // 11 light yellow
+    '(173,181,255)', // 12 skin
+    '(115,123,206)', // 13 middark yellow
+    '(107,99,198)', // 14 darkdark yellow
+    '(132,132,214)' // 15 light gem
+];
+var lx_dash_addresses = ['120DA842', // 1 darkdark blue
+    '120DA844', // 2 dark blue
+    '120DA846', // 3 mid blue
+    '120DA848', // 4 light blue
+    '120DA84A', // 5 white
+    '120DA84C', // 6 dark red
+    '120DA84E', // 7 mid red
+    '120DA850', // 8 light red
+    '120DA852', // 9 dark gem
+    '120DA854', // 10 midlight yellow
+    '120DA856', // 11  light yellow
+    '120DA858', // 12 skin
+    '120DA85A', // 13 middark yellow
+    '120DA85C', // 12 skin
+    '120DA85E' // 13 middark yellow
 ];
 
 var px_sprite = [
@@ -665,6 +853,38 @@ var px_sprite_addresses = ['120DAB22', // 1 darkdark blue
     '120DAB3C', // 14 darkdark yellow
     '120DAB3E' // 15 light gem
 ];
+var px_dash_rgb = ['(82,74,107)', // 1 darkdark blue
+    '(115,99,140)', // 2 dark blue
+    '(165,148,181)', // 3 mid blue
+    '(206,189,214)', // 4 light blue
+    '(231,222,239)', // 5 white
+    '(115,99,140)', // 6 dark red
+    '(156,140,173)', // 7 mid red
+    '(198,181,206)', // 8 light red
+    '(115,99,140)', // 9 dark gem
+    '(189,173,206)', // 10 midlight yellow
+    '(214,198,231)', // 11 light yellow
+    '(222,206,247)', // 12 skin
+    '(165,148,181)', // 13 middark yellow
+    '(115,99,140)', // 14 darkdark yellow
+    '(140,123,165)' // 15 light gem
+];
+var px_dash_addresses = ['120DA862', // 1 darkdark blue
+    '120DA864', // 2 dark blue
+    '120DA866', // 3 mid blue
+    '120DA868', // 4 light blue
+    '120DA86A', // 5 white
+    '120DA86C', // 6 dark red
+    '120DA86E', // 7 mid red
+    '120DA860', // 8 light red
+    '120DA862', // 9 dark gem
+    '120DA864', // 10 midlight yellow
+    '120DA866', // 11  light yellow
+    '120DA868', // 12 skin
+    '120DA86A', // 13 middark yellow
+    '120DA86C', // 12 skin
+    '120DA86E' // 13 middark yellow
+];
 
 var ox_sprite = [
     [,,,,,,,,,,,,,,,,,,12,,,,,11,,,,,,,,,,,],
@@ -735,6 +955,34 @@ var ox_sprite_addresses = ['120DAB62', // 1 darkdark blue
     '120DAB78', // 12 skin
     '120DAB7A', // 13 middark yellow
 ];
+var ox_dash_rgb = ['(173,49,66)', // 1 dark gray/brown
+    '(140,33,41)', // 2 dark blue
+    '(165,57,74)', // 3 mid blue
+    '(189,82,90)', // 4 light blue
+    '(231,140,148)', // 5 white
+    '(189,82,82)', // 6 dark yellow
+    '(222,132,132)', // 7 mid yellow
+    '(239,165,165)', // 8 light yellow
+    '(239,165,165)', // 9 skin color
+    '(82,16,41)', // 10 dark red
+    '(132,41,57)', // 11 middark red
+    '(198,90,115)', // 12 midlight red
+    '(239,107,123)' // 13 light red
+];
+var ox_dash_addresses = ['120DA882', // 1 darkdark blue
+    '120DA884', // 2 dark blue
+    '120DA886', // 3 mid blue
+    '120DA888', // 4 light blue
+    '120DA88A', // 5 white
+    '120DA88C', // 6 dark red
+    '120DA88E', // 7 mid red
+    '120DA890', // 8 light red
+    '120DA892', // 9 dark gem
+    '120DA894', // 10 midlight yellow
+    '120DA896', // 11  light yellow
+    '120DA898', // 12 skin
+    '120DA89A', // 13 middark yellow
+];
 
 /******************************************************************************************
  ****** TO-DO ******
@@ -781,10 +1029,15 @@ function resetElement(elementId, recreateBool, containerId, elementType, width, 
     }
 }
 
-function showZero() {
+function showZero(dash) {
     current_sprite = zero_sprite;
-    current_sprite_rgb = zero_sprite_rgb;
-    current_sprite_addresses = zero_sprite_addresses;
+    if (!dash) {
+        current_sprite_rgb = zero_sprite_rgb;
+        current_sprite_addresses = zero_sprite_addresses;
+    } else {
+        current_sprite_rgb = zero_dash_rgb;
+        current_sprite_addresses = zero_dash_addresses;
+    }
     var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '680px', '780px', 'gray');
     show_sprite(canvas);
 }
@@ -802,52 +1055,87 @@ function showAile() {
     var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '420px', '800px', 'gray');
     show_sprite(canvas);
 }
-function showX() {
+function showX(dash) {
     current_sprite = x_sprite;
-    current_sprite_rgb = x_sprite_rgb;
-    current_sprite_addresses = x_sprite_addresses;
+    if (!dash) {
+        current_sprite_rgb = x_sprite_rgb;
+        current_sprite_addresses = x_sprite_addresses;
+    } else {
+        current_sprite_rgb = x_dash_rgb;
+        current_sprite_addresses = x_dash_addresses;
+    }
     var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '700px', '720px', 'gray');
     show_sprite(canvas);
 }
-function showZX() {
+function showZX(dash) {
     current_sprite = zx_sprite;
-    current_sprite_rgb = zx_sprite_rgb;
-    current_sprite_addresses = zx_sprite_addresses;
+    if (!dash) {
+        current_sprite_rgb = zx_sprite_rgb;
+        current_sprite_addresses = zx_sprite_addresses;
+    } else {
+        current_sprite_rgb = zx_dash_rgb;
+        current_sprite_addresses = zx_dash_addresses;
+    }
     var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '700px', '780px', 'gray');
     show_sprite(canvas);
 }
-function showHX() {
+function showHX(dash) {
     current_sprite = hx_sprite;
-    current_sprite_rgb = hx_sprite_rgb;
-    current_sprite_addresses = hx_sprite_addresses;
+    if (!dash) {
+        current_sprite_rgb = hx_sprite_rgb;
+        current_sprite_addresses = hx_sprite_addresses;
+    } else {
+        current_sprite_rgb = hx_dash_rgb;
+        current_sprite_addresses = hx_dash_addresses;
+    }
     var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '700px', '860px', 'gray');
     show_sprite(canvas);
 }
-function showFX() {
+function showFX(dash) {
     current_sprite = fx_sprite;
-    current_sprite_rgb = fx_sprite_rgb;
-    current_sprite_addresses = fx_sprite_addresses;
+    if (!dash) {
+        current_sprite_rgb = fx_sprite_rgb;
+        current_sprite_addresses = fx_sprite_addresses;
+    } else {
+        current_sprite_rgb = fx_dash_rgb;
+        current_sprite_addresses = fx_dash_addresses;
+    }
     var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '700px', '840px', 'gray');
     show_sprite(canvas);
 }
-function showLX() {
+function showLX(dash) {
     current_sprite = lx_sprite;
-    current_sprite_rgb = lx_sprite_rgb;
-    current_sprite_addresses = lx_sprite_addresses;
+    if (!dash) {
+        current_sprite_rgb = lx_sprite_rgb;
+        current_sprite_addresses = lx_sprite_addresses;
+    } else {
+        current_sprite_rgb = lx_dash_rgb;
+        current_sprite_addresses = lx_dash_addresses;
+    }
     var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '740px', '780px', 'gray');
     show_sprite(canvas);
 }
-function showPX() {
+function showPX(dash) {
     current_sprite = px_sprite;
-    current_sprite_rgb = px_sprite_rgb;
-    current_sprite_addresses = px_sprite_addresses;
+    if (!dash) {
+        current_sprite_rgb = px_sprite_rgb;
+        current_sprite_addresses = px_sprite_addresses;
+    } else {
+        current_sprite_rgb = px_dash_rgb;
+        current_sprite_addresses = px_dash_addresses;
+    }
     var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '720px', '780px', 'gray');
     show_sprite(canvas);
 }
-function showOX() {
+function showOX(dash) {
     current_sprite = ox_sprite;
-    current_sprite_rgb = ox_sprite_rgb;
-    current_sprite_addresses = ox_sprite_addresses;
+    if (!dash) {
+        current_sprite_rgb = ox_sprite_rgb;
+        current_sprite_addresses = ox_sprite_addresses;
+    } else {
+        current_sprite_rgb = ox_dash_rgb;
+        current_sprite_addresses = ox_dash_addresses;
+    }
     var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '680px', '780px', 'gray');
     show_sprite(canvas);
 }
@@ -1035,20 +1323,20 @@ function outputCodes(targetID, region) {
     //var target = document.getElementById(targetID);
     //var colorArr = [];
     var addresses = Array.from(current_sprite_addresses);
-    if (region === "en" && current_sprite_addresses !== zero_sprite_addresses) {
+    if (region === "en" && current_sprite !== zero_sprite) {
         for (var i = 0; i < current_sprite_addresses.length; i++) {
             addresses[i] = (parseInt(current_sprite_addresses[i], 16) + 15844).toString(16).toUpperCase()
         }
     }
     var inbetween = ' ';
-    if (current_sprite_addresses !== zero_sprite_addresses)
+    if (current_sprite !== zero_sprite)
         inbetween = ' 0000';
     for (var i = 0; i < addresses.length; i++) {
         var input = document.getElementById('input' + (i+1));
         if (input.value)
             target.innerHTML = target.innerHTML + addresses[i] + inbetween + convertToGBA(input.value) + '<br>';
     }
-    if(current_sprite_addresses !== zero_sprite_addresses && current_sprite_addresses !== vent_sprite_addresses && current_sprite_addresses !== aile_sprite_addresses) { //do it again for zx which has them twice
+    if(current_sprite !== zero_sprite && current_sprite !== vent_sprite && current_sprite !== aile_sprite) { //do it again for zx which has them twice
         for (var i = 0; i < addresses.length; i++) {
             var input = document.getElementById('input' + (i+1));
             if (input.value)
