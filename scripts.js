@@ -721,19 +721,19 @@ var ox_sprite_rgb = ['(66, 74, 66)', // 1 dark gray/brown
     '(206, 41, 74)', // 12 midlight red
     '(255, 41, 74)' // 13 light red
 ];
-var ox_sprite_addresses = ['120DA862', // 1 darkdark blue
-    '120DA864', // 2 dark blue
-    '120DA866', // 3 mid blue
-    '120DA868', // 4 light blue
-    '120DA86A', // 5 white
-    '120DA86C', // 6 dark red
-    '120DA86E', // 7 mid red
-    '120DA870', // 8 light red
-    '120DA872', // 9 dark gem
-    '120DA874', // 10 midlight yellow
-    '120DA876', // 11  light yellow
-    '120DA878', // 12 skin
-    '120DA87A', // 13 middark yellow
+var ox_sprite_addresses = ['120DAB62', // 1 darkdark blue
+    '120DAB64', // 2 dark blue
+    '120DAB66', // 3 mid blue
+    '120DAB68', // 4 light blue
+    '120DAB6A', // 5 white
+    '120DAB6C', // 6 dark red
+    '120DAB6E', // 7 mid red
+    '120DAB70', // 8 light red
+    '120DAB72', // 9 dark gem
+    '120DAB74', // 10 midlight yellow
+    '120DAB76', // 11  light yellow
+    '120DAB78', // 12 skin
+    '120DAB7A', // 13 middark yellow
 ];
 
 /******************************************************************************************
