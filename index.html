@@ -23,16 +23,17 @@
         - <a href="#" onclick="showZX(true)" style="color: lightcoral">Dash</a>
         | <a href="#" onclick="showHX(false)" style="color: limegreen">HX</a>
         - <a href="#" onclick="showHX(true)" style="color: limegreen">Dash</a>
+        - <a href="#" onclick="showHxSaber()" style="color: limegreen">Saber</a>
         | <a href="#" onclick="showFX(false)" style="color: #cc8c22">FX</a>
         - <a href="#" onclick="showFX(true)" style="color: #cc8c22">Dash</a>
         | <a href="#" onclick="showLX(false)" style="color: lightblue">LX</a>
         - <a href="#" onclick="showLX(true)" style="color: lightblue">Dash</a>
         | <a href="#" onclick="showPX(false)" style="color: mediumpurple">PX</a>
         - <a href="#" onclick="showPX(true)" style="color: mediumpurple">Dash</a>
+        - <a href="#" onclick="showKunai()" style="color: mediumpurple">Kunai</a>
         | <a href="#" onclick="showOX(false)" style="color: #cc0000">OX</a>
         - <a href="#" onclick="showOX(true)" style="color: #cc0000">Dash</a></header>
-	<main>
-        <div id="sprite-container"></div>
+	<main> <div id="workspace-container">
         <div id="color-controls-container">
             <table id="color-controls">
                 <caption><button onclick="refreshAllPixels()">Update All</button></caption>
@@ -40,7 +41,8 @@
                     <th>Address (JP)<div id="addressTrunc"></div></th>
                     <th>Color</th>
                     <th>New Color</th>
-                    <th></th>
+                    <th>[Zoom]<button onclick="zoom(false)" style="display: inline; margin: auto;">-</button>
+                        <button onclick="zoom(true)" style="display: inline; margin: auto;">+</button></th>
                 </tr>
             </table>
             <!---<div id="color-conversion-row">
@@ -65,7 +67,8 @@
                 <button onclick="outputCodes('codes-output', 'en')" style="display: inline; margin: auto;">EN</button></div>
             <p id="codes-output"></p>
         </div>
-    </main>
+        <div id="sprite-container"></div>
+    </div></main>
 	<footer></footer>
 </body>
 

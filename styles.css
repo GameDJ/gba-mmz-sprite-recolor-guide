@@ -40,7 +40,7 @@ a {
 #color-controls-container {
     float: left;
     background-color: #ddd;
-    width: calc(100% - 680px);
+    width: 248px;
     height: 780px;
     text-align: center;
 }

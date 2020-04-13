@@ -984,6 +984,148 @@ var ox_dash_addresses = ['120DA882', // 1 darkdark blue
     '120DA89A', // 13 middark yellow
 ];
 
+// WEAPONS
+
+var kunai_sprite = [
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,5,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,5,2,4,5,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,5,5,5,,5,2,1,1,2,4,5,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,5,3,1,3,5,2,1,1,1,1,1,2,4,5,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,5,2,5,2,3,1,1,1,1,1,1,1,1,2,4,5,,,,,,,,,,,,],
+    [,,,,,,,,,,,,5,4,2,4,5,3,2,2,3,3,3,3,4,5,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,5,5,5,,5,3,2,3,3,4,5,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,5,3,4,5,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,5,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,5,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,6,2,5,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,6,3,2,2,5,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,6,3,3,1,2,2,5,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,6,3,3,3,1,2,2,2,5,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,5,5,5,5,5,6,5,3,4,5,5,5,4,3,5,5,5,5,5,5,5,,,,,,,,,,],
+    [,,,,,5,5,5,5,4,4,3,2,1,1,2,4,5,6,6,6,5,4,2,1,1,2,2,2,3,4,5,5,5,,,,,,],
+    [,5,5,5,5,3,2,1,1,1,1,1,1,1,1,1,1,4,6,6,6,4,1,1,1,1,1,1,1,1,1,1,2,3,4,5,5,5,,],
+    [5,2,1,1,1,1,1,1,1,1,1,1,1,1,1,2,3,2,2,1,1,2,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,4],[,5,5,5,4,2,1,1,1,1,1,1,1,1,3,5,2,2,2,1,1,1,2,4,3,1,1,1,1,1,1,1,1,2,4,4,4,4,,],
+    [,,,,,5,5,5,4,2,1,1,2,4,5,4,2,2,2,1,1,1,1,3,5,4,2,1,1,2,4,4,4,4,,,,,,],
+    [,,,,,,,,,5,5,5,5,,5,2,2,2,2,1,1,1,1,1,4,,4,4,4,4,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,4,2,2,2,1,1,1,1,4,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,5,2,2,1,1,1,4,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,5,2,1,1,4,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,5,1,4,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,4,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,6,6,5,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,6,6,5,2,3,5,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,6,6,5,3,1,1,2,3,5,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,6,5,4,3,1,1,2,2,2,5,,,,,,,,,,,,,],
+    [,6,6,6,6,6,6,6,6,6,6,6,6,6,6,,6,4,3,2,1,2,2,2,2,2,5,,,,,,,,,,,,,],
+    [,5,3,2,2,1,1,1,1,1,2,2,3,3,3,5,6,5,5,5,4,2,2,2,2,3,5,,,,,,,,,,,,,],
+    [,,5,4,3,2,2,2,2,2,1,1,1,1,1,4,5,6,6,6,5,4,4,5,5,5,,,,,,,,,,,,,,],
+    [,,,,5,4,3,2,2,2,2,2,2,2,2,3,4,6,6,6,4,1,1,2,3,3,4,4,5,,,,,,,,,,,],
+    [,,,,,,5,4,3,2,2,2,3,4,3,3,2,1,1,1,3,1,1,1,1,1,2,2,2,4,5,,,,,,,,,],
+    [,,,,,,,,5,4,4,5,4,3,3,2,1,1,1,1,4,3,1,1,1,1,1,1,1,2,2,4,5,,,,,,,],
+    [,,,,,,,,,,,5,3,3,2,1,1,1,1,1,4,4,2,1,1,1,1,1,1,1,1,1,2,4,5,,,,,],
+    [,,,,,,,,,,5,4,3,2,1,1,1,1,1,1,4,6,4,2,1,1,1,1,1,1,1,1,1,1,2,5,,,,],
+    [,,,,,,,,,,5,3,3,1,1,1,1,1,1,1,4,,,4,4,4,4,4,4,4,4,4,4,4,4,4,,,,],
+    [,,,,,,,,,,4,3,1,1,1,1,1,2,3,4,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,5,3,1,1,1,2,3,4,4,,,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,5,1,2,3,4,4,,,,,,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,5,4,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
+];
+var kunai_sprite_rgb = ['(255, 255, 255)', // 1 darkdark blue
+    '(206, 231, 247)', // 2 dark blue
+    '(148, 198, 231)', // 3 mid blue
+    '(123, 173, 206)', // 4 light blue
+    '(90, 148, 189)', // 5 white
+    '(57, 123, 173)', // 6 dark red
+];
+var kunai_sprite_addresses = ['121E038A', // 1 darkdark blue
+    '121E038C', // 2 dark blue
+    '121E038E', // 3 mid blue
+    '121E0390', // 4 light blue
+    '121E0392', // 5 white
+    '121E0394', // 6 dark red
+];
+
+var hx_saber_sprite = [
+    [,,,,,,,,,,,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
+    [2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,],
+    [,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,,,,,,,,,,,,,,,,,,,,,,,],
+    [,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,,,,,,,,,,,,,,,,,,,,,],
+    [,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,3,2,2,2,2,2,2,,,,,,,,,,,,,,,,,,,],
+    [,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,3,3,2,2,2,2,,,,,,,,,,,,,,,,,],
+    [,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,4,3,3,2,,,,,,,,,,,,,,,,],
+    [,,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,4,3,2,2,,,,,,,,,,,,,,],
+    [,,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,4,3,2,,,,,,,,,,,,,],
+    [,,,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,3,2,2,,,,,,,,,,,],
+    [,,,,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,4,3,2,,,,,,,,,,],
+    [,,,,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,3,2,,,,,,,,,],
+    [,,,,,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,3,3,3,3,3,3,3,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,4,2,,,,,,,,],
+    [,,,,,,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,1,1,1,1,1,1,1,1,1,4,4,2,,,,,,,],
+    [,,,,,,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,1,1,1,1,1,1,1,4,4,2,,,,,,],
+    [,,,,,,,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,1,1,1,1,1,4,4,3,,,,,],
+    [,,,,,,,,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,1,1,1,1,4,3,,,,,],
+    [,,,,,,,,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,1,1,1,4,3,,,,],
+    [,,,,,,,,,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,1,1,4,,,,],
+    [,,,,,,,,,,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,1,4,3,,,],
+    [,,,,,,,,,,,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,1,4,,,],
+    [,,,,,,,,,,,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,1,4,,],
+    [,,,,,,,,,,,,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,4,,],
+    [,,,,,,,,,,,,,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,,],
+    [,,,,,,,,,,,,,,,,,2,2,2,1,1,1,1,1,1,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,1,1,1,4],
+    [,,,,,,,,,,,,,,,,,,,,2,1,1,2,,,,,,,,,,,,,,,,,,,,,,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,3,3,3,3,3,3,2,1,1,4],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,3,3,3,3,3,1,1,1],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,3,3,3,3,2,1,1],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,4,4,4,4,4,4,4,4,4,4,4,3,3,3,3,2,1,1],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,4,4,4,4,4,4,4,4,4,4,3,3,3,2,1,1],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,4,4,4,4,4,4,4,4,4,4,3,3,3,2,1,1],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,5,5,5,5,5,5,5,5,5,5,4,4,3,3,2,2],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,5,5,5,5,5,5,5,5,5,5,4,4,3,3,2,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,5,5,5,5,5,5,5,5,5,5,4,4,4,3,3,2,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,5,5,5,5,5,5,5,5,5,5,4,4,3,3,2,2,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,5,5,5,5,5,5,5,5,5,5,4,4,4,3,3,2,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,5,5,5,5,5,5,5,5,5,5,4,4,3,3,2,2,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,5,5,5,5,5,5,5,5,5,5,4,4,4,3,3,2,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,5,5,5,5,5,5,5,5,5,5,4,4,4,3,3,2,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,5,5,5,5,5,5,5,5,5,5,5,4,4,4,3,3,2,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,5,5,5,5,5,5,5,5,5,5,5,4,4,4,3,3,3,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,5,5,5,5,5,5,5,5,5,5,5,5,4,4,4,3,3,3,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,4,5,5,5,5,5,5,5,5,5,5,5,4,4,4,4,3,3,3,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,4,4,4,3,3,3,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,5,5,5,5,5,5,5,5,5,5,5,5,5,4,4,4,4,3,3,3,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,5,5,5,5,5,5,,,,,5,5,5,5,,4,4,,,,,,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,4,4,4,3,3,3,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,4,4,4,3,3,3,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,5,5,5,5,5,5,5,5,5,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,4,4,4,4,3,3,3,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,5,5,5,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,4,4,4,4,3,3,3,3,,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,5,5,5,5,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4,4,4,4,4,4,3,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,5,5,5,5,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,3,3,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,5,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
+];
+var hx_saber_sprite_rgb = ['(255, 247, 255)', // 1 darkdark blue
+    '(255, 198, 255)', // 2 dark blue
+    '(255, 148, 247)', // 3 mid blue
+    '(255, 82, 255)', // 4 light blue
+    '(247, 24, 206)', // 5 white
+];
+var hx_saber_first_addresses = ['120F7A6A', // 1 darkdark blue
+    '120F7A6C', // 2 dark blue
+    '120F7A6E', // 3 mid blue
+    '120F7A70', // 4 light blue
+    '120F7A72', // 5 white
+];
+var hx_saber_actual_addresses = ['120F7A6A', '121DCE46', '121DD3E6', '121DDB06', '121DE1A6', '121DE946',
+    '121DEF66', '121DF506', '121DFAA6', '121DFF66', '121E0386', '121E0926', '121E0EC6', '121E1366', '121E1986',
+    '121E1DA6', '121E2146', '121E24E6', '121E2A06', '121E3026', '121E33E6', '121E37A6', '121E3DE6', '121E4586',
+    '121E4CC6', '121E5226', '121E5466', '121E5DA6', '121E66E6', '121E6C46', '121E7166', '121E76A6', '121E7FE6',
+    '121E8926', '121E8D46', '121E9466', '121E9B86', '121EA126', '121EA866'];
+
+
 /******************************************************************************************
  ****** TO-DO ******
  * main input, RGB sliders, and RGB inputs all affect each other for selected pixel
@@ -998,6 +1140,7 @@ var colorType = 'rgb';
 var current_sprite;
 var current_sprite_rgb;
 var current_sprite_addresses;
+var zoomFactor = 20;
 
 
 //------------------------------------------------------------------//
@@ -1024,7 +1167,7 @@ function resetElement(elementId, recreateBool, containerId, elementType, width, 
         element.style.backgroundColor = bgColor || '';
         container.appendChild(element);
         document.getElementById("sprite-container").style.width = width;
-        document.getElementById("color-controls-container").style.width = "calc(100% - " + width + ")";
+        //document.getElementById("color-controls-container").style.width = "calc(100% - " + width + ")";
         return element;
     }
 }
@@ -1091,6 +1234,13 @@ function showHX(dash) {
     var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '700px', '860px', 'gray');
     show_sprite(canvas);
 }
+function showHxSaber() {
+    current_sprite = hx_saber_sprite;
+    current_sprite_rgb = hx_saber_sprite_rgb;
+    current_sprite_addresses = hx_saber_first_addresses;
+    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '1540px', '1120px', 'gray');
+    show_sprite(canvas);
+}
 function showFX(dash) {
     current_sprite = fx_sprite;
     if (!dash) {
@@ -1127,6 +1277,13 @@ function showPX(dash) {
     var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '720px', '780px', 'gray');
     show_sprite(canvas);
 }
+function showKunai() {
+    current_sprite = kunai_sprite;
+    current_sprite_rgb = kunai_sprite_rgb;
+    current_sprite_addresses = kunai_sprite_addresses;
+    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '780px', '940px', 'gray');
+    show_sprite(canvas);
+}
 function showOX(dash) {
     current_sprite = ox_sprite;
     if (!dash) {
@@ -1141,6 +1298,7 @@ function showOX(dash) {
 }
 
 function show_sprite(canvas) {
+    zoomFactor = 20;
     var addressTrunc = document.getElementById("addressTrunc");
     addressTrunc.innerHTML = current_sprite_addresses[0].substring(0, 6) + "...";
     for (var i = 0; i < current_sprite.length; i++) {
@@ -1157,6 +1315,7 @@ function show_sprite(canvas) {
             canvas.appendChild(pixel);
         }
     }
+    document.getElementById('workspace-container').style.width = 'calc(248px + ' + document.getElementById('sprite-container').style.width + ')';
     populateColorControls(current_sprite_rgb, current_sprite_addresses);
     // resetElement(targetID, true, 'color-controls-container', 'P'); // optional
 }
@@ -1301,7 +1460,7 @@ function refreshPixel(num) {
             newColor = 'rgb(' + isRGB(newColor) + ')';
         }
         if (isHex(newColor)) {
-            if (newColor.length != 4)
+            if (newColor.length !== 4)
                 newColor = '#' + isHex(newColor);
             else
                 newColor = '#' + convertAnyToAny(newColor, 'hex');
@@ -1318,32 +1477,73 @@ function refreshAllPixels() {
         refreshPixel(i+1);
 }
 
+function zoom(zoomIn) {
+    var container  = document.getElementById('sprite-container');
+    var canvas = document.getElementById('sprite-canvas');
+    var pixels = document.getElementsByClassName('sprite-pixel');
+    if (zoomIn) {
+        container.style.width = ((parseInt(container.style.width.substring(0, container.style.width.length-2)) / zoomFactor) * (zoomFactor + 1)).toString() + 'px';
+        container.style.height = ((parseInt(container.style.height.substring(0, container.style.height.length-2)) / zoomFactor) * (zoomFactor + 1)).toString() + 'px';
+        canvas.style.width = ((parseInt(canvas.style.width.substring(0, canvas.style.width.length-2)) / zoomFactor) * (zoomFactor + 1)).toString() + 'px';
+        canvas.style.height = ((parseInt(canvas.style.height.substring(0, canvas.style.height.length-2)) / zoomFactor) * (zoomFactor + 1)).toString() + 'px';
+        zoomFactor++;
+    } else if (zoomFactor > 1) {
+        container.style.width = ((parseInt(container.style.width.substring(0, container.style.width.length-2)) / zoomFactor) * (zoomFactor - 1)).toString() + 'px';
+        container.style.height = ((parseInt(container.style.height.substring(0, container.style.height.length-2)) / zoomFactor) * (zoomFactor - 1)).toString() + 'px';
+        canvas.style.width = ((parseInt(canvas.style.width.substring(0, canvas.style.width.length-2)) / zoomFactor) * (zoomFactor - 1)).toString() + 'px';
+        canvas.style.height = ((parseInt(canvas.style.height.substring(0, canvas.style.height.length-2)) / zoomFactor) * (zoomFactor - 1)).toString() + 'px';
+        zoomFactor--;
+    }
+    for (var i = 0; i < pixels.length; i++) {
+        pixels[i].style.width = zoomFactor.toString() + 'px';
+        pixels[i].style.height = zoomFactor.toString() + 'px';
+    }
+    document.getElementById('workspace-container').style.width = 'calc(248px + ' + container.style.width + ')';
+}
+
 function outputCodes(targetID, region) {
     var target = resetElement(targetID, true, 'color-controls-container', 'P');
     //var target = document.getElementById(targetID);
     //var colorArr = [];
-    var addresses = Array.from(current_sprite_addresses);
-    if (region === "en" && current_sprite !== zero_sprite) {
-        for (var i = 0; i < current_sprite_addresses.length; i++) {
-            addresses[i] = (parseInt(current_sprite_addresses[i], 16) + 15844).toString(16).toUpperCase()
+    if (current_sprite === kunai_sprite)
+        target.innerHTML = target.innerHTML + '920F457C 00000006' + '<br>';
+    else if (current_sprite === hx_saber_sprite)
+        target.innerHTML = target.innerHTML + '921E3DE6 00007FDF' + '<br>';
+    if (current_sprite !== hx_saber_sprite) {
+        var addresses = Array.from(current_sprite_addresses);
+        if (region === "en" && current_sprite !== zero_sprite && current_sprite !== kunai_sprite) {
+            for (var i = 0; i < current_sprite_addresses.length; i++) {
+                addresses[i] = (parseInt(current_sprite_addresses[i], 16) + 15844).toString(16).toUpperCase()
+            }
         }
-    }
-    var inbetween = ' ';
-    if (current_sprite !== zero_sprite)
-        inbetween = ' 0000';
-    for (var i = 0; i < addresses.length; i++) {
-        var input = document.getElementById('input' + (i+1));
-        if (input.value)
-            target.innerHTML = target.innerHTML + addresses[i] + inbetween + convertToGBA(input.value) + '<br>';
-    }
-    if(current_sprite !== zero_sprite && current_sprite !== vent_sprite && current_sprite !== aile_sprite
-        && current_sprite_addresses !== x_dash_addresses && current_sprite_addresses !== zx_dash_addresses && current_sprite_addresses !== hx_dash_addresses && current_sprite_addresses !== fx_dash_addresses && current_sprite_addresses !== lx_dash_addresses && current_sprite_addresses !== px_dash_addresses && current_sprite_addresses !== ox_dash_addresses) { //do it again for zx which has them twice
+        var inbetween = ' ';
+        if (current_sprite !== zero_sprite)
+            inbetween = ' 0000';
         for (var i = 0; i < addresses.length; i++) {
-            var input = document.getElementById('input' + (i+1));
+            var input = document.getElementById('input' + (i + 1));
             if (input.value)
-                target.innerHTML = target.innerHTML + (parseInt(addresses[i], 16) + 32).toString(16).toUpperCase() + inbetween + convertToGBA(input.value) + '<br>';
+                target.innerHTML = target.innerHTML + addresses[i] + inbetween + convertToGBA(input.value) + '<br>';
+        }
+        if (current_sprite !== zero_sprite && current_sprite !== vent_sprite && current_sprite !== aile_sprite
+            && current_sprite_addresses !== x_dash_addresses && current_sprite_addresses !== zx_dash_addresses && current_sprite_addresses !== hx_dash_addresses && current_sprite_addresses !== fx_dash_addresses && current_sprite_addresses !== lx_dash_addresses && current_sprite_addresses !== px_dash_addresses && current_sprite_addresses !== ox_dash_addresses
+            && current_sprite !== kunai_sprite) { //do it again for zx which has them twice
+            for (var i = 0; i < addresses.length; i++) {
+                var input = document.getElementById('input' + (i + 1));
+                if (input.value)
+                    target.innerHTML = target.innerHTML + (parseInt(addresses[i], 16) + 32).toString(16).toUpperCase() + inbetween + convertToGBA(input.value) + '<br>';
+            }
+        }
+    } else if (current_sprite === hx_saber_sprite) {
+        for (var i = 0; i < hx_saber_first_addresses.length; i++) {
+            var input = document.getElementById('input' + (i + 1));
+            if (input.value)
+                for (var j = 0; j < hx_saber_actual_addresses.length; j++) {
+                    target.innerHTML = target.innerHTML + (parseInt(hx_saber_actual_addresses[j], 16) + i*2).toString(16).toUpperCase() + ' 0000' + convertToGBA(input.value) + '<br>';
+                }
         }
     }
+    if (current_sprite === kunai_sprite || current_sprite === hx_saber_sprite)
+        target.innerHTML = target.innerHTML + 'D2000000 00000000';
 }
 
 function convertToGBA(color) {
