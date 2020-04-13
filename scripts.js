@@ -1336,7 +1336,8 @@ function outputCodes(targetID, region) {
         if (input.value)
             target.innerHTML = target.innerHTML + addresses[i] + inbetween + convertToGBA(input.value) + '<br>';
     }
-    if(current_sprite !== zero_sprite && current_sprite !== vent_sprite && current_sprite !== aile_sprite) { //do it again for zx which has them twice
+    if(current_sprite !== zero_sprite && current_sprite !== vent_sprite && current_sprite !== aile_sprite
+        && current_sprite_addresses !== x_dash_addresses && current_sprite_addresses !== zx_dash_addresses && current_sprite_addresses !== hx_dash_addresses && current_sprite_addresses !== fx_dash_addresses && current_sprite_addresses !== lx_dash_addresses && current_sprite_addresses !== px_dash_addresses && current_sprite_addresses !== ox_dash_addresses) { //do it again for zx which has them twice
         for (var i = 0; i < addresses.length; i++) {
             var input = document.getElementById('input' + (i+1));
             if (input.value)
