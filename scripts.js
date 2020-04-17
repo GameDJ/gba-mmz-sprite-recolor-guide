@@ -1988,7 +1988,7 @@ function outputCodes(targetID, region) {
     else if (current_sprite === hx_jetpack_sprite)
         target.innerHTML = target.innerHTML + '920F7A4A 00007F3F' + '<br>';
     else if (current_sprite === fx_attacks_sprite)
-        target.innerHTML = target.innerHTML + '520F7A6C 231F33DF' + '<br>';
+        target.innerHTML = target.innerHTML + '520F7A4C 231F33DF' + '<br>';
     if (current_sprite !== hx_saber_sprite && current_sprite !== zx_saber_sprite && current_sprite !== hx_jetpack_sprite && current_sprite !== fx_attacks_sprite) {
         var addresses = Array.from(current_sprite_addresses);
         if (region === "en" && current_sprite !== zero_sprite && current_sprite !== kunai_sprite) {
