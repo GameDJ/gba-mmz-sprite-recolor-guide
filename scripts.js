@@ -67,6 +67,20 @@ var zero_sprite_addresses = ['83002CC2', // 1 dark gray/brown
     '83002CD8', // 12 midlight red
     '83002CDA' // 13 light red
 ];
+var zero_z1_sprite_addresses = ['830019A2', // 1 dark gray/brown
+    '830019A4', // 2 dark blue
+    '830019A6', // 3 mid blue
+    '830019A8', // 4 light blue
+    '830019AA', // 5 white
+    '830019AC', // 6 dark yellow
+    '830019AE', // 7 mid yellow
+    '830019B0', // 8 light yellow
+    '830019B2', // 9 skin color
+    '830019B4', // 10 dark red
+    '830019B6', // 11 middark red
+    '830019B8', // 12 midlight red
+    '830019BA' // 13 light red
+];
 var zero_dash_rgb = ['(96,0,48)', // 1 dark gray/brown
     '(136,32,56)', // 2 dark blue
     '(176,64,64)', // 3 mid blue
@@ -94,6 +108,34 @@ var zero_dash_addresses = ['83002E42', // 1 dark gray/brown
     '83002E56', // 11 middark red
     '83002E58', // 12 midlight red
     '83002E5A' // 13 light red
+];
+var zero_z1_dash_rgb = ['(64,72,64)', // 1 dark gray/brown
+    '(24,56,104)', // 2 dark blue
+    '(48,88,144)', // 3 mid blue
+    '(104,144,184)', // 4 light blue
+    '(136,200,224)', // 5 white
+    '(64,96,128)', // 6 dark yellow
+    '(88,128,160)', // 7 mid yellow
+    '(96,152,176)', // 8 light yellow
+    '(96,168,184)', // 9 skin color
+    '(0,72,128)', // 10 dark red
+    '(32,104,144)', // 11 middark red
+    '(64,136,168)', // 12 midlight red
+    '(96,168,184)' // 13 light red
+];
+var zero_z1_dash_addresses = ['83001B22', // 1 dark gray/brown
+    '83001B24', // 2 dark blue
+    '83001B26', // 3 mid blue
+    '83001B28', // 4 light blue
+    '83001B2A', // 5 white
+    '83001B2C', // 6 dark yellow
+    '83001B2E', // 7 mid yellow
+    '83001B30', // 8 light yellow
+    '83001B32', // 9 skin color
+    '83001B34', // 10 dark red
+    '83001B36', // 11 middark red
+    '83001B38', // 12 midlight red
+    '83001B3A' // 13 light red
 ];
 
 var vent_sprite = [
@@ -986,6 +1028,44 @@ var ox_dash_addresses = ['120DA882', // 1 darkdark blue
 
 // WEAPONS
 
+var z1_saber_sprite = [
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
+    [,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
+    [,,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
+    [,,,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
+    [,,,,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,,,,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,,,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,,,,,,,,,,,,,,,],
+    [,,,,,,,,,3,3,3,3,3,,,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,,,,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,,,,,,,,,,,,,],
+    [,,,,,,,,,,3,3,,,,,,,,3,3,3,3,2,2,2,2,2,2,2,2,,,,,,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,2,2,2,2,,,,,,,,,,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,3,3,3,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,1,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,,,,,,,,,,,,,,,,,,,,,,],
+    [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,2,2,2,2,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,]
+];
+var z1_saber_sprite_rgb = ['(64, 224, 0)', '(192, 248, 56)', '(240, 240, 240)'];
+var z1_saber_sprite_addresses = ['830019FC', '830019FE', '830019EA'];
+
 var pellet_sprite = [
     [ , , , , , , , , , ,],
     [ , ,1,1,1,2,2,2, , ,],
@@ -1630,6 +1710,26 @@ function showZero(dash) {
     var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '680px', '780px', 'gray');
     show_sprite(canvas);
 }
+function showZero1(dash) {
+    current_sprite = zero_sprite;
+    if (!dash) {
+        current_sprite_rgb = zero_sprite_rgb;
+        current_sprite_addresses = zero_z1_sprite_addresses;
+    } else {
+        current_sprite_rgb = zero_z1_dash_rgb;
+        current_sprite_addresses = zero_z1_dash_addresses;
+    }
+    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '680px', '780px', 'gray');
+    show_sprite(canvas);
+}
+function showZ1Saber() {
+    current_sprite = z1_saber_sprite;
+    current_sprite_rgb = z1_saber_sprite_rgb;
+    current_sprite_addresses = z1_saber_sprite_addresses;
+    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '1480px', '680px', 'gray');
+    show_sprite(canvas);
+    zoom(true, 10);
+}
 function showVent() {
     current_sprite = vent_sprite;
     current_sprite_rgb = vent_sprite_rgb;
@@ -1681,6 +1781,7 @@ function showZxSaber() {
     current_sprite_addresses = zx_saber_first_addresses;
     var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '1740px', '2680px', 'gray');
     show_sprite(canvas);
+    zoom(true, 6);
 }
 function showHX(dash) {
     current_sprite = hx_sprite;
@@ -1700,6 +1801,7 @@ function showHxSaber() {
     current_sprite_addresses = hx_saber_first_addresses;
     var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '1540px', '1120px', 'gray');
     show_sprite(canvas);
+    zoom(true, 8);
 }
 function showHxJetpack() {
     current_sprite = hx_jetpack_sprite;
@@ -1707,6 +1809,7 @@ function showHxJetpack() {
     current_sprite_addresses = hx_jetpack_first_addresses;
     var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '1660px', '2080px', '#225566');
     show_sprite(canvas);
+    zoom(true, 8);
 }
 function showFX(dash) {
     current_sprite = fx_sprite;
@@ -1726,6 +1829,7 @@ function showFxAttacks() {
     current_sprite_addresses = fx_attacks_first_addresses;
     var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '1660px', '1400px', 'gray');
     show_sprite(canvas);
+    zoom(true, 8);
 }
 function showLX(dash) {
     current_sprite = lx_sprite;
@@ -1757,6 +1861,7 @@ function showKunai() {
     current_sprite_addresses = kunai_sprite_addresses;
     var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '780px', '940px', 'gray');
     show_sprite(canvas);
+    zoom(true);
 }
 function showOX(dash) {
     current_sprite = ox_sprite;
@@ -1951,22 +2056,25 @@ function refreshAllPixels() {
         refreshPixel(i+1);
 }
 
-function zoom(zoomIn) {
+function zoom(zoomIn, manualFactor) {
     var container  = document.getElementById('sprite-container');
     var canvas = document.getElementById('sprite-canvas');
     var pixels = document.getElementsByClassName('sprite-pixel');
+    var factor;
     if (zoomIn) {
-        container.style.width = ((parseInt(container.style.width.substring(0, container.style.width.length-2)) / zoomFactor) * (zoomFactor + 1)).toString() + 'px';
-        container.style.height = ((parseInt(container.style.height.substring(0, container.style.height.length-2)) / zoomFactor) * (zoomFactor + 1)).toString() + 'px';
-        canvas.style.width = ((parseInt(canvas.style.width.substring(0, canvas.style.width.length-2)) / zoomFactor) * (zoomFactor + 1)).toString() + 'px';
-        canvas.style.height = ((parseInt(canvas.style.height.substring(0, canvas.style.height.length-2)) / zoomFactor) * (zoomFactor + 1)).toString() + 'px';
-        zoomFactor++;
+        if (manualFactor) factor = manualFactor; else factor = zoomFactor + 1;
+        container.style.width = ((parseInt(container.style.width.substring(0, container.style.width.length-2)) / zoomFactor) * factor).toString() + 'px';
+        container.style.height = ((parseInt(container.style.height.substring(0, container.style.height.length-2)) / zoomFactor) * factor).toString() + 'px';
+        canvas.style.width = ((parseInt(canvas.style.width.substring(0, canvas.style.width.length-2)) / zoomFactor) * factor).toString() + 'px';
+        canvas.style.height = ((parseInt(canvas.style.height.substring(0, canvas.style.height.length-2)) / zoomFactor) * factor).toString() + 'px';
+        zoomFactor = factor;
     } else if (zoomFactor > 1) {
-        container.style.width = ((parseInt(container.style.width.substring(0, container.style.width.length-2)) / zoomFactor) * (zoomFactor - 1)).toString() + 'px';
-        container.style.height = ((parseInt(container.style.height.substring(0, container.style.height.length-2)) / zoomFactor) * (zoomFactor - 1)).toString() + 'px';
-        canvas.style.width = ((parseInt(canvas.style.width.substring(0, canvas.style.width.length-2)) / zoomFactor) * (zoomFactor - 1)).toString() + 'px';
-        canvas.style.height = ((parseInt(canvas.style.height.substring(0, canvas.style.height.length-2)) / zoomFactor) * (zoomFactor - 1)).toString() + 'px';
-        zoomFactor--;
+        if (manualFactor) factor = manualFactor; else factor = zoomFactor - 1;
+        container.style.width = ((parseInt(container.style.width.substring(0, container.style.width.length-2)) / zoomFactor) * factor).toString() + 'px';
+        container.style.height = ((parseInt(container.style.height.substring(0, container.style.height.length-2)) / zoomFactor) * factor).toString() + 'px';
+        canvas.style.width = ((parseInt(canvas.style.width.substring(0, canvas.style.width.length-2)) / zoomFactor) * factor).toString() + 'px';
+        canvas.style.height = ((parseInt(canvas.style.height.substring(0, canvas.style.height.length-2)) / zoomFactor) * factor).toString() + 'px';
+        zoomFactor = factor;
     }
     for (var i = 0; i < pixels.length; i++) {
         pixels[i].style.width = zoomFactor.toString() + 'px';
@@ -1991,7 +2099,7 @@ function outputCodes(targetID, region) {
         target.innerHTML = target.innerHTML + '520F7A4C 231F33DF' + '<br>';
     if (current_sprite !== hx_saber_sprite && current_sprite !== zx_saber_sprite && current_sprite !== hx_jetpack_sprite && current_sprite !== fx_attacks_sprite) {
         var addresses = Array.from(current_sprite_addresses);
-        if (region === "en" && current_sprite !== zero_sprite && current_sprite !== kunai_sprite) {
+        if (region === "en" && current_sprite !== zero_sprite && current_sprite !== kunai_sprite  && current_sprite !== z1_saber_sprite ) {
             var difference = 15844;
             if (current_sprite === pellet_sprite) difference = 1024;
             for (var i = 0; i < current_sprite_addresses.length; i++) {
@@ -1999,14 +2107,14 @@ function outputCodes(targetID, region) {
             }
         }
         var inbetween = ' ';
-        if (current_sprite !== zero_sprite)
+        if (current_sprite !== zero_sprite && current_sprite !== z1_saber_sprite)
             inbetween = ' 0000';
         for (var i = 0; i < addresses.length; i++) {
             var input = document.getElementById('input' + (i + 1));
             if (input.value)
                 target.innerHTML = target.innerHTML + addresses[i] + inbetween + convertToGBA(input.value) + '<br>';
         }
-        if (current_sprite !== zero_sprite && current_sprite !== vent_sprite && current_sprite !== aile_sprite
+        if (current_sprite !== zero_sprite && current_sprite !== z1_saber_sprite && current_sprite !== vent_sprite && current_sprite !== aile_sprite
             && current_sprite_addresses !== x_dash_addresses && current_sprite_addresses !== zx_dash_addresses && current_sprite_addresses !== hx_dash_addresses && current_sprite_addresses !== fx_dash_addresses && current_sprite_addresses !== lx_dash_addresses && current_sprite_addresses !== px_dash_addresses && current_sprite_addresses !== ox_dash_addresses
             && current_sprite !== kunai_sprite && current_sprite !== pellet_sprite && current_sprite !== fx_attacks_sprite) { //do it again for zx which has them twice
             for (var i = 0; i < addresses.length; i++) {
