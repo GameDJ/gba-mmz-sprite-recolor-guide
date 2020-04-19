@@ -1,6 +1,6 @@
 # gba-mmz-sprite-recolor-guide
 PLEASE READ:
-This is still VERY MUCH in development, there are a lot of incomplete things. Right now you can just do the basics of inputting a color, previewing it, and outputting codebreaker codes for Zero and Action Replay codes for ZX.
+This is still very much in development. Right now you can just do the basics of inputting a color, previewing it, and outputting codebreaker codes for Zero and Action Replay codes for ZX.
 
 Coming soon:  
 -More sprites  
