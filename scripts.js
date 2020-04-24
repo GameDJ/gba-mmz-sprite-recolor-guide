@@ -3067,6 +3067,7 @@ function outputCodes(targetID, region) {
                 }
         }
 	} else if (current_sprite === z23_attacks_sprite) {
+        target.innerHTML = target.innerHTML + 'Note: F6 through FE will be replaced if you equip an elemental chip. Remove each "72000... 0000" to override them.' + '<br>';
         for (var i = 0; i < z23_attacks_addresses.length; i++) {
             var input = document.getElementById('input' + (i + 1));
             var elemUsing = '';
