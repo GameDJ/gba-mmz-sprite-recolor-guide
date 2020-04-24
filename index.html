@@ -22,6 +22,7 @@
         - <a href="#" onclick="showZ1Saber()" style="color: #e0506b">Saber</a>
         | <a href="#" onclick="showZero(false)" style="color: #e0506b">Zero (Z2-4)</a>
         - <a href="#" onclick="showZero(true)" style="color: #e0506b">Dash</a>
+        - <a href="#" onclick="showZ23Attacks()" style="color: #e0506b">Z2/3 Attacks</a>
         | <a href="#" onclick="showVent()" style="color: skyblue">Vent</a>
         | <a href="#" onclick="showAile()" style="color: skyblue">Aile</a>
         | <a href="#" onclick="showX(false)" style="color: dodgerblue">Model X</a>
@@ -80,8 +81,8 @@
                        oninput="updateColorRange(3)">
             </div> --->
             <hr>
-            <div>Output Codes<br><button onclick="outputCodes('codes-output', 'jp')" style="display: inline; margin: auto;">JP</button>
-                <button onclick="outputCodes('codes-output', 'en')" style="display: inline; margin: auto;">EN</button></div>
+            <div>Output Codes<br><button id="jp-button" onclick="outputCodes('codes-output', 'jp')" style="display: inline; margin: auto;">JP</button>
+                <button id="en-button" onclick="outputCodes('codes-output', 'en')" style="display: inline; margin: auto;">EN</button></div>
             <p id="codes-output"></p>
         </div>
         <div id="sprite-container"></div>
