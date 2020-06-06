@@ -2947,7 +2947,10 @@ function outputCodes(targetID, region) {
         current_sprite !== ox_saber_sprite && current_sprite !== ox_specials_sprite &&
         current_sprite !== z23_attacks_sprite) {
         var addresses = Array.from(current_sprite_addresses);
-        if (region === "en" && current_sprite !== zero_sprite && current_sprite !== kunai_sprite && current_sprite !== z1_saber_sprite ) {
+        // shift addresses for EN, if necessary
+        if (region === "en" && (current_sprite !== zero_sprite || current_sprite_addresses === ox_sprite_addresses ||
+            current_sprite_addresses === ox_dash_addresses) && current_sprite !== kunai_sprite &&
+            current_sprite !== z1_saber_sprite ) {
             var difference = 15844;
             if (current_sprite === pellet_sprite) difference = 1024;
             for (var i = 0; i < current_sprite_addresses.length; i++) {
@@ -2955,7 +2958,9 @@ function outputCodes(targetID, region) {
             }
         }
         var inbetween = ' ';
-        if (current_sprite !== zero_sprite && current_sprite !== z1_saber_sprite)
+        // if, of sprites that can reach here, not mmz sprite (or if zero sprite but is OX)
+        if ((current_sprite !== zero_sprite || current_sprite_addresses === ox_sprite_addresses ||
+            current_sprite_addresses === ox_dash_addresses) && current_sprite !== z1_saber_sprite)
             inbetween = ' 0000';
         for (var i = 0; i < addresses.length; i++) {
             var input = document.getElementById('input' + (i + 1));
