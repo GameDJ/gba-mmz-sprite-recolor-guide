@@ -2926,20 +2926,27 @@ function outputCodes(targetID, region) {
     var target = resetElement(targetID, true, 'color-controls-container', 'P');
     //var target = document.getElementById(targetID);
     //var colorArr = [];
-    if(current_sprite === ox_saber_sprite)
+
+    if (current_sprite === zx_saber_sprite)
         target.innerHTML = target.innerHTML + '<b>WARNING:</b>' + '<br>' +
             'Full code may need to be split into two parts to fit in DeSmuME. ' +
-            'Remember to keep the first and last line in both codes (that start with 9 and D)' + '<br>';
+            'Remember to keep the first and last line in both codes (that start with 5 and D)' + '<br>';
+    if (current_sprite === lx_staff_sprite)
+        target.innerHTML = target.innerHTML + '<b>Note:</b>' + '<br>' +
+            'May cause minor visual glitches ' + '<br>';
+    if (current_sprite === ox_saber_sprite)
+        target.innerHTML = target.innerHTML + '<b>WARNING:</b>' + '<br>' +
+            'Full code may need to be split into two parts to fit in DeSmuME. ' +
+            'Remember to keep the first and last line in both codes (that start with 5 and D)' + '<br>';
     if (current_sprite === kunai_sprite || current_sprite === px_shield_sprite ||
-        current_sprite === hx_saber_sprite || current_sprite === hx_jetpack_sprite ||
-        current_sprite === zx_saber_sprite || current_sprite === fx_attacks_sprite ||
-        current_sprite === lx_staff_sprite || current_sprite === lx_specials_sprite ||
-        current_sprite === ox_saber_sprite || current_sprite === ox_specials_sprite) {
-        if (region === "en")
-            target.innerHTML = target.innerHTML + '9214FC74 FFF0000';
+    current_sprite === hx_saber_sprite || current_sprite === hx_jetpack_sprite ||
+    current_sprite === zx_saber_sprite || current_sprite === fx_attacks_sprite ||
+    current_sprite === lx_staff_sprite || current_sprite === lx_specials_sprite ||
+    current_sprite === ox_saber_sprite || current_sprite === ox_specials_sprite) {
+        if (region === 'en')
+            target.innerHTML = target.innerHTML + '920F2EFC FFF0000';
         else
-            target.innerHTML = target.innerHTML + '9214F874 FFF0000';
-    }
+            target.innerHTML = target.innerHTML + '920F457C FFF0000';
     if (current_sprite === kunai_sprite || current_sprite === px_shield_sprite)
         target.innerHTML = target.innerHTML + '6' + '<br>';
     else if (current_sprite === hx_saber_sprite || current_sprite === hx_jetpack_sprite)
@@ -2952,16 +2959,85 @@ function outputCodes(targetID, region) {
         target.innerHTML = target.innerHTML + '5' + '<br>'; //'920F457C 231F33DF' + '<br>';
     else if (current_sprite === ox_saber_sprite || current_sprite === ox_specials_sprite)
         target.innerHTML = target.innerHTML + '7' + '<br>'; //'920F457C 231F33DF' + '<br>';
-    if (current_sprite !== hx_saber_sprite && current_sprite !== zx_saber_sprite &&
-        current_sprite !== hx_jetpack_sprite && current_sprite !== fx_attacks_sprite &&
-        current_sprite !== px_shield_sprite && current_sprite !== lx_staff_sprite &&
-        current_sprite !== ox_saber_sprite && current_sprite !== ox_specials_sprite &&
-        current_sprite !== z23_attacks_sprite) {
+    }
+
+    /*
+    if (current_sprite === zx_saber_sprite) {
+        target.innerHTML = target.innerHTML + '<b>WARNING:</b>' + '<br>' +
+            'Full code may need to be split into two parts to fit in DeSmuME. ' +
+            'Remember to keep the first and last line in both codes (that start with 5 and D)' + '<br>';
+        if (region === "en")
+            target.innerHTML = target.innerHTML + '520F5CD0 5F857FF9' + '<br>';
+        else
+            target.innerHTML = target.innerHTML + '520F7A50 5F857FF9' + '<br>';
+    }
+    else if (current_sprite === hx_jetpack_sprite) {
+        if (region === "en")
+            target.innerHTML = target.innerHTML + '520F5CD0 647E7D7F' + '<br>';
+        else
+            target.innerHTML = target.innerHTML + '520F7A50 647E7D7F' + '<br>';
+    }
+    else if (current_sprite === hx_saber_sprite) {
+        if (region === "en")
+            target.innerHTML = target.innerHTML + '520F5CF0 647E7D5F' + '<br>';
+        else
+            target.innerHTML = target.innerHTML + '520F7A70 647E7D5F' + '<br>';
+    }
+    else if (current_sprite === fx_attacks_sprite) {
+        if (region === "en")
+            target.innerHTML = target.innerHTML + '920F27FC FFF00004' + '<br>';//'520F5CCC 231F33DF' + '<br>';
+        else
+            target.innerHTML = target.innerHTML + '9214F874 FFF00004' + '<br>';//'520F7A4C 231F33DF' + '<br>';
+    }
+    else if (current_sprite === lx_specials_sprite) {
+        target.innerHTML = target.innerHTML + '521E7C94 3CEA3D3C' + '<br>';
+    }
+    else if (current_sprite === lx_staff_sprite) {
+        if (region === "en")
+            target.innerHTML = target.innerHTML + '520F5CF4 18922C7F' + '<br>';
+        else
+            target.innerHTML = target.innerHTML + '520F7A74 18922C7F' + '<br>';
+    }
+    else if (current_sprite === kunai_sprite) {
+        target.innerHTML = target.innerHTML + '521E0390 5E4B66AF' + '<br>';
+    }
+    else if (current_sprite === px_shield_sprite) {
+        target.innerHTML = target.innerHTML + '<b>WARNING:</b>' + '<br>' +
+            'After transforming into PX, please throw kunai before activating shield, or game-breaking visual glitches may occur' + '<br>';
+        if (region === "en")
+            target.innerHTML = target.innerHTML + '520F5CF0 6D4E71F1' + '<br>';
+        else
+            target.innerHTML = target.innerHTML + '520F7A70 6D4E71F1' + '<br>';
+    }
+    else if (current_sprite === ox_specials_sprite) {
+        if (region === "en")
+            target.innerHTML = target.innerHTML + '520F5CD0 1BFF03F9' + '<br>';
+        else
+            target.innerHTML = target.innerHTML + '520F7A50 1BFF03F9' + '<br>';
+    }
+    else if (current_sprite === ox_saber_sprite) {
+        target.innerHTML = target.innerHTML + '<b>WARNING:</b>' + '<br>' +
+            'Full code may need to be split into two parts to fit in DeSmuME. ' +
+            'Remember to keep the first and last line in both codes (that start with 5 and D)' + '<br>';
+        if (region === "en")
+            target.innerHTML = target.innerHTML + '520F5CF8 7DBA7D11' + '<br>';
+        else
+            target.innerHTML = target.innerHTML + '520F7A78 7DBA7D11' + '<br>';
+    }
+    */
+
+    if (current_sprite !== z23_attacks_sprite &&
+        current_sprite !== zx_saber_sprite &&
+        current_sprite !== hx_saber_sprite && current_sprite !== hx_jetpack_sprite &&
+        current_sprite !== fx_attacks_sprite &&
+        current_sprite !== lx_staff_sprite &&
+        current_sprite !== px_shield_sprite &&
+        current_sprite !== ox_saber_sprite && current_sprite !== ox_specials_sprite) {
         var addresses = Array.from(current_sprite_addresses);
         // shift addresses for EN, if necessary
         if (region === "en" && (current_sprite !== zero_sprite || current_sprite_addresses === ox_sprite_addresses ||
             current_sprite_addresses === ox_dash_addresses) && current_sprite !== kunai_sprite &&
-            current_sprite !== z1_saber_sprite ) {
+            current_sprite !== z1_saber_sprite && current_sprite !== lx_specials_sprite) {
             var difference = 15844;
             if (current_sprite === pellet_sprite) difference = 1024;
             for (var i = 0; i < current_sprite_addresses.length; i++) {
