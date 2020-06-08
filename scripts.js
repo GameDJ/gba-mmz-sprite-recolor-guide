@@ -1384,15 +1384,16 @@ var zx_saber_first_addresses = ['120F7A4A', // 3 mid cyan
     '120F7A62', // 3 mid cyan
     '120F7A64', // 4 dark cyan
 ];
-var zx_saber_actual_addresses = ['120F7A4A ', '120F7A6A ', '121E40E2 ', '121E4682 ', '121E4BA2 ', '121E4FC2 ',
+var zx_saber_actual_addresses = ['121E40E2 ', '121E4682 ', '121E4BA2 ', '121E4FC2 ',
     '121E57E2 ', '121E6002 ', '121E66A2 ', '121E68C2 ', '121E6B62 ', '121E7202 ', '121E78A2 ', '121E7DC2 ',
     '121E8282 ', '121E8822 ', '121E8DC2 ', '121E9562 ', '121E9C02 ', '121EA3A2 ', '121EA9C2 ', '121EAF62 ',
     '121EB502 ', '121EB9C2 ', '121EBEE2 ', '121EC482 ', '121ECA22 ', '121ECF02 ', '121ED522 ', '121ED942 ',
     '121EDBE2 ', '121EE002 ', '121EE322 ', '121EE742 ', '121EEA62 ', '121EEE82 ', '121EF1A2 ', '121EF5C2 ',
     '121EF8E2 ', '121EFD02 ', '121EFF22 ', '121F02C2 ', '121F0662 ', '121F0B82 ', '121F11A2 ', '121FA382 ',
     '121F1A22 ', '121F20C2 ', '121F1382 ', '121F2662 ', '121F2B82 ', '121F30E2 ', '121F36A2 ', '121F3DE2 ',
-    '121F4602 ', '121F4CE2 ', '121F5302 ', '121F5922 ', '121F60C2 ', '121F7694 ', '121F7C44 ', '121F81A4 ',
-    '121F8704 ', '121F8C64'];
+    '121F4602 ', '121F4CE2 ', '121F5302 ', '121F5922 ', '121F60C2 ', '121F7696 ', '121F7C46 ', '121F81A6 ',
+    '121F8706 ', '121F8C66'];
+
 
 var hx_saber_sprite = [
     [,,,,,,,,,,,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
@@ -2929,18 +2930,28 @@ function outputCodes(targetID, region) {
         target.innerHTML = target.innerHTML + '<b>WARNING:</b>' + '<br>' +
             'Full code may need to be split into two parts to fit in DeSmuME. ' +
             'Remember to keep the first and last line in both codes (that start with 9 and D)' + '<br>';
+    if (current_sprite === kunai_sprite || current_sprite === px_shield_sprite ||
+        current_sprite === hx_saber_sprite || current_sprite === hx_jetpack_sprite ||
+        current_sprite === zx_saber_sprite || current_sprite === fx_attacks_sprite ||
+        current_sprite === lx_staff_sprite || current_sprite === lx_specials_sprite ||
+        current_sprite === ox_saber_sprite || current_sprite === ox_specials_sprite) {
+        if (region === "en")
+            target.innerHTML = target.innerHTML + '9214FC74 FFF0000';
+        else
+            target.innerHTML = target.innerHTML + '9214F874 FFF0000';
+    }
     if (current_sprite === kunai_sprite || current_sprite === px_shield_sprite)
-        target.innerHTML = target.innerHTML + '920F457C 00000006' + '<br>';
+        target.innerHTML = target.innerHTML + '6' + '<br>';
     else if (current_sprite === hx_saber_sprite || current_sprite === hx_jetpack_sprite)
-        target.innerHTML = target.innerHTML + '920F457C 00000003' + '<br>'; //'921E3DE6 00007FDF' + '<br>';  //'920F7A4A 00007F3F' + '<br>';
+        target.innerHTML = target.innerHTML + '3' + '<br>'; //'921E3DE6 00007FDF' + '<br>';  //'920F7A4A 00007F3F' + '<br>';
     else if (current_sprite === zx_saber_sprite)
-        target.innerHTML = target.innerHTML + '920F457C 00000002' + '<br>'; //'921E78AA 00005F85' + '<br>';
+        target.innerHTML = target.innerHTML + '2' + '<br>'; //'921E78AA 00005F85' + '<br>';
     else if (current_sprite === fx_attacks_sprite)
-        target.innerHTML = target.innerHTML + '920F457C 00000004' + '<br>'; //'920F457C 231F33DF' + '<br>';
+        target.innerHTML = target.innerHTML + '4' + '<br>'; //'920F457C 231F33DF' + '<br>';
     else if (current_sprite === lx_staff_sprite || current_sprite === lx_specials_sprite)
-        target.innerHTML = target.innerHTML + '920F457C 00000005' + '<br>'; //'920F457C 231F33DF' + '<br>';
+        target.innerHTML = target.innerHTML + '5' + '<br>'; //'920F457C 231F33DF' + '<br>';
     else if (current_sprite === ox_saber_sprite || current_sprite === ox_specials_sprite)
-        target.innerHTML = target.innerHTML + '920F457C 00000007' + '<br>'; //'920F457C 231F33DF' + '<br>';
+        target.innerHTML = target.innerHTML + '7' + '<br>'; //'920F457C 231F33DF' + '<br>';
     if (current_sprite !== hx_saber_sprite && current_sprite !== zx_saber_sprite &&
         current_sprite !== hx_jetpack_sprite && current_sprite !== fx_attacks_sprite &&
         current_sprite !== px_shield_sprite && current_sprite !== lx_staff_sprite &&
@@ -3072,9 +3083,9 @@ function outputCodes(targetID, region) {
     }
     if (current_sprite === kunai_sprite || current_sprite === px_shield_sprite ||
         current_sprite === hx_saber_sprite || current_sprite === hx_jetpack_sprite ||
-        current_sprite === fx_attacks_sprite || current_sprite === lx_staff_sprite ||
-        current_sprite === lx_specials_sprite || current_sprite === ox_saber_sprite ||
-        current_sprite === ox_specials_sprite)
+        current_sprite === zx_saber_sprite || current_sprite === fx_attacks_sprite ||
+        current_sprite === lx_staff_sprite || current_sprite === lx_specials_sprite ||
+        current_sprite === ox_saber_sprite || current_sprite === ox_specials_sprite)
         target.innerHTML = target.innerHTML + 'D2000000 00000000';
 }
 
