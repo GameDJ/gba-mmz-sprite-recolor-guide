@@ -5,8 +5,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>GBA sprite color picker GUI</title>
-	<meta name="author" content="Your Name">
-	<meta name="description" content="Example description">
+	<!--<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="icon" type="image/x-icon" href="favicon.ico"/>
@@ -16,42 +16,78 @@
 </head>
 
 <body>
-	<header>
-        <a href="#" onclick="showZero1(false)" style="color: #e0506b">Zero (Z1)</a>
-        - <a href="#" onclick="showZero1(true)" style="color: #e0506b">Dash</a>
-        - <a href="#" onclick="showZ1Saber()" style="color: #e0506b">Saber</a>
-        | <a href="#" onclick="showZero(false)" style="color: #e0506b">Zero (Z2-4)</a>
-        - <a href="#" onclick="showZero(true)" style="color: #e0506b">Dash</a>
-        - <a href="#" onclick="showZ23Attacks()" style="color: #e0506b">Z2/3 Attacks</a>
-        | <a href="#" onclick="showVent()" style="color: skyblue">Vent</a>
-        | <a href="#" onclick="showAile()" style="color: skyblue">Aile</a>
-        | <a href="#" onclick="showX(false)" style="color: dodgerblue">Model X</a>
-        - <a href="#" onclick="showX(true)" style="color: dodgerblue">Dash</a>
-        - <a href="#" onclick="showPellet()" style="color: dodgerblue">Pellet</a>
-        - <a href="#" onclick="showXattacks()" style="color: dodgerblue">Charges</a>
-        | <a href="#" onclick="showZX(false)" style="color: lightcoral">ZX</a>
-        - <a href="#" onclick="showZX(true)" style="color: lightcoral">Dash</a>
-        - <a href="#" onclick="showZxSaber()" style="color: lightcoral">Attacks</a>
-        | <a href="#" onclick="showHX(false)" style="color: limegreen">HX</a>
-        - <a href="#" onclick="showHX(true)" style="color: limegreen">Dash</a>
-        - <a href="#" onclick="showHxSaber()" style="color: limegreen">Saber</a>
-        - <a href="#" onclick="showHxJetpack()" style="color: limegreen">Special</a>
-        | <a href="#" onclick="showFX(false)" style="color: #cc8c22">FX</a>
-        - <a href="#" onclick="showFX(true)" style="color: #cc8c22">Dash</a>
-        - <a href="#" onclick="showFxAttacks()" style="color: #cc8c22">Attacks</a>
-        | <a href="#" onclick="showLX(false)" style="color: lightblue">LX</a>
-        - <a href="#" onclick="showLX(true)" style="color: lightblue">Dash</a>
-        - <a href="#" onclick="showLxStaff()" style="color: lightblue">Staff</a>
-        - <a href="#" onclick="showLxSpecials()" style="color: lightblue">Specials</a>
-        | <a href="#" onclick="showPX(false)" style="color: mediumpurple">PX</a>
-        - <a href="#" onclick="showPX(true)" style="color: mediumpurple">Dash</a>
-        - <a href="#" onclick="showKunai()" style="color: mediumpurple">Kunai</a>
-        - <a href="#" onclick="showPxShield()" style="color: mediumpurple">Shield</a>
-        | <a href="#" onclick="showOX(false)" style="color: #cc0000">OX</a>
-        - <a href="#" onclick="showOX(true)" style="color: #cc0000">Dash</a>
-        - <a href="#" onclick="showOxSaber()" style="color: #cc0000">Attacks 1</a>
-        - <a href="#" onclick="showOxSpecials()" style="color: #cc0000">Attacks 2</a>
-    </header>
+    <div id="navmenu-container">
+    <ul id="navmenu">
+        <li><ul id="MMZ">
+            <li><ul id="Z1">
+                <li class="group-label"><div>MMZ1</div></li>
+                <li><a href="#" onclick="showZero1(false)">Zero (Z1)</a></li>
+                <li><a href="#" onclick="showZero1(true)">Dash</a></li>
+                <li><a href="#" onclick="showZ1Saber()">Saber</a>
+            </ul></li>
+            <li><ul id="Z234">
+                <li class="group-label"><div>MMZ2-4</div></li>
+                <li><a href="#" onclick="showZero(false)">Zero (Z2-4)</a></li>
+                <li><a href="#" onclick="showZero(true)">Dash</a></li>
+                <li><a href="#" onclick="showZ23Attacks()">Z2/3 Attacks</a>
+            </ul></li>
+        </ul></li>
+        <li><ul id="ZX">
+            <li><ul id="ModelHu">
+                <li class="group-label"><div>Human</div></li>
+                <li><a href="#" onclick="showVent()">Vent</a></li>
+                <li><a href="#" onclick="showAile()">Aile</a></li>
+            </ul></li>
+            <li><ul id="ModelX">
+                <li class="group-label"><div>Model X</div></li>
+                <li><a href="#" onclick="showX(false)">Model X</a></li>
+                <li><a href="#" onclick="showX(true)">Dash</a></li>
+                <li><a href="#" onclick="showPellet()">Pellet</a></li>
+                <li><a href="#" onclick="showXattacks()">Charges</a></li>
+            </ul></li>
+            <li><ul id="ModelZx">
+                <li class="group-label"><div>Model ZX</div></li>
+                <li><a href="#" onclick="showZX(false)">ZX</a></li>
+                <li><a href="#" onclick="showZX(true)">Dash</a></li>
+                <li><a href="#" onclick="showZxSaber()">Attacks</a></li>
+            </ul></li>
+            <li><ul id="ModelHx">
+                <li class="group-label"><div>Model HX</div></li>
+                <li><a href="#" onclick="showHX(false)">HX</a></li>
+                <li><a href="#" onclick="showHX(true)">Dash</a></li>
+                <li><a href="#" onclick="showHxSaber()">Saber</a></li>
+                <li><a href="#" onclick="showHxJetpack()">Special</a></li>
+            </ul></li>
+            <li><ul id="ModelFx">
+                <li class="group-label"><div>Model FX</div></li>
+                <li><a href="#" onclick="showFX(false)">FX</a></li>
+                <li><a href="#" onclick="showFX(true)">Dash</a></li>
+                <li><a href="#" onclick="showFxAttacks()">Attacks</a></li>
+            </ul></li>
+            <li><ul id="ModelLx">
+                <li class="group-label"><div>Model LX</div></li>
+                <li><a href="#" onclick="showLX(false)">LX</a></li>
+                <li><a href="#" onclick="showLX(true)">Dash</a></li>
+                <li><a href="#" onclick="showLxStaff()">Staff</a></li>
+                <li><a href="#" onclick="showLxSpecials()">Specials</a></li>
+            </ul></li>
+            <li><ul id="ModelPx">
+                <li class="group-label"><div>Model PX</div></li>
+                <li><a href="#" onclick="showPX(false)">PX</a></li>
+                <li><a href="#" onclick="showPX(true)">Dash</a></li>
+                <li><a href="#" onclick="showKunai()">Kunai</a></li>
+                <li><a href="#" onclick="showPxShield()">Shield</a></li>
+            </ul></li>
+            <li><ul id="ModelOx">
+                <li class="group-label"><div>Model OX</div></li>
+                <li><a href="#" onclick="showOX(false)">OX</a></li>
+                <li><a href="#" onclick="showOX(true)">Dash</a></li>
+                <li><a href="#" onclick="showOxSaber()">Attacks 1</a></li>
+                <li><a href="#" onclick="showOxSpecials()">Attacks 2</a></li>
+            </ul></li>
+        </ul></li>
+    </ul>
+    </div>
 	<main> <div id="workspace-container">
         <div id="color-controls-container">
             <table id="color-controls">

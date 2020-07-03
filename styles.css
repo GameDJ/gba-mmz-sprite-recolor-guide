@@ -1,13 +1,137 @@
 body {
     background-color: #444;
 }
-header {
-    color: white;
-    padding-bottom: 1px;
+#navmenu-container {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 12px;
 }
+#navmenu {
+    color: white;
+    //padding-bottom: 1px;
+    list-style-type: none;
+    margin: 0 8px 12px 8px;
+    padding: 0;
+}
+#navmenu ul {
+    padding-inline-start: 0;
+}
+#navmenu #MMZ * li a:link {
+    background-color: #c1244a;
+}
+#navmenu #ModelHu li a:link {
+    background-color: saddlebrown;
+}
+#navmenu #ModelX li a:link {
+    background-color: #116ac1;
+}
+#navmenu #ModelZx li a:link {
+    background-color: #e75f5f;
+}
+#navmenu #ModelHx li a:link {
+    background-color: #19a519;
+}
+#navmenu #ModelFx li a:link {
+    background-color: #cd6b21;
+}
+#navmenu #ModelLx li a:link {
+    background-color: #746c9a;
+}
+#navmenu #ModelPx li a:link {
+    background-color: #714cc1;
+}
+#navmenu #ModelOx li a:link {
+    background-color: #a00202;
+}
+#navmenu li li li a {
+    color: white;
+    float: left;
+    display: block;
+    box-sizing: border-box;
+    height: 2.1em;
+    width: auto;
+    padding: 0 .3em 0 .3em;
+    text-decoration: none;
+    border: solid;
+    border-color: black;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: .3em;
+    margin-top: .25em;
+    margin-left: .05em;
+    margin-right: .05em;
+}
+#navmenu li ul li {
+    display: inline;
+    color: white;
+    float: left;
+    box-sizing: border-box;
+    height: 2.6em;
+    width: auto;
+    text-decoration: none;
+    border: solid;
+    border-color: black;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 18px;
+    margin-left: .05em;
+    margin-right: .05em;
+    border-top-left-radius: 0;
+    background-color: #282828;
+}
+#navmenu li ul li ul li{
+    background-color: rgba(0,0,0,0);}
+#navmenu li ul li ul {
+    width: 100%;
+    position: relative;
+}
+#navmenu li ul li li.group-label {
+    font-size: 14px;
+    position: absolute;
+    left: -3px;
+    top: -20px;
+    height: 17px;
+    text-align: center;
+    //padding-left: 5px;
+}
+.group-label div {
+    box-sizing: border-box;
+    height: 17px;
+    width: auto;
+    border: solid;
+    border-color: black;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: none;
+    padding: 0px 2px 1px 2px;
+    background-color: #bbb;
+    color: #111;
+}
+#navmenu li ul li li {
+    border-width: 0;
+    margin: 0;
+}
+#navmenu li ul li ul li a {
+    margin-top: 1px;
+}
+#navmenu a {
+    width: 100%;
+    height: 100%;
+    display:block;
+    color: white;
+    text-decoration: none;
+}
+#navmenu a:hover {
+    //background-color: white;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5));
+    color: white;
+}
+
 a {
     color: #cbc;
 }
+
 
 #sprite-container {
     width: 680px;
