@@ -3267,13 +3267,12 @@ function outputCodes(targetID, region) {
         for (var i = 0; i < z23_attacks_addresses.length; i++) {
             var input = document.getElementById('input' + (i + 1));
             if (input.value) {
-                if (region === 'en' || i > 9) { //apply IF for colors for element or charge attacks for z2/3, or all for Z4
-                    if (i == 11) //dont add 0x08000 for that one pesky number
-                        add8000 = 0;
-                    else if (add8000 == 0)
-                        add8000 = 32768;
+                if (i == 2 || i == 11) //dont add 0x08000 for those two pesky numbers
+                    add8000 = 0;
+                else if (add8000 == 0)
+                    add8000 = 32768;
+                if (region === 'en' || i > 9) //apply IF for colors for element or charge attacks for z2/3, or all for Z4
                     target.innerHTML = target.innerHTML + '7' + z23_attacks_addresses[i].substring(1) + ' ' + (parseInt(convertToGBA(z23_attacks_rgb[i]), 16) + add8000).toString(16).toUpperCase() + '<br>';
-                }
                 target.innerHTML = target.innerHTML + z23_attacks_addresses[i] + ' ' + convertToGBA(input.value) + '<br>';
             }
         }
@@ -3281,7 +3280,7 @@ function outputCodes(targetID, region) {
             for (var i = 0; i < z23_attacks_addresses.length; i++) {
                 var input = document.getElementById('input' + (i + 1));
                 if (input.value) {
-                    if (i == 11)
+                    if (i == 2 || i == 11)
                         add8000 = 0;
                     else if (add8000 == 0)
                         add8000 = 32768;
