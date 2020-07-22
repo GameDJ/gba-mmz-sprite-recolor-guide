@@ -3045,14 +3045,14 @@ function outputCodes(targetID, region) {
     if (current_sprite === zx_saber_sprite)
         target.innerHTML = target.innerHTML + '<b>WARNING:</b>' + '<br>' +
             'Full code may need to be split into two parts to fit in DeSmuME. ' +
-            'Remember to keep the first and last line in both codes (that start with 5 and D)' + '<br>';
+            'Remember to keep the first and last line in both codes (that start with 9 and D)' + '<br>';
     if (current_sprite === lx_staff_sprite)
         target.innerHTML = target.innerHTML + '<b>Note:</b>' + '<br>' +
             'May cause minor visual glitches ' + '<br>';
     if (current_sprite === ox_saber_sprite)
         target.innerHTML = target.innerHTML + '<b>WARNING:</b>' + '<br>' +
             'Full code may need to be split into two parts to fit in DeSmuME. ' +
-            'Remember to keep the first and last line in both codes (that start with 5 and D)' + '<br>';
+            'Remember to keep the first and last line in both codes (that start with 9 and D)' + '<br>';
     if (current_sprite === kunai_sprite || current_sprite === px_shield_sprite ||
     current_sprite === hx_saber_sprite || current_sprite === hx_jetpack_sprite ||
     current_sprite === zx_saber_sprite || current_sprite === fx_attacks_sprite ||
