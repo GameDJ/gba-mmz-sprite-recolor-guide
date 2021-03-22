@@ -1,4 +1,4 @@
-var zero_sprite = [
+const zero_sprite = [
     [,,,,,,,,,,,,,,,,,,12,,,,,11,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,11,12,,,,11,11,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,10,11,12,,,10,11,11,,,,,,,,,,,,,,,,,],
@@ -39,7 +39,7 @@ var zero_sprite = [
     [2,3,4,4,4,4,3,2,,,,,,,,,,,,,2,2,2,2,2,2,2,2,2,2,,,,,,,,,,,,,],
     [,2,2,2,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
 ];
-var zero_sprite_rgb = ['(64, 72, 64)', // 1 dark gray/brown
+const zero_rgb = ['(64, 72, 64)', // 1 dark gray/brown
     '(0, 40, 104)', // 2 dark blue
     '(64, 96, 136)', // 3 mid blue
     '(144, 176, 208)', // 4 light blue
@@ -55,7 +55,7 @@ var zero_sprite_rgb = ['(64, 72, 64)', // 1 dark gray/brown
     '(88, 104, 40)', // 14
     '(136, 168, 56)' // 15
 ];
-var zero_sprite_addresses = ['83002CC2', // 1 dark gray/brown
+const zero_addresses = ['83002CC2', // 1 dark gray/brown
     '83002CC4', // 2 dark blue
     '83002CC6', // 3 mid blue
     '83002CC8', // 4 light blue
@@ -71,7 +71,7 @@ var zero_sprite_addresses = ['83002CC2', // 1 dark gray/brown
     '83002CDC', // 12 midlight red
     '83002CDE' // 13 light red
 ];
-var zero_z1_sprite_addresses = ['830019A2', // 1 dark gray/brown
+const zero_z1_addresses = ['830019A2', // 1 dark gray/brown
     '830019A4', // 2 dark blue
     '830019A6', // 3 mid blue
     '830019A8', // 4 light blue
@@ -87,7 +87,7 @@ var zero_z1_sprite_addresses = ['830019A2', // 1 dark gray/brown
     '830019BC', // 11 middark red
     '830019BE' // 12 midlight red
 ];
-var zero_dash_rgb = ['(96,0,48)', // 1 dark gray/brown
+const zero_dash_rgb = ['(96,0,48)', // 1 dark gray/brown
     '(136,32,56)', // 2 dark blue
     '(176,64,64)', // 3 mid blue
     '(216,96,80)', // 4 light blue
@@ -103,7 +103,7 @@ var zero_dash_rgb = ['(96,0,48)', // 1 dark gray/brown
     '(144,32,56)', // 12 midlight red
     '(184,64,64)' // 13 light red
 ];
-var zero_dash_addresses = ['83002E42', // 1 dark gray/brown
+const zero_dash_addresses = ['83002E42', // 1 dark gray/brown
     '83002E44', // 2 dark blue
     '83002E46', // 3 mid blue
     '83002E48', // 4 light blue
@@ -119,7 +119,7 @@ var zero_dash_addresses = ['83002E42', // 1 dark gray/brown
     '83002E5C', // 12 midlight red
     '83002E5E' // 13 light red
 ];
-var zero_z1_dash_rgb = ['(24,56,104)', // 1 dark gray/brown
+const zero_z1_dash_rgb = ['(24,56,104)', // 1 dark gray/brown
     '(24,56,104)', // 2 dark blue
     '(48,88,144)', // 3 mid blue
     '(104,144,184)', // 4 light blue
@@ -135,7 +135,7 @@ var zero_z1_dash_rgb = ['(24,56,104)', // 1 dark gray/brown
     '(32,104,144)', // 12 midlight red
     '(64,136,168)', // 12 midlight red
 ];
-var zero_z1_dash_addresses = ['83001B22', // 1 dark gray/brown
+const zero_z1_dash_addresses = ['83001B22', // 1 dark gray/brown
     '83001B24', // 2 dark blue
     '83001B26', // 3 mid blue
     '83001B28', // 4 light blue
@@ -152,7 +152,7 @@ var zero_z1_dash_addresses = ['83001B22', // 1 dark gray/brown
     '83001B3E' // 13 light red
 ];
 
-var vent_sprite = [
+const vent_sprite = [
     [,,,,,,,,,14,14,14,14,,,,,,,,,,,],
     [,,,,,14,14,14,14,13,13,13,14,14,14,14,,,,,,,,],
     [,,,,,14,10,13,13,10,13,13,12,14,13,13,14,,,,,,,],
@@ -195,7 +195,7 @@ var vent_sprite = [
     [1,1,1,1,1,1,1,1,1,1,,,,,,1,2,3,4,4,4,3,1],
     [,,,,,,,,,,,,,,,,1,1,1,1,1,1,]
 ];
-var vent_sprite_rgb = ['(57, 49, 90)', // 1 darkdark blue
+const vent_rgb = ['(57, 49, 90)', // 1 darkdark blue
     '(74, 74, 140)', // 2 dark blue
     '(148, 148, 189)', // 3 mid blue
     '(206, 231, 239)', // 4 light blue
@@ -211,7 +211,7 @@ var vent_sprite_rgb = ['(57, 49, 90)', // 1 darkdark blue
     '(115, 41, 0)', // 14 darkdark yellow
     '(255, 24, 90)' // 15 light gem
 ];
-var vent_sprite_addresses = ['120DA9A2', // 1 darkdark blue
+const vent_addresses = ['120DA9A2', // 1 darkdark blue
     '120DA9A4', // 2 dark blue
     '120DA9A6', // 3 mid blue
     '120DA9A8', // 4 light blue
@@ -227,7 +227,7 @@ var vent_sprite_addresses = ['120DA9A2', // 1 darkdark blue
     '120DA9BC', // 14 darkdark yellow
     '120DA9BE' // 15 light gem
 ];
-var aile_sprite = [
+const aile_sprite = [
     [,,,,,,,14,14,14,14,14,14,,,,,,,,,],
     [,,,,,14,14,13,13,13,13,13,13,14,14,,,,,,,],
     [,,,,14,13,13,13,13,14,13,13,13,13,14,14,,,,,,],
@@ -269,7 +269,7 @@ var aile_sprite = [
     [,,1,1,1,1,1,1,1,1,1,1,2,3,4,4,4,3,1,,,],
     [,,,,,,,,,,,,1,1,1,1,1,1,,,]
 ];
-var aile_sprite_rgb = ['(57, 49, 90)', // 1 darkdark blue
+const aile_rgb = ['(57, 49, 90)', // 1 darkdark blue
     '(90, 90, 148)', // 2 dark blue
     '(140, 140, 181)', // 3 mid blue
     '(206, 231, 239)', // 4 light blue
@@ -285,7 +285,7 @@ var aile_sprite_rgb = ['(57, 49, 90)', // 1 darkdark blue
     '(115, 41, 0)', // 14 darkdark yellow
     '(255, 24, 90)' // 15 light gem
 ];
-var aile_sprite_addresses = ['120DA9C2', // 1 darkdark blue
+const aile_addresses = ['120DA9C2', // 1 darkdark blue
     '120DA9C4', // 2 dark blue
     '120DA9C6', // 3 mid blue
     '120DA9C8', // 4 light blue
@@ -302,7 +302,7 @@ var aile_sprite_addresses = ['120DA9C2', // 1 darkdark blue
     '120DA9DE' // 15 light gem
 ];
 
-var x_sprite = [
+const x_sprite = [
     [,,,,,,,,,,,,,,,,,7,8,8,8,8,6,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,7,8,9,9,5,8,14,14,14,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,6,8,6,6,7,7,8,15,12,15,14,,,,,,,,,,],
@@ -340,7 +340,7 @@ var x_sprite = [
     [,1,2,3,4,4,3,2,1,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,,,,,],
     [,,1,1,1,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,]
 ];
-var x_sprite_rgb = ['(16, 33, 99)', // 1 darkdark blue
+const x_rgb = ['(16, 33, 99)', // 1 darkdark blue
     '(57, 82, 148)', // 2 dark blue
     '(148, 156, 198)', // 3 mid blue
     '(214, 222, 247)', // 4 light blue
@@ -356,7 +356,7 @@ var x_sprite_rgb = ['(16, 33, 99)', // 1 darkdark blue
     '(140, 16, 0)', // 14 darkdark yellow
     '(255, 24, 90)' // 15 light gem
 ];
-var x_sprite_addresses = ['120DA9E2', // 1 darkdark blue
+const x_addresses = ['120DA9E2', // 1 darkdark blue
     '120DA9E4', // 2 dark blue
     '120DA9E6', // 3 mid blue
     '120DA9E8', // 4 light blue
@@ -372,7 +372,7 @@ var x_sprite_addresses = ['120DA9E2', // 1 darkdark blue
     '120DA9FC', // 14 darkdark yellow
     '120DA9FE' // 15 light gem
 ];
-var x_dash_rgb = ['(8,57,156)', // 1 darkdark blue
+const x_dash_rgb = ['(8,57,156)', // 1 darkdark blue
     '(41,90,198)', // 2 dark blue
     '(74,123,247)', // 3 mid blue
     '(132,181,247)', // 4 light blue
@@ -388,7 +388,7 @@ var x_dash_rgb = ['(8,57,156)', // 1 darkdark blue
     '(49,82,181)', // 14 darkdark yellow
     '(66,115,239)' // 15 light gem
 ];
-var x_dash_addresses = ['120DA7C2', // 1 darkdark blue
+const x_dash_addresses = ['120DA7C2', // 1 darkdark blue
     '120DA7C4', // 2 dark blue
     '120DA7C6', // 3 mid blue
     '120DA7C8', // 4 light blue
@@ -405,7 +405,7 @@ var x_dash_addresses = ['120DA7C2', // 1 darkdark blue
     '120DA7DE' // 13 middark yellow
 ];
 
-var zx_sprite = [
+const zx_sprite = [
     [,,,,,,,,,,,,,,7,,,,,,,6,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,6,7,7,,,,,6,6,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,6,6,8,7,,,,6,6,6,,,,,,,,,,,],
@@ -446,7 +446,7 @@ var zx_sprite = [
     [,,1,2,3,4,4,3,2,1,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,,,,],
     [,,,1,1,1,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,]
 ];
-var zx_sprite_rgb = ['(16, 33, 99)', // 1 darkdark blue
+const zx_rgb = ['(16, 33, 99)', // 1 darkdark blue
     '(57, 82, 148)', // 2 dark blue
     '(148, 156, 198)', // 3 mid blue
     '(214, 222, 247)', // 4 light blue
@@ -462,7 +462,7 @@ var zx_sprite_rgb = ['(16, 33, 99)', // 1 darkdark blue
     '(140, 74, 0)', // 14 darkdark yellow
     '(57, 231, 198)' // 15 light gem
 ];
-var zx_sprite_addresses = ['120DAA22', // 1 darkdark blue
+const zx_addresses = ['120DAA22', // 1 darkdark blue
     '120DAA24', // 2 dark blue
     '120DAA26', // 3 mid blue
     '120DAA28', // 4 light blue
@@ -478,7 +478,7 @@ var zx_sprite_addresses = ['120DAA22', // 1 darkdark blue
     '120DAA3C', // 14 darkdark yellow
     '120DAA3E' // 15 light gem
 ];
-var zx_dash_rgb = ['(173,49,57)', // 1 darkdark blue
+const zx_dash_rgb = ['(173,49,57)', // 1 darkdark blue
     '(206,57,66)', // 2 dark blue
     '(239,90,107)', // 3 mid blue
     '(255,132,148)', // 4 light blue
@@ -494,7 +494,7 @@ var zx_dash_rgb = ['(173,49,57)', // 1 darkdark blue
     '(192,56,64)', // 14 darkdark yellow
     '(255,107,123)' // 15 light gem
 ];
-var zx_dash_addresses = ['120DA7E2', // 1 darkdark blue
+const zx_dash_addresses = ['120DA7E2', // 1 darkdark blue
     '120DA7E4', // 2 dark blue
     '120DA7E6', // 3 mid blue
     '120DA7E8', // 4 light blue
@@ -511,7 +511,7 @@ var zx_dash_addresses = ['120DA7E2', // 1 darkdark blue
     '120DA7FE' // 13 middark yellow
 ];
 
-var hx_sprite = [
+const hx_sprite = [
     [,,,,,,,,,,,7,7,,,,,,,6,7,7,,,,,,,,,,,,,],
     [,,,,,,,,,,,,6,8,7,,,,,,1,6,7,7,,,,,,,,,,,,],
     [,,,,,,,,,,,,6,7,8,7,,,,,1,6,6,7,,,,,,,,,,,,],
@@ -556,7 +556,7 @@ var hx_sprite = [
     [,,1,2,3,4,4,3,2,1,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,,,,],
     [,,,1,1,1,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,]
 ]
-var hx_sprite_rgb = ['(16, 33, 99)', // 1 darkdark blue
+const hx_rgb = ['(16, 33, 99)', // 1 darkdark blue
     '(57, 82, 148)', // 2 dark blue
     '(148, 156, 198)', // 3 mid blue
     '(214, 222, 247)', // 4 light blue
@@ -572,7 +572,7 @@ var hx_sprite_rgb = ['(16, 33, 99)', // 1 darkdark blue
     '(140, 24, 49)', // 14 darkdark yellow
     '(255, 0, 90)' // 15 light gem
 ];
-var hx_sprite_addresses = ['120DAA62', // 1 darkdark blue
+const hx_addresses = ['120DAA62', // 1 darkdark blue
     '120DAA64', // 2 dark blue
     '120DAA66', // 3 mid blue
     '120DAA68', // 4 light blue
@@ -588,7 +588,7 @@ var hx_sprite_addresses = ['120DAA62', // 1 darkdark blue
     '120DAA7C', // 14 darkdark yellow
     '120DAA7E' // 15 light gem
 ];
-var hx_dash_rgb = ['(49,99,49)', // 1 darkdark blue
+const hx_dash_rgb = ['(49,99,49)', // 1 darkdark blue
     '(74,132,49)', // 2 dark blue
     '(107,165,49)', // 3 mid blue
     '(140,189,49)', // 4 light blue
@@ -604,7 +604,7 @@ var hx_dash_rgb = ['(49,99,49)', // 1 darkdark blue
     '(49,99,49)', // 14 darkdark yellow
     '(90,165,49)' // 15 light gem
 ];
-var hx_dash_addresses = ['120DA802', // 1 darkdark blue
+const hx_dash_addresses = ['120DA802', // 1 darkdark blue
     '120DA804', // 2 dark blue
     '120DA806', // 3 mid blue
     '120DA808', // 4 light blue
@@ -621,7 +621,7 @@ var hx_dash_addresses = ['120DA802', // 1 darkdark blue
     '120DA81E' // 13 middark yellow
 ];
 
-var fx_sprite = [
+const fx_sprite = [
     [,,,,,,,,,,,,,,,,,,,14,14,,,,14,14,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,14,13,14,,,14,13,14,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,14,10,14,14,,14,13,14,,,,,,,,,,,],
@@ -665,7 +665,7 @@ var fx_sprite = [
     [,1,2,3,4,4,3,2,1,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,,,,,],
     [,,1,1,1,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
 ];
-var fx_sprite_rgb = ['(16, 33, 99)', // 1 darkdark blue
+const fx_rgb = ['(16, 33, 99)', // 1 darkdark blue
     '(57, 82, 148)', // 2 dark blue
     '(148, 156, 198)', // 3 mid blue
     '(214, 222, 247)', // 4 light blue
@@ -681,7 +681,7 @@ var fx_sprite_rgb = ['(16, 33, 99)', // 1 darkdark blue
     '(107, 82, 0)', // 14 darkdark yellow
     '(255, 107, 222)' // 15 light gem
 ];
-var fx_sprite_addresses = ['120DAAA2', // 1 darkdark blue
+const fx_addresses = ['120DAAA2', // 1 darkdark blue
     '120DAAA4', // 2 dark blue
     '120DAAA6', // 3 mid blue
     '120DAAA8', // 4 light blue
@@ -697,7 +697,7 @@ var fx_sprite_addresses = ['120DAAA2', // 1 darkdark blue
     '120DAABC', // 14 darkdark yellow
     '120DAABE' // 15 light gem
 ];
-var fx_dash_rgb = ['(156,57,0)', // 1 darkdark blue
+const fx_dash_rgb = ['(156,57,0)', // 1 darkdark blue
     '(198,74,33)', // 2 dark blue
     '(231,123,74)', // 3 mid blue
     '(239,156,115)', // 4 light blue
@@ -713,7 +713,7 @@ var fx_dash_rgb = ['(156,57,0)', // 1 darkdark blue
     '(173,74,24)', // 14 darkdark yellow
     '(239,140,74)' // 15 light gem
 ];
-var fx_dash_addresses = ['120DA822', // 1 darkdark blue
+const fx_dash_addresses = ['120DA822', // 1 darkdark blue
     '120DA824', // 2 dark blue
     '120DA826', // 3 mid blue
     '120DA828', // 4 light blue
@@ -771,7 +771,7 @@ lx_sprite = [
     [,,,1,2,3,4,4,3,2,1,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,,,,,],
     [,,,,1,1,1,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
 ]
-var lx_sprite_rgb = ['(74, 33, 74)', // 1 darkdark blue
+const lx_rgb = ['(74, 33, 74)', // 1 darkdark blue
     '(115, 74, 115)', // 2 dark blue
     '(156, 165, 198)', // 3 mid blue
     '(222, 247, 239)', // 4 light blue
@@ -787,7 +787,7 @@ var lx_sprite_rgb = ['(74, 33, 74)', // 1 darkdark blue
     '(140, 16, 0)', // 14 darkdark yellow
     '(255, 24, 90)' // 15 light gem
 ];
-var lx_sprite_addresses = ['120DAAE2', // 1 darkdark blue
+const lx_addresses = ['120DAAE2', // 1 darkdark blue
     '120DAAE4', // 2 dark blue
     '120DAAE6', // 3 mid blue
     '120DAAE8', // 4 light blue
@@ -803,7 +803,7 @@ var lx_sprite_addresses = ['120DAAE2', // 1 darkdark blue
     '120DAAFC', // 14 darkdark yellow
     '120DAAFE' // 15 light gem
 ];
-var lx_dash_rgb = ['(57,49,115)', // 1 darkdark blue
+const lx_dash_rgb = ['(57,49,115)', // 1 darkdark blue
     '(74,74,156)', // 2 dark blue
     '(156,165,198)', // 3 mid blue
     '(156,173,247)', // 4 light blue
@@ -819,7 +819,7 @@ var lx_dash_rgb = ['(57,49,115)', // 1 darkdark blue
     '(107,99,198)', // 14 darkdark yellow
     '(132,132,214)' // 15 light gem
 ];
-var lx_dash_addresses = ['120DA842', // 1 darkdark blue
+const lx_dash_addresses = ['120DA842', // 1 darkdark blue
     '120DA844', // 2 dark blue
     '120DA846', // 3 mid blue
     '120DA848', // 4 light blue
@@ -836,7 +836,7 @@ var lx_dash_addresses = ['120DA842', // 1 darkdark blue
     '120DA85E' // 13 middark yellow
 ];
 
-var px_sprite = [
+const px_sprite = [
     [,,,,,,,,,,,,,3,3,,,,,,,,3,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,2,4,3,,,,,,,2,3,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,2,5,3,,,,,,,2,3,,,,,,,,,,,,],
@@ -877,7 +877,7 @@ var px_sprite = [
     [,,1,2,3,4,4,3,2,1,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,,,,,],
     [,,,1,1,1,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
 ];
-var px_sprite_rgb = ['(16, 33, 99)', // 1 darkdark blue
+const px_rgb = ['(16, 33, 99)', // 1 darkdark blue
     '(57, 82, 148)', // 2 dark blue
     '(148, 156, 198)', // 3 mid blue
     '(214, 222, 239)', // 4 light blue
@@ -893,7 +893,7 @@ var px_sprite_rgb = ['(16, 33, 99)', // 1 darkdark blue
     '(148, 57, 24)', // 14 darkdark yellow
     '(255, 33, 99)' // 15 light gem
 ];
-var px_sprite_addresses = ['120DAB22', // 1 darkdark blue
+const px_addresses = ['120DAB22', // 1 darkdark blue
     '120DAB24', // 2 dark blue
     '120DAB26', // 3 mid blue
     '120DAB28', // 4 light blue
@@ -909,7 +909,7 @@ var px_sprite_addresses = ['120DAB22', // 1 darkdark blue
     '120DAB3C', // 14 darkdark yellow
     '120DAB3E' // 15 light gem
 ];
-var px_dash_rgb = ['(82,74,107)', // 1 darkdark blue
+const px_dash_rgb = ['(82,74,107)', // 1 darkdark blue
     '(115,99,140)', // 2 dark blue
     '(165,148,181)', // 3 mid blue
     '(206,189,214)', // 4 light blue
@@ -925,7 +925,7 @@ var px_dash_rgb = ['(82,74,107)', // 1 darkdark blue
     '(115,99,140)', // 14 darkdark yellow
     '(140,123,165)' // 15 light gem
 ];
-var px_dash_addresses = ['120DA862', // 1 darkdark blue
+const px_dash_addresses = ['120DA862', // 1 darkdark blue
     '120DA864', // 2 dark blue
     '120DA866', // 3 mid blue
     '120DA868', // 4 light blue
@@ -944,7 +944,7 @@ var px_dash_addresses = ['120DA862', // 1 darkdark blue
 
 //OX uses same sprite as Zero
 
-var ox_sprite_rgb = ['(66, 74, 66)', // 1 dark gray/brown
+const ox_rgb = ['(66, 74, 66)', // 1 dark gray/brown
     '(0, 49, 99)', // 2 dark blue
     '(66, 99, 115)', // 3 mid blue
     '(148, 189, 189)', // 4 light blue
@@ -960,7 +960,7 @@ var ox_sprite_rgb = ['(66, 74, 66)', // 1 dark gray/brown
     '(40,96,112)', // 12 midlight red
     '(80,128,120)' // 13 light red
 ];
-var ox_sprite_addresses = ['120DAB62', // 1 darkdark blue
+const ox_addresses = ['120DAB62', // 1 darkdark blue
     '120DAB64', // 2 dark blue
     '120DAB66', // 3 mid blue
     '120DAB68', // 4 light blue
@@ -976,7 +976,7 @@ var ox_sprite_addresses = ['120DAB62', // 1 darkdark blue
     '120DAB7C', // 12 skin
     '120DAB7E', // 13 middark yellow
 ];
-var ox_dash_rgb = ['(173,49,66)', // 1 dark gray/brown
+const ox_dash_rgb = ['(173,49,66)', // 1 dark gray/brown
     '(140,33,41)', // 2 dark blue
     '(165,57,74)', // 3 mid blue
     '(189,82,90)', // 4 light blue
@@ -992,7 +992,7 @@ var ox_dash_rgb = ['(173,49,66)', // 1 dark gray/brown
     '(128,56,64)', // 12 midlight red
     '(168,72,80)' // 13 light red
 ];
-var ox_dash_addresses = ['120DA882', // 1 darkdark blue
+const ox_dash_addresses = ['120DA882', // 1 darkdark blue
     '120DA884', // 2 dark blue
     '120DA886', // 3 mid blue
     '120DA888', // 4 light blue
@@ -1011,7 +1011,7 @@ var ox_dash_addresses = ['120DA882', // 1 darkdark blue
 
 // WEAPONS
 
-var z1_saber_sprite = [
+const z1_saber_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
@@ -1046,10 +1046,10 @@ var z1_saber_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,2,2,2,2,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,]
 ];
-var z1_saber_sprite_rgb = ['(64, 224, 0)', '(192, 248, 56)', '(240, 240, 240)'];
-var z1_saber_sprite_addresses = ['830019FC', '830019FE', '830019EA'];
+const z1_saber_rgb = ['(64, 224, 0)', '(192, 248, 56)', '(240, 240, 240)'];
+const z1_saber_addresses = ['830019FC', '830019FE', '830019EA'];
 
-var z23_attacks_sprite = [
+const z23_attacks_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11,,,,,,,,,,,,,,,],
     [,,5,5,5,5,5,5,,,,,5,5,5,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11,,,,,,,,,,,,,,,],
     [,5,6,6,6,6,6,6,5,,,5,5,6,6,6,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11,11,,,,,,,,,,,,,,,],
@@ -1147,7 +1147,7 @@ var z23_attacks_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8,9,9,9,9,9,9,9,9,9,9,9,9,9,8,,,,,,,,,,,,,,,,,,11,11,,,11,11,11,11,11,11,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11,,,,,,,,,,,,,,,,,,,,,,]
 ];
-var z23_attacks_rgb = ['(0,40,104)',
+const z23_attacks_rgb = ['(0,40,104)',
     '(64,96,136)',
     '(144,176,208)',
     '(240, 240, 240)',
@@ -1163,7 +1163,7 @@ var z23_attacks_rgb = ['(0,40,104)',
     '(248,232,248)',
     '(248,248,248)'
 ];
-var z23_attacks_addresses = ['83002CE2',
+const z23_attacks_addresses = ['83002CE2',
     '83002CE4',
     '83002CE6',
     '83002CE8',
@@ -1180,7 +1180,7 @@ var z23_attacks_addresses = ['83002CE2',
     '83002CFE'
 ];
 
-var pellet_sprite = [
+const pellet_sprite = [
     [ , , , , , , , , , ,],
     [ , ,1,1,1,2,2,2, , ,],
     [ ,1,1,2,2,2,3,3,2, ,],
@@ -1207,18 +1207,18 @@ var pellet_sprite = [
     [ , ,1,1,1,1,1,1, , ,],
     [ , , , , , , , , ,]
 ];
-var pellet_sprite_rgb = ['(255, 206, 16)',
+const pellet_rgb = ['(255, 206, 16)',
     '(247, 255, 173)',
     '(255, 255, 214)',
     '(255, 255, 255)',
 ];
-var pellet_addresses = ['12107210',
+const pellet_addresses = ['12107210',
     '12107194',
     '12107214',
     '12107196',
 ];
 
-var x_attacks_sprite = [
+const x_attacks_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,4,4,4,4,4,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,7,7,6,6,7,7,,,,,,,,,,,,,,,,,,,,,,],
@@ -1283,7 +1283,7 @@ var x_attacks_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,11,11,11,11,11,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
 ];
-var x_attacks_sprite_rgb = ['(247, 247, 247)',
+const x_attacks_rgb = ['(247, 247, 247)',
     '(206, 255, 255)', //
     '(41, 231, 189)', //
     '(0, 181, 165)', //
@@ -1295,7 +1295,7 @@ var x_attacks_sprite_rgb = ['(247, 247, 247)',
     '(255, 181, 123)', //
     '(255, 115, 165)', //
 ];
-var x_attacks_first_addresses = ['120F7A4E', // 1 white
+const x_attacks_first_addresses = ['120F7A4E', // 1 white
     '120F7A50', // 2 very light blue
     '120F7A52', // 3 mid cyan
     '120F7A54', // 4 dark cyan
@@ -1323,9 +1323,9 @@ var x_attacks_first_addresses = ['120F7A4E', // 1 white
     '120F5CE2', // 3 mid cyan
     '120F5CE4', // 4 dark cyan
 ];*/
-var x_attacks_actual_addresses = ['121CF982', '121CFF32', '121D0492', '121D09F2', '121D0F52'];
+const x_attacks_actual_addresses = ['121CF982', '121CFF32', '121D0492', '121D09F2', '121D0F52'];
 
-var zx_saber_sprite = [
+const zx_saber_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,5,5,5,5,5,5,5,5,5,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
@@ -1461,7 +1461,7 @@ var zx_saber_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
 ];
-var zx_saber_sprite_rgb = ['(148, 156, 206)', //
+const zx_saber_rgb = ['(148, 156, 206)', //
     '(214, 222, 247)', //
     '(247, 247, 247)',
     '(206, 255, 255)', //
@@ -1476,7 +1476,7 @@ var zx_saber_sprite_rgb = ['(148, 156, 206)', //
     '(255, 181, 123)', //
     '(255, 115, 165)', //
 ];
-var zx_saber_first_addresses = ['120F7A4A', // 3 mid cyan
+const zx_saber_first_addresses = ['120F7A4A', // 3 mid cyan
     '120F7A4C', // 4 dark cyan
     '120F7A4E', // 1 white
     '120F7A50', // 2 very light blue
@@ -1491,7 +1491,7 @@ var zx_saber_first_addresses = ['120F7A4A', // 3 mid cyan
     '120F7A62', // 3 mid cyan
     '120F7A64', // 4 dark cyan
 ];
-var zx_saber_actual_addresses = ['121E40E2 ', '121E4682 ', '121E4BA2 ', '121E4FC2 ',
+const zx_saber_actual_addresses = ['121E40E2 ', '121E4682 ', '121E4BA2 ', '121E4FC2 ',
     '121E57E2 ', '121E6002 ', '121E66A2 ', '121E68C2 ', '121E6B62 ', '121E7202 ', '121E78A2 ', '121E7DC2 ',
     '121E8282 ', '121E8822 ', '121E8DC2 ', '121E9562 ', '121E9C02 ', '121EA3A2 ', '121EA9C2 ', '121EAF62 ',
     '121EB502 ', '121EB9C2 ', '121EBEE2 ', '121EC482 ', '121ECA22 ', '121ECF02 ', '121ED522 ', '121ED942 ',
@@ -1502,7 +1502,7 @@ var zx_saber_actual_addresses = ['121E40E2 ', '121E4682 ', '121E4BA2 ', '121E4FC
     '121F8706 ', '121F8C66'];
 
 
-var hx_saber_sprite = [
+const hx_saber_sprite = [
     [,,,,,,,,,,,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
@@ -1560,25 +1560,25 @@ var hx_saber_sprite = [
     [,,,,,,,,,,,,,5,5,5,5,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,3,3,3,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,5,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
 ];
-var hx_saber_sprite_rgb = ['(255, 247, 255)', // 1 darkdark blue
+const hx_saber_rgb = ['(255, 247, 255)', // 1 darkdark blue
     '(255, 198, 255)', // 2 dark blue
     '(255, 148, 247)', // 3 mid blue
     '(255, 82, 255)', // 4 light blue
     '(247, 24, 206)', // 5 white
 ];
-var hx_saber_first_addresses = ['120F7A6A', // 1 darkdark blue
+const hx_saber_first_addresses = ['120F7A6A', // 1 darkdark blue
     '120F7A6C', // 2 dark blue
     '120F7A6E', // 3 mid blue
     '120F7A70', // 4 light blue
     '120F7A72', // 5 white
 ];
-var hx_saber_actual_addresses = ['120F7A6A', '121DCE46', '121DD3E6', '121DDB06', '121DE1A6', '121DE946',
+const hx_saber_actual_addresses = ['120F7A6A', '121DCE46', '121DD3E6', '121DDB06', '121DE1A6', '121DE946',
     '121DEF66', '121DF506', '121DFAA6', '121DFF66', '121E0386', '121E0926', '121E0EC6', '121E1366', '121E1986',
     '121E1DA6', '121E2146', '121E24E6', '121E2A06', '121E3026', '121E33E6', '121E37A6', '121E3DE6', '121E4586',
     '121E4CC6', '121E5226', '121E5466', '121E5DA6', '121E66E6', '121E6C46', '121E7166', '121E76A6', '121E7FE6',
     '121E8926', '121E8D46', '121E9466', '121E9B86', '121EA126', '121EA866'];
 
-var hx_jetpack_sprite = [
+const hx_jetpack_sprite = [
     [4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8,8,8,,,,,,,,,,,,,,,,,],
     [,,4,4,,,,,,,,,,,,,,,,,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8,8,7,7,6,6,7,7,8,8,,,,,,,,,,,,,,,],
@@ -1684,7 +1684,7 @@ var hx_jetpack_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,5,5,5,4,4,4,4,3,3,2,1,1,1,1,1,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,4,4,4,3,3,3,2,2,1,1,1,1,,,,,,,,,,,,,,,,,,,,,,,]
 ];
-var hx_jetpack_sprite_rgb = ['(255, 255, 255)', // 1 darkdark blue
+const hx_jetpack_rgb = ['(255, 255, 255)', // 1 darkdark blue
     '(255, 206, 255)', // 2 dark blue
     '(255, 148, 247)', // 3 mid blue
     '(255, 90, 255)', // 4 light blue
@@ -1699,7 +1699,7 @@ var hx_jetpack_sprite_rgb = ['(255, 255, 255)', // 1 darkdark blue
     '(231, 90, 255)', // 5 white
     '(107, 123, 99)', // a different of same color for some reason
 ];
-var hx_jetpack_first_addresses = ['120F7A4A', // 1 darkdark blue
+const hx_jetpack_first_addresses = ['120F7A4A', // 1 darkdark blue
     '120F7A4C', // 2 dark blue
     '120F7A4E', // 3 mid blue
     '120F7A50', // 4 light blue
@@ -1714,9 +1714,9 @@ var hx_jetpack_first_addresses = ['120F7A4A', // 1 darkdark blue
     '120F7A62', // 3 mid blue
     '120F7A64', // 3 mid blue
 ];
-var hx_jetpack_actual_addresses = ['120F7A4A', '1215FD1A', '121EBE3A', '121EC72A', '121ECB4A', '121ECF6A', '121ED38A'];
+const hx_jetpack_actual_addresses = ['120F7A4A', '1215FD1A', '121EBE3A', '121EC72A', '121ECB4A', '121ECF6A', '121ED38A'];
 
-var fx_attacks_sprite = [
+const fx_attacks_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6,,6,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6,,6,,,,,,,,,,,,,,,,,,,,,,,,,],
@@ -1788,7 +1788,7 @@ var fx_attacks_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,4,4,4,4,4,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
 ];
-var fx_attacks_sprite_rgb = ['(255, 255, 255)', // 1 darkdark blue
+const fx_attacks_rgb = ['(255, 255, 255)', // 1 darkdark blue
     '(255, 247, 99)', // 2 dark blue
     '(255, 198, 66)', // 3 mid blue
     '(255, 165, 16)', // 4 light blue
@@ -1797,7 +1797,7 @@ var fx_attacks_sprite_rgb = ['(255, 255, 255)', // 1 darkdark blue
     '(255, 0, 0)', // 3 mid blue
     '(255, 0, 181)', // 4 light blue
 ];
-var fx_attacks_first_addresses = ['120F7A6A', // 1 darkdark blue
+const fx_attacks_first_addresses = ['120F7A6A', // 1 darkdark blue
     '120F7A6C', // 2 dark blue
     '120F7A6E', // 3 mid blue
     '120F7A70', // 4 light blue
@@ -1806,9 +1806,9 @@ var fx_attacks_first_addresses = ['120F7A6A', // 1 darkdark blue
     '120F7A76', // 3 mid blue
     '120F7A78', // 4 light blue
 ];
-var fx_attacks_actual_addresses = ['120F7A4A', '120F7A6A', '121F2BF6', '121F4B7E', '121F362A'];
+const fx_attacks_actual_addresses = ['120F7A4A', '120F7A6A', '121F2BF6', '121F4B7E', '121F362A'];
 
-var lx_staff_sprite = [
+const lx_staff_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,,,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
@@ -1917,7 +1917,7 @@ var lx_staff_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
 ];
-var lx_staff_sprite_rgb = ['(115, 74, 115)', // 1 darkdark blue
+const lx_staff_rgb = ['(115, 74, 115)', // 1 darkdark blue
     '(156, 165, 198)', // 2 dark blue
     '(8, 198, 239)', // 3 mid blue
     '(148, 255, 247)', // 4 light blue
@@ -1933,7 +1933,7 @@ var lx_staff_sprite_rgb = ['(115, 74, 115)', // 1 darkdark blue
     //'(SSSSSSSSSS)', // 4 light blue
     '(231, 255, 239)', // 4 light blue
 ];
-var lx_staff_first_addresses = ['121DC0B2', // 1 darkdark blue
+const lx_staff_first_addresses = ['121DC0B2', // 1 darkdark blue
     '121DC0B4', // 2 dark blue
     '121DC0B6', // 3 mid blue
     '121DC0B8', // 4 light blue
@@ -1949,13 +1949,13 @@ var lx_staff_first_addresses = ['121DC0B2', // 1 darkdark blue
     //'121DC0CC', // 4 light blue
     '121DC0CE', // 4 light blue
 ];
-var lx_staff_actual_addresses = ['121DC0B2', '121DC7D2', '121DCD72', '121DD352', '121DD6B2',
+const lx_staff_actual_addresses = ['121DC0B2', '121DC7D2', '121DCD72', '121DD352', '121DD6B2',
     '121E03D2', '121E0C72', '121E1512', '121E1AF2', '121E2312', '121E27D2', '121E2DB2',
     '121E36F2', '121E4032', '121E4872', '121E4972', '121E5232', '121E5C12', '121E6172',
     '121D9F52', '121DA812', '121DAF32', '121DB352', '121DB992', '121DDAD2', '121DE372',
     '121DEC12', '121DF2B2', '121DFBF2', '121DFFB2', '121E66B2'];
 
-var lx_specials_sprite = [
+const lx_specials_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9,9,9,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,10,11,11,11,11,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,11,11,11,11,11,10,,,,,,,,,,,,13,12,,,,,,,,,,,,,,,,,,,,,9,9,10,10,9,9,,,,,,,,,,,,,,,,,,,],
@@ -2017,7 +2017,7 @@ var lx_specials_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,4,,,4,4,,,,,,,,,,,,,,,,,,,4,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
 ];
-var lx_specials_sprite_rgb = ['(255, 255, 255)', // 1 darkdark blue
+const lx_specials_rgb = ['(255, 255, 255)', // 1 darkdark blue
     '(231, 255, 255)', // 2 dark blue
     '(222, 247, 247)', // 3 mid blue
     '(206, 239, 239)', // 4 light blue
@@ -2033,7 +2033,7 @@ var lx_specials_sprite_rgb = ['(255, 255, 255)', // 1 darkdark blue
     '(165, 255, 222)', // 4 light blue
     '(231, 255, 239)', // 4 light blue
 ];
-var lx_specials_addresses = ['121E7C86', // 1 darkdark blue
+const lx_specials_addresses = ['121E7C86', // 1 darkdark blue
     '121E7C88', // 2 dark blue
     '121E7C8A', // 3 mid blue
     '121E7C8C', // 4 light blue
@@ -2050,7 +2050,7 @@ var lx_specials_addresses = ['121E7C86', // 1 darkdark blue
     '121E7CA2', // 4 light blue
 ];
 
-var kunai_sprite = [
+const kunai_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,5,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,5,2,4,5,,,,,,,,,,,,,,,,,,],
@@ -2098,14 +2098,14 @@ var kunai_sprite = [
     [,,,,,,,,,5,4,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
 ];
-var kunai_sprite_rgb = ['(255, 255, 255)', // 1 darkdark blue
+const kunai_rgb = ['(255, 255, 255)', // 1 darkdark blue
     '(206, 231, 247)', // 2 dark blue
     '(148, 198, 231)', // 3 mid blue
     '(123, 173, 206)', // 4 light blue
     '(90, 148, 189)', // 5 white
     '(57, 123, 173)', // 6 dark red
 ];
-var kunai_sprite_addresses = ['121E038A', // 1 darkdark blue
+const kunai_addresses = ['121E038A', // 1 darkdark blue
     '121E038C', // 2 dark blue
     '121E038E', // 3 mid blue
     '121E0390', // 4 light blue
@@ -2113,7 +2113,7 @@ var kunai_sprite_addresses = ['121E038A', // 1 darkdark blue
     '121E0394', // 6 dark red
 ];
 
-var px_shield_sprite = [
+const px_shield_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7,7,7,7,7,7,7,7,7,7,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7,7,7,6,6,6,5,5,5,5,6,6,6,7,7,7,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7,7,7,6,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,7,7,7,,,,,,,,,,,,,,,,],
@@ -2219,7 +2219,7 @@ var px_shield_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7,7,7,7,5,5,5,5,5,5,5,5,5,5,7,7,7,7,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7,7,7,7,7,7,7,7,7,7,,,,,,,,,,,,,,,,,,,,,]
 ];
-var px_shield_sprite_rgb = ['(198, 247, 255)', // 1 darkdark blue
+const px_shield_rgb = ['(198, 247, 255)', // 1 darkdark blue
     '(189, 214, 255)', // 2 dark blue
     '(165, 173, 247)', // 3 mid blue
     '(140, 123, 231)', // 4 light blue
@@ -2235,7 +2235,7 @@ var px_shield_sprite_rgb = ['(198, 247, 255)', // 1 darkdark blue
     '(255, 214, 255)', // 4 light blue
     '(255, 255, 255)', // 5 white
 ];
-var px_shield_first_addresses = ['121E0826', // 1 darkdark blue
+const px_shield_first_addresses = ['121E0826', // 1 darkdark blue
     '121E0828', // 2 dark blue
     '121E082A', // 1 darkdark blue
     '121E082C', // 2 dark blue
@@ -2251,11 +2251,11 @@ var px_shield_first_addresses = ['121E0826', // 1 darkdark blue
     '121E0840', // 5 white
     '121E0842', // 6 dark red
 ];
-var px_shield_actual_addresses = ['121E0826', '121E1046', '121E1866', '121E2086', '121E28A6',
+const px_shield_actual_addresses = ['121E0826', '121E1046', '121E1866', '121E2086', '121E28A6',
     '121E30C6', '121E38E6', '121E4106', '121E4926', '121E5146', '121E5966', '121E6186',
     '121E69A6', '121E71C6', '121E79E6', '121E8206', '121E8A26', '121E9246', '121E9A66'];
 
-var ox_specials_sprite = [
+const ox_specials_sprite = [
 	[,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
 	[,,,,,,,,,,,,,,,8,8,8,8,8,,,,,,,,,,,,9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
 	[,,,,,,,,,,,,,,,,8,8,8,8,8,8,8,,,,,,,,,9,9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,4,4,4,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
@@ -2360,7 +2360,7 @@ var ox_specials_sprite = [
 	[,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9,9,9,9,9,9,9,9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
 	[,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
 ];
-var ox_specials_sprite_rgb = ['(206,255,0)', // 1 darkdark blue
+const ox_specials_rgb = ['(206,255,0)', // 1 darkdark blue
     '(255,255,49)', // 2 dark blue
     '(239,255,165)', // 3 mid blue
     '(57,222,0)', // 4 light blue
@@ -2373,7 +2373,7 @@ var ox_specials_sprite_rgb = ['(206,255,0)', // 1 darkdark blue
     '(181,255,255)', // 6 dark red
     '(255, 255, 255)', // 5 white
 ];
-var ox_specials_first_addresses = ['1220C5B0', // 1 darkdark blue
+const ox_specials_first_addresses = ['1220C5B0', // 1 darkdark blue
     '1220C5B2', // 2 dark blue
     '1220C5B4', // 1 darkdark blue
     '1220C5B6', // 2 dark blue
@@ -2386,10 +2386,10 @@ var ox_specials_first_addresses = ['1220C5B0', // 1 darkdark blue
     '1220C5C4', // 4 light blue
     '1220C5C6', // 5 white
 ];
-var ox_specials_actual_addresses = ['1215FD28', '1220761C', '12207E5C', '1220869C', '12208EDC',
+const ox_specials_actual_addresses = ['1215FD28', '1220761C', '12207E5C', '1220869C', '12208EDC',
     '1220971C', '12209F5C', '1220A79C', '1220AFDC', '1220C5B0'];
 
-var ox_saber_sprite = [
+const ox_saber_sprite = [
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
@@ -2502,7 +2502,7 @@ var ox_saber_sprite = [
     [,,,,,,,,,,,,,,,,,,6,6,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,],
     [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,]
 ];
-var ox_saber_sprite_rgb = ['(66,99,140)', // 1 darkdark blue
+const ox_saber_rgb = ['(66,99,140)', // 1 darkdark blue
     '(148,181,214)', // 2 dark blue
     '(247,247,247)', // 3 mid blue
     '(231,181,0)', // 4 light blue
@@ -2517,7 +2517,7 @@ var ox_saber_sprite_rgb = ['(66,99,140)', // 1 darkdark blue
     '(255,231,255)', // 5 white
     '(255, 255, 255)', // 5 white
 ];
-var ox_saber_first_addresses = ['121F1218', // 1 darkdark blue
+const ox_saber_first_addresses = ['121F1218', // 1 darkdark blue
     '121F121A', // 2 dark blue
     '121F121C', // 1 darkdark blue
     '121F122E', // 2 dark blue
@@ -2532,7 +2532,7 @@ var ox_saber_first_addresses = ['121F1218', // 1 darkdark blue
     '121F1230', // 5 white
     '121F1232', // 5 white
 ];
-var ox_saber_actual_addresses = ['1215FD44', '121F06D8', '121F0918', '121F0DD8', '121F1218', '121F15D8', '121F1C18', '121F1F58', '121F2418', '121F28D8',
+const ox_saber_actual_addresses = ['1215FD44', '121F06D8', '121F0918', '121F0DD8', '121F1218', '121F15D8', '121F1C18', '121F1F58', '121F2418', '121F28D8',
     '121F2E98', '121F2F58', '121F3018', '121F36D8', '121F3E98', '121F4558', '121F4C18', '121F5158', '121F5518',
     '121F57D8', '121F5A98', '121F5DD8', '121F5E18', '121F6458', '121F6A98', '121F70D8', '121F7718', '121F7C58',
     '121F8098', '121F8438', '121F87D8', '121F8AB8', '121F8B98', '121F8C78', '121F8D58', '121F8DB8', '121F8FF8',
@@ -2542,6 +2542,236 @@ var ox_saber_actual_addresses = ['1215FD44', '121F06D8', '121F0918', '121F0DD8',
     '122013F8', '12201818', '12201B38', '12201F58', '12202178', '12202538', '12202CF8', '122030B8', '12203478',
     '12203658', '12203738', '122039F8', '12203F38', '122043F8', '12204838', '12204D78', '122052B8', '122057F8',
     '12205A58', '12206038', '12206618', '12206978', '12206D38'];
+
+let sprites = [
+    {
+        "name": "zero1",
+        "sprite": zero_sprite,
+        "colors": zero_rgb,
+        "addresses": zero_z1_addresses,
+    },
+    {
+        "name": "zero1_dash",
+        "sprite": zero_sprite,
+        "colors": zero_z1_dash_rgb,
+        "addresses": zero_z1_dash_addresses,
+    },
+    {
+        "name": "zero1_saber",
+        "sprite": z1_saber_sprite,
+        "colors": z1_saber_rgb,
+        "addresses": z1_saber_addresses,
+        "zoom": 10
+    },
+    {
+        "name": "zero234",
+        "sprite": zero_sprite,
+        "colors": zero_rgb,
+        "addresses": zero_addresses,
+    },
+    {
+        "name": "zero234_dash",
+        "sprite": zero_sprite,
+        "colors": zero_dash_rgb,
+        "addresses": zero_dash_addresses,
+    },
+    {
+        "name": "zero234_attacks",
+        "sprite": z23_attacks_sprite,
+        "colors": z23_attacks_rgb,
+        "addresses": z23_attacks_addresses,
+        "zoom": 7
+    },
+    {
+        "name": "vent",
+        "sprite": vent_sprite,
+        "colors": vent_rgb,
+        "addresses": vent_addresses,
+    },
+    {
+        "name": "aile",
+        "sprite": aile_sprite,
+        "colors": aile_rgb,
+        "addresses": aile_addresses,
+    },
+    {
+        "name": "x",
+        "sprite": x_sprite,
+        "colors": x_rgb,
+        "addresses": x_addresses,
+    },
+    {
+        "name": "x_dash",
+        "sprite": x_sprite,
+        "colors": x_dash_rgb,
+        "addresses": x_dash_addresses,
+    },
+    {
+        "name": "pellet",
+        "sprite": pellet_sprite,
+        "colors": pellet_rgb,
+        "addresses": pellet_addresses,
+    },
+    {
+        "name": "x_charges",
+        "sprite": x_attacks_sprite,
+        "colors": x_attacks_rgb,
+        "addresses": x_attacks_first_addresses,
+        "zoom": 9
+    },
+    {
+        "name": "zx",
+        "sprite": zx_sprite,
+        "colors": zx_rgb,
+        "addresses": zx_addresses,
+        "width": 35,
+        "height": 39
+    },
+    {
+        "name": "zx_dash",
+        "sprite": zx_sprite,
+        "colors": zx_dash_rgb,
+        "addresses": zx_dash_addresses,
+        "width": 35,
+        "height": 39
+    },
+    {
+        "name": "zx_attacks",
+        "sprite": zx_saber_sprite,
+        "colors": zx_saber_rgb,
+        "addresses": zx_saber_first_addresses,
+        "zoom": 6
+    },
+    {
+        "name": "hx",
+        "sprite": hx_sprite,
+        "colors": hx_rgb,
+        "addresses": hx_addresses,
+        "width": 35,
+        "height": 43
+    },
+    {
+        "name": "hx_dash",
+        "sprite": hx_sprite,
+        "colors": hx_dash_rgb,
+        "addresses": hx_dash_rgb,
+        "width": 35,
+        "height": 43
+    },
+    {
+        "name": "hx_saber",
+        "sprite": hx_saber_sprite,
+        "colors": hx_saber_rgb,
+        "addresses": hx_saber_first_addresses,
+        "zoom": 8
+    },
+    {
+        "name": "hx_specials",
+        "sprite": hx_jetpack_sprite,
+        "colors": hx_jetpack_rgb,
+        "addresses": hx_jetpack_first_addresses,
+        "zoom": 8
+    },
+    {
+        "name": "fx",
+        "sprite": fx_sprite,
+        "colors": fx_rgb,
+        "addresses": fx_addresses,
+    },
+    {
+        "name": "fx_dash",
+        "sprite": fx_sprite,
+        "colors": fx_dash_rgb,
+        "addresses": fx_dash_addresses,
+    },
+    {
+        "name": "fx_attacks",
+        "sprite": fx_attacks_sprite,
+        "colors": fx_attacks_rgb,
+        "addresses": fx_attacks_first_addresses,
+        "zoom": 8
+    },
+    {
+        "name": "lx",
+        "sprite": lx_sprite,
+        "colors": lx_rgb,
+        "addresses": lx_addresses,
+    },
+    {
+        "name": "lx_dash",
+        "sprite": lx_sprite,
+        "colors": lx_dash_rgb,
+        "addresses": lx_dash_addresses,
+    },
+    {
+        "name": "lx_staff",
+        "sprite": lx_staff_sprite,
+        "colors": lx_staff_rgb,
+        "addresses": lx_staff_first_addresses,
+        "zoom": 6
+    },
+    {
+        "name": "lx_specials",
+        "sprite": lx_specials_sprite,
+        "colors": lx_specials_rgb,
+        "addresses": lx_specials_addresses,
+        "zoom": 7
+    },
+    {
+        "name": "px",
+        "sprite": px_sprite,
+        "colors": px_rgb,
+        "addresses": px_addresses,
+    },
+    {
+        "name": "px_dash",
+        "sprite": px_sprite,
+        "colors": px_dash_rgb,
+        "addresses": px_dash_addresses,
+    },
+    {
+        "name": "px_attacks",
+        "sprite": kunai_sprite,
+        "colors": kunai_rgb,
+        "addresses": kunai_addresses,
+        "zoom": 10
+    },
+    {
+        "name": "px_shield",
+        "sprite": px_shield_sprite,
+        "colors": px_shield_rgb,
+        "addresses": px_shield_first_addresses,
+        "zoom": 7
+    },
+    {
+        "name": "ox",
+        "sprite": zero_sprite,
+        "colors": ox_rgb,
+        "addresses": ox_addresses,
+    },
+    {
+        "name": "ox_dash",
+        "sprite": zero_sprite,
+        "colors": ox_dash_rgb,
+        "addresses": ox_dash_addresses,
+    },
+    {
+        "name": "ox_attacks1",
+        "sprite": ox_saber_sprite,
+        "colors": ox_saber_rgb,
+        "addresses": ox_saber_first_addresses,
+        "zoom": 7
+    },
+    {
+        "name": "ox_attacks2",
+        "sprite": ox_specials_sprite,
+        "colors": ox_specials_rgb,
+        "addresses": ox_specials_first_addresses,
+        "zoom": 6
+    },
+]
+
+
 	
 /******************************************************************************************
  ****** TO-DO ******
@@ -2555,8 +2785,8 @@ var ox_saber_actual_addresses = ['1215FD44', '121F06D8', '121F0918', '121F0DD8',
 var selected;
 var colorType = 'rgb';
 var current_sprite;
-var current_sprite_rgb;
-var current_sprite_addresses;
+var current_rgb;
+var current_addresses;
 var zoomFactor = 20;
 
 
@@ -2589,252 +2819,38 @@ function resetElement(elementId, recreateBool, containerId, elementType, width, 
     }
 }
 
-function showZero1(dash) {
-    current_sprite = zero_sprite;
-    if (!dash) {
-        current_sprite_rgb = zero_sprite_rgb;
-        current_sprite_addresses = zero_z1_sprite_addresses;
-    } else {
-        current_sprite_rgb = zero_z1_dash_rgb;
-        current_sprite_addresses = zero_z1_dash_addresses;
-    }
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '840px', '780px', 'gray');
+function loadSprite(name) {
+    let currentObject = sprites.find(sprite => sprite.name === name);
+    current_sprite = currentObject.sprite;
+    current_rgb = currentObject.colors;
+    current_addresses = currentObject.addresses;
+    let width = 0;
+    let height = 0;
+    let bg = "gray"
+    if (currentObject.hasOwnProperty("width")) { width = currentObject.width; }
+    else { width = currentObject.sprite[0].length; }
+    width = (20 * width) + "px";
+    if (currentObject.hasOwnProperty("height")) { height = currentObject.height; }
+    else { height = currentObject.sprite.length; }
+    height = (20 * height) + "px";
+    if (currentObject.hasOwnProperty("bg")) bg = currentObject.bg;
+    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', width, height, bg);
     show_sprite(canvas);
-}
-function showZ1Saber() {
-    current_sprite = z1_saber_sprite;
-    current_sprite_rgb = z1_saber_sprite_rgb;
-    current_sprite_addresses = z1_saber_sprite_addresses;
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '1480px', '680px', 'gray');
-    show_sprite(canvas);
-    zoom(true, 10);
-}
-function showZero(dash) {
-    current_sprite = zero_sprite;
-    if (!dash) {
-        current_sprite_rgb = zero_sprite_rgb;
-        current_sprite_addresses = zero_sprite_addresses;
-    } else {
-        current_sprite_rgb = zero_dash_rgb;
-        current_sprite_addresses = zero_dash_addresses;
-    }
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '840px', '780px', 'gray');
-    show_sprite(canvas);
-}
-function showZ23Attacks() {
-    current_sprite = z23_attacks_sprite;
-    current_sprite_rgb = z23_attacks_rgb;
-    current_sprite_addresses = z23_attacks_addresses;
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '2120px', '1920px', 'gray');
-    show_sprite(canvas);
-    zoom(true, 7);
-}
-function showVent() {
-    current_sprite = vent_sprite;
-    current_sprite_rgb = vent_sprite_rgb;
-    current_sprite_addresses = vent_sprite_addresses;
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '460px', '820px', 'gray');
-    show_sprite(canvas);
-}
-function showAile() {
-    current_sprite = aile_sprite;
-    current_sprite_rgb = aile_sprite_rgb;
-    current_sprite_addresses = aile_sprite_addresses;
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '420px', '800px', 'gray');
-    show_sprite(canvas);
-}
-function showX(dash) {
-    current_sprite = x_sprite;
-    if (!dash) {
-        current_sprite_rgb = x_sprite_rgb;
-        current_sprite_addresses = x_sprite_addresses;
-    } else {
-        current_sprite_rgb = x_dash_rgb;
-        current_sprite_addresses = x_dash_addresses;
-    }
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '700px', '720px', 'gray');
-    show_sprite(canvas);
-}
-function showPellet() {
-    current_sprite = pellet_sprite;
-    current_sprite_rgb = pellet_sprite_rgb;
-    current_sprite_addresses = pellet_addresses;
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '200px', '500px', 'gray');
-    show_sprite(canvas);
-}
-function showXattacks() {
-    current_sprite = x_attacks_sprite;
-    current_sprite_rgb = x_attacks_sprite_rgb;
-    current_sprite_addresses = x_attacks_first_addresses;
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '960px', '1260px', 'gray');
-    show_sprite(canvas);
-    zoom(true, 9);
-}
-function showZX(dash) {
-    current_sprite = zx_sprite;
-    if (!dash) {
-        current_sprite_rgb = zx_sprite_rgb;
-        current_sprite_addresses = zx_sprite_addresses;
-    } else {
-        current_sprite_rgb = zx_dash_rgb;
-        current_sprite_addresses = zx_dash_addresses;
-    }
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '700px', '780px', 'gray');
-    show_sprite(canvas);
-}
-function showZxSaber() {
-    current_sprite = zx_saber_sprite;
-    current_sprite_rgb = zx_saber_sprite_rgb;
-    current_sprite_addresses = zx_saber_first_addresses;
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '1740px', '2680px', 'gray');
-    show_sprite(canvas);
-    zoom(true, 6);
-}
-function showHX(dash) {
-    current_sprite = hx_sprite;
-    if (!dash) {
-        current_sprite_rgb = hx_sprite_rgb;
-        current_sprite_addresses = hx_sprite_addresses;
-    } else {
-        current_sprite_rgb = hx_dash_rgb;
-        current_sprite_addresses = hx_dash_addresses;
-    }
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '700px', '860px', 'gray');
-    show_sprite(canvas);
-}
-function showHxSaber() {
-    current_sprite = hx_saber_sprite;
-    current_sprite_rgb = hx_saber_sprite_rgb;
-    current_sprite_addresses = hx_saber_first_addresses;
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '1540px', '1120px', 'gray');
-    show_sprite(canvas);
-    zoom(true, 8);
-}
-function showHxJetpack() {
-    current_sprite = hx_jetpack_sprite;
-    current_sprite_rgb = hx_jetpack_sprite_rgb;
-    current_sprite_addresses = hx_jetpack_first_addresses;
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '1660px', '2080px', '#225566');
-    show_sprite(canvas);
-    zoom(true, 8);
-}
-function showFX(dash) {
-    current_sprite = fx_sprite;
-    if (!dash) {
-        current_sprite_rgb = fx_sprite_rgb;
-        current_sprite_addresses = fx_sprite_addresses;
-    } else {
-        current_sprite_rgb = fx_dash_rgb;
-        current_sprite_addresses = fx_dash_addresses;
-    }
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '700px', '840px', 'gray');
-    show_sprite(canvas);
-}
-function showFxAttacks() {
-    current_sprite = fx_attacks_sprite;
-    current_sprite_rgb = fx_attacks_sprite_rgb;
-    current_sprite_addresses = fx_attacks_first_addresses;
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '1660px', '1400px', 'gray');
-    show_sprite(canvas);
-    zoom(true, 8);
-}
-function showLX(dash) {
-    current_sprite = lx_sprite;
-    if (!dash) {
-        current_sprite_rgb = lx_sprite_rgb;
-        current_sprite_addresses = lx_sprite_addresses;
-    } else {
-        current_sprite_rgb = lx_dash_rgb;
-        current_sprite_addresses = lx_dash_addresses;
-    }
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '740px', '780px', 'gray');
-    show_sprite(canvas);
-}
-function showLxStaff() {
-    current_sprite = lx_staff_sprite;
-    current_sprite_rgb = lx_staff_sprite_rgb;
-    current_sprite_addresses = lx_staff_first_addresses;
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '2040px', '2140px', 'gray');
-    show_sprite(canvas);
-    zoom(true, 6);
-}
-function showLxSpecials() {
-    current_sprite = lx_specials_sprite;
-    current_sprite_rgb = lx_specials_sprite_rgb;
-    current_sprite_addresses = lx_specials_addresses;
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '1920px', '1200px', 'gray');
-    show_sprite(canvas);
-    zoom(true, 7);
-}
-function showPX(dash) {
-    current_sprite = px_sprite;
-    if (!dash) {
-        current_sprite_rgb = px_sprite_rgb;
-        current_sprite_addresses = px_sprite_addresses;
-    } else {
-        current_sprite_rgb = px_dash_rgb;
-        current_sprite_addresses = px_dash_addresses;
-    }
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '720px', '780px', 'gray');
-    show_sprite(canvas);
-}
-function showKunai() {
-    current_sprite = kunai_sprite;
-    current_sprite_rgb = kunai_sprite_rgb;
-    current_sprite_addresses = kunai_sprite_addresses;
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '780px', '940px', 'gray');
-    show_sprite(canvas);
-    zoom(true, 10);
-}
-function showPxShield() {
-    current_sprite = px_shield_sprite;
-    current_sprite_rgb = px_shield_sprite_rgb;
-    current_sprite_addresses = px_shield_first_addresses;
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '1860px', '2080px', 'gray');
-    show_sprite(canvas);
-    zoom(true, 7);
-}
-function showOX(dash) {
-    current_sprite = zero_sprite;
-    if (!dash) {
-        current_sprite_rgb = ox_sprite_rgb;
-        current_sprite_addresses = ox_sprite_addresses;
-    } else {
-        current_sprite_rgb = ox_dash_rgb;
-        current_sprite_addresses = ox_dash_addresses;
-    }
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '840px', '780px', 'gray');
-    show_sprite(canvas);
-}
-function showOxSaber() {
-    current_sprite = ox_saber_sprite;
-    current_sprite_rgb = ox_saber_sprite_rgb;
-    current_sprite_addresses = ox_saber_first_addresses;
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '1540px', '2220px', 'gray');
-    show_sprite(canvas);
-    zoom(true, 7);
-}
-function showOxSpecials() {
-    current_sprite = ox_specials_sprite;
-    current_sprite_rgb = ox_specials_sprite_rgb;
-    current_sprite_addresses = ox_specials_first_addresses;
-    var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', '2280px', '2060px', 'gray');
-    show_sprite(canvas);
-    zoom(true, 6);
+    if (currentObject.hasOwnProperty("zoom")) zoom(true, currentObject.zoom);
 }
 
 function show_sprite(canvas) {
     zoomFactor = 20;
     var addressTrunc = document.getElementById("addressTrunc");
-    addressTrunc.innerHTML = current_sprite_addresses[0].substring(0, 6) + "...";
-    for (var i = 0; i < current_sprite.length; i++) {
-        for (var j = 0; j < current_sprite[i].length; j++) {
+    addressTrunc.innerHTML = current_addresses[0].substring(0, 6) + "...";
+    for (let i = 0; i < current_sprite.length; i++) {
+        for (let j = 0; j < current_sprite[i].length; j++) {
             var pixel = document.createElement("DIV");
             pixel.className = "sprite-pixel";
             if (!current_sprite[i][j]) {
                 pixel.style.visibility = 'hidden';
             } else {
-                pixel.style.backgroundColor = 'rgb' + current_sprite_rgb[current_sprite[i][j]-1];
+                pixel.style.backgroundColor = 'rgb' + current_rgb[current_sprite[i][j]-1];
                 pixel.className = 'sprite-pixel pix' + current_sprite[i][j].toString();
                 pixel.setAttribute('onclick', 'selectPixel(this)');
             }
@@ -2842,7 +2858,7 @@ function show_sprite(canvas) {
         }
     }
     document.getElementById('workspace-container').style.width = 'calc(248px + ' + document.getElementById('sprite-container').style.width + ')';
-    populateColorControls(current_sprite_rgb, current_sprite_addresses);
+    populateColorControls(current_rgb, current_addresses);
     // resetElement(targetID, true, 'color-controls-container', 'P'); // optional
 }
 
@@ -2851,11 +2867,11 @@ function populateColorControls(rgb_colors, color_addresses) {
     var table = document.getElementById('color-controls');
     var rowArr = []; // holds arrays of each row's TDs [row][column]
     var rows = []; // holds actual row elements (TRs)
-    for (var i = 0; i < color_addresses.length; i++) {
+    for (let i = 0; i < color_addresses.length; i++) {
         rowArr[i] = []; // define current row as a matrix
-        for (var j = 0; j < 4; j++) // populate current row with 4 TDs
+        for (let j = 0; j < 4; j++) // populate current row with 4 TDs
             rowArr[i][j] = document.createElement("TD");
-        rowArr[i][0].innerHTML = '...' + color_addresses[i].replace(current_sprite_addresses[0].substring(0, 6), ''); // first row displays address
+        rowArr[i][0].innerHTML = '...' + color_addresses[i].replace(current_addresses[0].substring(0, 6), ''); // first row displays address
         rowArr[i][1].style.height = '100%';
         var colorBox1 = document.createElement('DIV');
         colorBox1.style.display = 'inline-block';
@@ -2911,9 +2927,9 @@ function populateColorControls(rgb_colors, color_addresses) {
         rows[i].className = 'color-control-row';
     }
     // place the rows into the table, then place all the TDs into their rows
-    for (var i = 0; i < rowArr.length; i++) {
+    for (let i = 0; i < rowArr.length; i++) {
         table.appendChild(rows[i]);
-        for (var j = 0; j < 4; j++)
+        for (let j = 0; j < 4; j++)
             rows[i].appendChild(rowArr[i][j]);
     }
     //var colorConvertRow = document.createElement("DIV");
@@ -2929,7 +2945,7 @@ function populateColorControls(rgb_colors, color_addresses) {
 function convertAll(type) {
     colorType = type;
     var toConvert = document.getElementsByClassName('inputBox');
-    for (var i = 0; i < toConvert.length; i++)
+    for (let i = 0; i < toConvert.length; i++)
         toConvert[i].value = convertAnyToAny(toConvert[i].value, type);
 }
 
@@ -2940,7 +2956,7 @@ function selectPixel(pix) {
     control.select();
     selectInput(control);
     /*var matching = document.getElementsByClassName(pix.className);
-    for (var i = 0; i < matching.length; i++) {
+    for (let i = 0; i < matching.length; i++) {
         matching[i].style.outline = '1px solid white';
     }*/
 }
@@ -2952,14 +2968,14 @@ function selectInput(input) {
     selected.parentElement.parentElement.style.outline = 'solid';
     var baseValue = selected.value;
     if (!baseValue)
-        baseValue = trimRGB(current_sprite_rgb[selected.id.replace('input', '') - 1]);
-        //selected.value = trimRGB(current_sprite_rgb[selected.id.replace('input', '') - 1]);
+        baseValue = trimRGB(current_rgb[selected.id.replace('input', '') - 1]);
+        //selected.value = trimRGB(current_rgb[selected.id.replace('input', '') - 1]);
     /*
     var indivRGBtext = document.getElementsByName('colorInput');
     //const indivRGBrange = document.getElementsByName('colorRange');
     if (isRGB(baseValue))
         var selectedSplit = baseValue.split(',');
-    for (var i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i++) {
         if (isRGB(baseValue)) {
             indivRGBtext[i].value = selectedSplit[i];
         }
@@ -2998,7 +3014,7 @@ function refreshPixel(num) {
             else
                 newColor = '#' + convertAnyToAny(newColor, 'hex');
         }
-        for (var i = 0; i < matching.length; i++) {
+        for (let i = 0; i < matching.length; i++) {
                 matching[i].style.backgroundColor = newColor;
         }
         document.getElementById('colorBox' + num).value = '#' + convertAnyToAny(newColor, 'hex').replace('#', '');
@@ -3006,7 +3022,7 @@ function refreshPixel(num) {
 }
 
 function refreshAllPixels() {
-    for (var i = 0; i < current_sprite_addresses.length; i++)
+    for (let i = 0; i < current_addresses.length; i++)
         refreshPixel(i+1);
 }
 
@@ -3030,7 +3046,7 @@ function zoom(zoomIn, manualFactor) {
         canvas.style.height = ((parseInt(canvas.style.height.substring(0, canvas.style.height.length-2)) / zoomFactor) * factor).toString() + 'px';
         zoomFactor = factor;
     }
-    for (var i = 0; i < pixels.length; i++) {
+    for (let i = 0; i < pixels.length; i++) {
         pixels[i].style.width = zoomFactor.toString() + 'px';
         pixels[i].style.height = zoomFactor.toString() + 'px';
     }
@@ -3045,14 +3061,14 @@ function outputCodes(targetID, region) {
     if (current_sprite === zx_saber_sprite)
         target.innerHTML = target.innerHTML + '<b>WARNING:</b>' + '<br>' +
             'Full code may need to be split into two parts to fit in DeSmuME. ' +
-            'Remember to keep the first and last line in both codes (that start with 9 and D)' + '<br>';
+            'Remember to keep the first and last line in both codes (that start with 5 and D)' + '<br>';
     if (current_sprite === lx_staff_sprite)
         target.innerHTML = target.innerHTML + '<b>Note:</b>' + '<br>' +
             'May cause minor visual glitches ' + '<br>';
     if (current_sprite === ox_saber_sprite)
         target.innerHTML = target.innerHTML + '<b>WARNING:</b>' + '<br>' +
             'Full code may need to be split into two parts to fit in DeSmuME. ' +
-            'Remember to keep the first and last line in both codes (that start with 9 and D)' + '<br>';
+            'Remember to keep the first and last line in both codes (that start with 5 and D)' + '<br>';
     if (current_sprite === kunai_sprite || current_sprite === px_shield_sprite ||
     current_sprite === hx_saber_sprite || current_sprite === hx_jetpack_sprite ||
     current_sprite === zx_saber_sprite || current_sprite === fx_attacks_sprite ||
@@ -3152,79 +3168,79 @@ function outputCodes(targetID, region) {
         current_sprite !== lx_staff_sprite &&
         current_sprite !== px_shield_sprite &&
         current_sprite !== ox_saber_sprite && current_sprite !== ox_specials_sprite) {
-        var addresses = Array.from(current_sprite_addresses);
+        var addresses = Array.from(current_addresses);
         // shift addresses for EN, if necessary
-        if (region === "en" && (current_sprite !== zero_sprite || current_sprite_addresses === ox_sprite_addresses ||
-            current_sprite_addresses === ox_dash_addresses) && current_sprite !== kunai_sprite &&
+        if (region === "en" && (current_sprite !== zero_sprite || current_addresses === ox_addresses ||
+            current_addresses === ox_dash_addresses) && current_sprite !== kunai_sprite &&
             current_sprite !== z1_saber_sprite && current_sprite !== lx_specials_sprite) {
             var difference = 15844;
             if (current_sprite === pellet_sprite) difference = 1024;
-            for (var i = 0; i < current_sprite_addresses.length; i++) {
-                addresses[i] = (parseInt(current_sprite_addresses[i], 16) + difference).toString(16).toUpperCase()
+            for (let i = 0; i < current_addresses.length; i++) {
+                addresses[i] = (parseInt(current_addresses[i], 16) + difference).toString(16).toUpperCase()
             }
         }
         var inbetween = ' ';
         // if, of sprites that can reach here, not mmz sprite (or if zero sprite but is OX)
-        if ((current_sprite !== zero_sprite || current_sprite_addresses === ox_sprite_addresses ||
-            current_sprite_addresses === ox_dash_addresses) && current_sprite !== z1_saber_sprite)
+        if ((current_sprite !== zero_sprite || current_addresses === ox_addresses ||
+            current_addresses === ox_dash_addresses) && current_sprite !== z1_saber_sprite)
             inbetween = ' 0000';
-        for (var i = 0; i < addresses.length; i++) {
+        for (let i = 0; i < addresses.length; i++) {
             var input = document.getElementById('input' + (i + 1));
             if (input.value)
                 target.innerHTML = target.innerHTML + addresses[i] + inbetween + convertToGBA(input.value) + '<br>';
         }
         if (current_sprite !== zero_sprite && current_sprite !== z1_saber_sprite && current_sprite !== vent_sprite && current_sprite !== aile_sprite
-            && current_sprite_addresses !== x_dash_addresses && current_sprite_addresses !== zx_dash_addresses && current_sprite_addresses !== hx_dash_addresses && current_sprite_addresses !== fx_dash_addresses && current_sprite_addresses !== lx_dash_addresses && current_sprite_addresses !== px_dash_addresses && current_sprite_addresses !== ox_dash_addresses
+            && current_addresses !== x_dash_addresses && current_addresses !== zx_dash_addresses && current_addresses !== hx_dash_addresses && current_addresses !== fx_dash_addresses && current_addresses !== lx_dash_addresses && current_addresses !== px_dash_addresses && current_addresses !== ox_dash_addresses
             && current_sprite !== kunai_sprite && current_sprite !== px_shield_sprite && current_sprite !== pellet_sprite && current_sprite !== fx_attacks_sprite && current_sprite !== lx_specials_sprite) { //do it again for zx which has them twice (cept the ones that dont)
-            for (var i = 0; i < addresses.length; i++) {
+            for (let i = 0; i < addresses.length; i++) {
                 var input = document.getElementById('input' + (i + 1));
                 if (input.value)
                     target.innerHTML = target.innerHTML + (parseInt(addresses[i], 16) + 32).toString(16).toUpperCase() + inbetween + convertToGBA(input.value) + '<br>';
             }
         }
     } else if (current_sprite === hx_saber_sprite) {
-        for (var i = 0; i < hx_saber_first_addresses.length; i++) {
+        for (let i = 0; i < hx_saber_first_addresses.length; i++) {
             var input = document.getElementById('input' + (i + 1));
             if (input.value)
-                for (var j = 0; j < hx_saber_actual_addresses.length; j++) {
+                for (let j = 0; j < hx_saber_actual_addresses.length; j++) {
                     target.innerHTML = target.innerHTML + (parseInt(hx_saber_actual_addresses[j], 16) + i*2).toString(16).toUpperCase() + ' 0000' + convertToGBA(input.value) + '<br>';
                 }
         }
     } else if (current_sprite === zx_saber_sprite) {
-        for (var i = 0; i < zx_saber_first_addresses.length; i++) {
+        for (let i = 0; i < zx_saber_first_addresses.length; i++) {
             var input = document.getElementById('input' + (i + 1));
             if (input.value)
-                for (var j = 0; j < zx_saber_actual_addresses.length; j++) {
+                for (let j = 0; j < zx_saber_actual_addresses.length; j++) {
                     target.innerHTML = target.innerHTML + (parseInt(zx_saber_actual_addresses[j], 16) + i * 2).toString(16).toUpperCase() + ' 0000' + convertToGBA(input.value) + '<br>';
                 }
         }
     } else if (current_sprite === hx_jetpack_sprite) {
-        for (var i = 0; i < hx_jetpack_first_addresses.length; i++) {
+        for (let i = 0; i < hx_jetpack_first_addresses.length; i++) {
             var input = document.getElementById('input' + (i + 1));
             if (input.value)
-                for (var j = 0; j < hx_jetpack_actual_addresses.length; j++) {
+                for (let j = 0; j < hx_jetpack_actual_addresses.length; j++) {
                     target.innerHTML = target.innerHTML + (parseInt(hx_jetpack_actual_addresses[j], 16) + i*2).toString(16).toUpperCase() + ' 0000' + convertToGBA(input.value) + '<br>';
                 }
         }
     } else if (current_sprite === fx_attacks_sprite) {
-        for (var i = 0; i < fx_attacks_first_addresses.length; i++) {
+        for (let i = 0; i < fx_attacks_first_addresses.length; i++) {
             var input = document.getElementById('input' + (i + 1));
             if (input.value)
-                for (var j = 0; j < fx_attacks_actual_addresses.length; j++) {
+                for (let j = 0; j < fx_attacks_actual_addresses.length; j++) {
                     target.innerHTML = target.innerHTML + (parseInt(fx_attacks_actual_addresses[j], 16) + i*2).toString(16).toUpperCase() + ' 0000' + convertToGBA(input.value) + '<br>';
                 }
         }
     } else if (current_sprite === px_shield_sprite) {
-        for (var i = 0; i < px_shield_first_addresses.length; i++) {
+        for (let i = 0; i < px_shield_first_addresses.length; i++) {
             var input = document.getElementById('input' + (i + 1));
             if (input.value)
-                for (var j = 0; j < px_shield_actual_addresses.length; j++) {
+                for (let j = 0; j < px_shield_actual_addresses.length; j++) {
                     target.innerHTML = target.innerHTML + (parseInt(px_shield_actual_addresses[j], 16) + i * 2).toString(16).toUpperCase() + ' 0000' + convertToGBA(input.value) + '<br>';
                 }
         }
     } else if (current_sprite === lx_staff_sprite) { // DO NOT COPY, special case
         var adjustedI= 0;
-        for (var i = 0; i < lx_staff_first_addresses.length; i++) {
+        for (let i = 0; i < lx_staff_first_addresses.length; i++) {
             // skip over ..C2, C6, C8, and CC
             if (adjustedI === 8 || adjustedI === 10|| adjustedI === 13)
                 adjustedI++;
@@ -3232,14 +3248,14 @@ function outputCodes(targetID, region) {
                 adjustedI++;
             var input = document.getElementById('input' + (i + 1));
             if (input.value)
-                for (var j = 0; j < lx_staff_actual_addresses.length; j++) {
+                for (let j = 0; j < lx_staff_actual_addresses.length; j++) {
                     target.innerHTML = target.innerHTML + (parseInt(lx_staff_actual_addresses[j], 16) + adjustedI * 2).toString(16).toUpperCase() + ' 0000' + convertToGBA(input.value) + '<br>';
                 }
             adjustedI++;
         }
     } else if (current_sprite === ox_saber_sprite) { // DO NOT COPY, special case
         var adjustedI= 0;
-        for (var i = 0; i < ox_saber_first_addresses.length; i++) {
+        for (let i = 0; i < ox_saber_first_addresses.length; i++) {
             // skip over ..24 and 2A
             if (adjustedI === 5 || adjustedI === 8) {
                 adjustedI++;
@@ -3247,16 +3263,16 @@ function outputCodes(targetID, region) {
             }
             var input = document.getElementById('input' + (i + 1));
             if (input.value)
-                for (var j = 0; j < ox_saber_actual_addresses.length; j++) {
+                for (let j = 0; j < ox_saber_actual_addresses.length; j++) {
                     target.innerHTML = target.innerHTML + (parseInt(ox_saber_actual_addresses[j], 16) + adjustedI * 2).toString(16).toUpperCase() + ' 0000' + convertToGBA(input.value) + '<br>';
                 }
             adjustedI++;
         }
     } else if (current_sprite === ox_specials_sprite) {
-        for (var i = 0; i < ox_specials_first_addresses.length; i++) {
+        for (let i = 0; i < ox_specials_first_addresses.length; i++) {
             var input = document.getElementById('input' + (i + 1));
             if (input.value)
-                for (var j = 0; j < ox_specials_actual_addresses.length; j++) {
+                for (let j = 0; j < ox_specials_actual_addresses.length; j++) {
                     target.innerHTML = target.innerHTML + (parseInt(ox_specials_actual_addresses[j], 16) + i * 2).toString(16).toUpperCase() + ' 0000' + convertToGBA(input.value) + '<br>';
                 }
         }
@@ -3264,7 +3280,7 @@ function outputCodes(targetID, region) {
         var add8000 = 32768;
         if (region === 'jp') //warning mostly applies to z2/3, would mess up z4
             target.innerHTML = target.innerHTML + 'Note: F6 through FE will be replaced if you equip an elemental chip. Remove each "72000... 0000" to override them.' + '<br>';
-        for (var i = 0; i < z23_attacks_addresses.length; i++) {
+        for (let i = 0; i < z23_attacks_addresses.length; i++) {
             var input = document.getElementById('input' + (i + 1));
             if (input.value) {
                 if (i == 2 || i == 11) //dont add 0x08000 for those two pesky numbers
@@ -3277,7 +3293,7 @@ function outputCodes(targetID, region) {
             }
         }
         if (region === 'en') { //add subweapon palette if z4
-            for (var i = 0; i < z23_attacks_addresses.length; i++) {
+            for (let i = 0; i < z23_attacks_addresses.length; i++) {
                 var input = document.getElementById('input' + (i + 1));
                 if (input.value) {
                     if (i == 2 || i == 11)
@@ -3291,7 +3307,7 @@ function outputCodes(targetID, region) {
         }
     } else if (current_sprite === x_attacks_sprite) {
         var adjustedI= 0;
-        for (var i = 0; i < x_attacks_first_addresses.length; i++) {
+        for (let i = 0; i < x_attacks_first_addresses.length; i++) {
             // skip over ..24 and 2A
             if (adjustedI === 4) {
                 adjustedI++;
@@ -3299,7 +3315,7 @@ function outputCodes(targetID, region) {
             }
             var input = document.getElementById('input' + (i + 1));
             if (input.value)
-                for (var j = 0; j < x_attacks_actual_addresses.length; j++) {
+                for (let j = 0; j < x_attacks_actual_addresses.length; j++) {
                     target.innerHTML = target.innerHTML + (parseInt(x_attacks_actual_addresses[j], 16) + adjustedI * 2).toString(16).toUpperCase() + ' 0000' + convertToGBA(input.value) + '<br>';
                 }
             adjustedI++;
@@ -3326,7 +3342,7 @@ function convertToGBA(color) {
                 code = code.substr(0, 6);
             var arrRGB = [];
             var finalCode = '';
-            for (var i = 0; i < 3; i++) {
+            for (let i = 0; i < 3; i++) {
                 arrRGB[i] = parseInt(code.substr(i * (code.length / 3), code.length / 3), 16);
                 arrRGB[i] = (Math.floor(parseInt(arrRGB[i]) / 8)).toString(2); // converts each 8bit hex to 5bit hex-sized binary eg FF -> 11111
                 while (arrRGB[i].length < 5)
@@ -3366,7 +3382,7 @@ function convertAnyToAny(color, outputType) {
             while (code.length < 15)
                 code = '0' + code;
             code = [code.substr(10, 5), code.substr(5, 5), code.substr(0, 5)]; // separates into 3 5-digit binaries
-            for (var i = 0; i < 3; i++) {
+            for (let i = 0; i < 3; i++) {
                 code[i] = (parseInt(code[i], 2) * 8).toString(16); // convert to 24-bit hex
                 while (code[i].length < 2)
                     code[i] = '0' + code[i];
@@ -3378,13 +3394,13 @@ function convertAnyToAny(color, outputType) {
     } else if (outputType === 'rgb') {
         if (inputType === 'hex') {
             code = [code.substr(0,2), code.substr(2,2), code.substr(4,2)]; // eg ['ff','00','00']
-            for (var i = 0; i < code.length; i++)
+            for (let i = 0; i < code.length; i++)
                 code[i] = parseInt(code[i], 16).toString(10); // convert each hex value into decimal
             code = code.join(); // joins; no argument means separated by commas eg '255,0,0'
         } else if (inputType === 'gba') {
             code = parseInt(code, 16).toString(2); // converts 4-digit GBA into 15-digit Binary
             code = [code.substr(10, 5), code.substr(5, 5), code.substr(0, 5)]; // separates into 3 5-digit binaries
-            for (var i = 0; i < 3; i++)
+            for (let i = 0; i < 3; i++)
                 code[i] = (parseInt(code[i], 2) * 8).toString(10); // convert to 256 decimal
             code = code.join(); // joins array elements into one string without breaks
         }
@@ -3398,7 +3414,7 @@ function rgbToHex(color) {
     var code = isRGB(color);
     if (code) {
         code = code.split(',');
-        for (var i = 0; i < code.length; i++) {
+        for (let i = 0; i < code.length; i++) {
             code[i] = parseInt(code[i]).toString(16);
             while (code[i].length < 2)
                 code[i] = '0' + code[i];
@@ -3416,8 +3432,8 @@ function isHex(code) {
         code = code.slice(1);
     code = code.toUpperCase();
     var hexDigits = '0123456789ABCDEF'; //['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
-    for (var i = 0; i < code.length; i++)
-        //for (var j = 0; j < hexDigits.length; j++)
+    for (let i = 0; i < code.length; i++)
+        //for (let j = 0; j < hexDigits.length; j++)
         if (hexDigits.indexOf(code.charAt(i)) === -1)
             return false; // not hex if a character isnt a hex numeral
     if (code.length === 8)
@@ -3432,7 +3448,7 @@ function isHex(code) {
 function isRGB(code) {
     code = trimRGB(code);
     var arrRGB = code.split(',');
-    for (var i = 0; i < arrRGB.length; i++)
+    for (let i = 0; i < arrRGB.length; i++)
         if (arrRGB[i] < 0 || arrRGB[i] > 255)
             return false;
     if (arrRGB.length === 4)
@@ -3454,6 +3470,6 @@ function trimRGB(code) {
 
 function clearRadio(elementName) {
     var elements = document.getElementsByName(elementName);
-    for (var i = 0; i < elements.length; i++)
+    for (let i = 0; i < elements.length; i++)
         elements[i].checked = false;
 }

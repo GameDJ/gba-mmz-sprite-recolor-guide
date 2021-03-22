@@ -3,92 +3,92 @@
       xmlns:fb="http://ogp.me/ns/fb#">
 
 <head>
-	<meta charset="utf-8">
-	<title>GBA sprite color picker GUI</title>
-	<meta name="author" content="Your Name">
-	<meta name="description" content="Example description">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles.css">
-	<link rel="icon" type="image/x-icon" href="favicon.ico"/>
-	<script type="text/javascript" src="scripts.js"></script>
-	<meta property="og:image" content="https://repository-images.githubusercontent.com/220561567/136dff00-024b-11ea-8a6e-cd8f48cfa12e" />
-	<meta property="og:description" content="Create Mega Man Zero/ZX recolors and turn them into playable Action Replay codes" />
+    <meta charset="utf-8">
+    <title>GBA sprite color picker GUI</title>
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Example description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <script type="text/javascript" src="scripts.js"></script>
+    <meta property="og:image" content="https://repository-images.githubusercontent.com/220561567/136dff00-024b-11ea-8a6e-cd8f48cfa12e" />
+    <meta property="og:description" content="Create Mega Man Zero/ZX recolors and turn them into playable Action Replay codes" />
 </head>
 
 <body>
-	<header>
-        <a href="#" onclick="showZero1(false)" style="color: #e0506b">Zero (Z1)</a>
-        - <a href="#" onclick="showZero1(true)" style="color: #e0506b">Dash</a>
-        - <a href="#" onclick="showZ1Saber()" style="color: #e0506b">Saber</a>
-        | <a href="#" onclick="showZero(false)" style="color: #e0506b">Zero (Z2-4)</a>
-        - <a href="#" onclick="showZero(true)" style="color: #e0506b">Dash</a>
-        - <a href="#" onclick="showZ23Attacks()" style="color: #e0506b">Attacks (Z2-4)</a>
-        | <a href="#" onclick="showVent()" style="color: skyblue">Vent</a>
-        | <a href="#" onclick="showAile()" style="color: skyblue">Aile</a>
-        | <a href="#" onclick="showX(false)" style="color: dodgerblue">Model X</a>
-        - <a href="#" onclick="showX(true)" style="color: dodgerblue">Dash</a>
-        - <a href="#" onclick="showPellet()" style="color: dodgerblue">Pellet</a>
-        - <a href="#" onclick="showXattacks()" style="color: dodgerblue">Charges</a>
-        | <a href="#" onclick="showZX(false)" style="color: lightcoral">ZX</a>
-        - <a href="#" onclick="showZX(true)" style="color: lightcoral">Dash</a>
-        - <a href="#" onclick="showZxSaber()" style="color: lightcoral">Attacks</a>
-        | <a href="#" onclick="showHX(false)" style="color: limegreen">HX</a>
-        - <a href="#" onclick="showHX(true)" style="color: limegreen">Dash</a>
-        - <a href="#" onclick="showHxSaber()" style="color: limegreen">Saber</a>
-        - <a href="#" onclick="showHxJetpack()" style="color: limegreen">Special</a>
-        | <a href="#" onclick="showFX(false)" style="color: #cc8c22">FX</a>
-        - <a href="#" onclick="showFX(true)" style="color: #cc8c22">Dash</a>
-        - <a href="#" onclick="showFxAttacks()" style="color: #cc8c22">Attacks</a>
-        | <a href="#" onclick="showLX(false)" style="color: lightblue">LX</a>
-        - <a href="#" onclick="showLX(true)" style="color: lightblue">Dash</a>
-        - <a href="#" onclick="showLxStaff()" style="color: lightblue">Staff</a>
-        - <a href="#" onclick="showLxSpecials()" style="color: lightblue">Specials</a>
-        | <a href="#" onclick="showPX(false)" style="color: mediumpurple">PX</a>
-        - <a href="#" onclick="showPX(true)" style="color: mediumpurple">Dash</a>
-        - <a href="#" onclick="showKunai()" style="color: mediumpurple">Kunai</a>
-        - <a href="#" onclick="showPxShield()" style="color: mediumpurple">Shield</a>
-        | <a href="#" onclick="showOX(false)" style="color: #cc0000">OX</a>
-        - <a href="#" onclick="showOX(true)" style="color: #cc0000">Dash</a>
-        - <a href="#" onclick="showOxSaber()" style="color: #cc0000">Attacks 1</a>
-        - <a href="#" onclick="showOxSpecials()" style="color: #cc0000">Attacks 2</a>
-    </header>
-	<main> <div id="workspace-container">
-        <div id="color-controls-container">
-            <table id="color-controls">
-                <caption><button onclick="refreshAllPixels()">Update All</button></caption>
-                <tr>
-                    <th>Address (JP)<div id="addressTrunc"></div></th>
-                    <th>Color</th>
-                    <th>New Color</th>
-                    <th>[Zoom]<button onclick="zoom(false)" style="display: inline; margin: auto;">-</button>
-                        <button onclick="zoom(true)" style="display: inline; margin: auto;">+</button></th>
-                </tr>
-            </table>
-            <!---<div id="color-conversion-row">
-                <input type="radio" id="colorRadioHEX" name="colorConvert" value="HEX" oninput="convertAll('hex')">HEX
-                <input type="radio" id="colorRadioRGB" name="colorConvert" value="RGB" oninput="convertAll('rgb')">RGB
-                <input type="radio" id="colorRadioGBA" name="colorConvert" value="GBA" oninput="convertAll('gba')">GBA
-                <button onclick="clearRadio('colorConvert')" style="margin-left: 5px;">Clear</button>
-            </div> --->
-            <!---<div id="color-ranges">
-                R <input type="text" id="colorInput1" name="colorInput" size="1" maxlength="3">
-                <input type="range" id="colorRange1" name="colorRange" min="0" max="31"
-                       oninput="updateColorRange(1)"><br>
-                G <input type="text" id="colorInput2" name="colorInput" size="1" maxlength="3">
-                <input type="range" id="colorRange2" name="colorRange" min="0" max="31"
-                       oninput="updateColorRange(2)"><br>
-                B <input type="text" id="colorInput3" name="colorInput" size="1" maxlength="3">
-                <input type="range" id="colorRange3" name="colorRange" min="0" max="31"
-                       oninput="updateColorRange(3)">
-            </div> --->
-            <hr>
-            <div>Output Codes<br><button id="jp-button" onclick="outputCodes('codes-output', 'jp')" style="display: inline; margin: auto;">JP</button>
-                <button id="en-button" onclick="outputCodes('codes-output', 'en')" style="display: inline; margin: auto;">EN</button></div>
-            <p id="codes-output"></p>
-        </div>
-        <div id="sprite-container"></div>
-    </div></main>
-	<footer></footer>
+<header>
+    <a href="#" onclick="loadSprite('zero1')" style="color: #e0506b">Zero (Z1)</a>
+    - <a href="#" onclick="loadSprite('zero1_dash')" style="color: #e0506b">Dash</a>
+    - <a href="#" onclick="loadSprite('zero1_saber')" style="color: #e0506b">Saber</a>
+    | <a href="#" onclick="loadSprite('zero234')" style="color: #e0506b">Zero (Z2-4)</a>
+    - <a href="#" onclick="loadSprite('zero234_dash')" style="color: #e0506b">Dash</a>
+    - <a href="#" onclick="loadSprite('zero234_attacks')" style="color: #e0506b">Attacks (Z2-4)</a>
+    | <a href="#" onclick="loadSprite('vent')" style="color: skyblue">Vent</a>
+    | <a href="#" onclick="loadSprite('aile')" style="color: skyblue">Aile</a>
+    | <a href="#" onclick="loadSprite('x')" style="color: dodgerblue">Model X</a>
+    - <a href="#" onclick="loadSprite('x_dash')" style="color: dodgerblue">Dash</a>
+    - <a href="#" onclick="loadSprite('pellet')" style="color: dodgerblue">Pellet</a>
+    - <a href="#" onclick="loadSprite('x_charges')" style="color: dodgerblue">Charges</a>
+    | <a href="#" onclick="loadSprite('zx')" style="color: lightcoral">ZX</a>
+    - <a href="#" onclick="loadSprite('zx_dash')" style="color: lightcoral">Dash</a>
+    - <a href="#" onclick="loadSprite('zx_attacks')" style="color: lightcoral">Attacks</a>
+    | <a href="#" onclick="loadSprite('hx')" style="color: limegreen">HX</a>
+    - <a href="#" onclick="loadSprite('hx_dash')" style="color: limegreen">Dash</a>
+    - <a href="#" onclick="loadSprite('hx_saber')" style="color: limegreen">Saber</a>
+    - <a href="#" onclick="loadSprite('hx_specials')" style="color: limegreen">Specials</a>
+    | <a href="#" onclick="loadSprite('fx')" style="color: #cc8c22">FX</a>
+    - <a href="#" onclick="loadSprite('fx_dash')" style="color: #cc8c22">Dash</a>
+    - <a href="#" onclick="loadSprite('fx_attacks')" style="color: #cc8c22">Attacks</a>
+    | <a href="#" onclick="loadSprite('lx')" style="color: lightblue">LX</a>
+    - <a href="#" onclick="loadSprite('lx_dash')" style="color: lightblue">Dash</a>
+    - <a href="#" onclick="loadSprite('lx_staff')" style="color: lightblue">Staff</a>
+    - <a href="#" onclick="loadSprite('lx_specials')" style="color: lightblue">Specials</a>
+    | <a href="#" onclick="loadSprite('px')" style="color: mediumpurple">PX</a>
+    - <a href="#" onclick="loadSprite('px_dash')" style="color: mediumpurple">Dash</a>
+    - <a href="#" onclick="loadSprite('px_attacks')" style="color: mediumpurple">Attacks</a>
+    - <a href="#" onclick="loadSprite('px_shield')" style="color: mediumpurple">Shield</a>
+    | <a href="#" onclick="loadSprite('ox')" style="color: #cc0000">OX</a>
+    - <a href="#" onclick="loadSprite('ox_dash')" style="color: #cc0000">Dash</a>
+    - <a href="#" onclick="loadSprite('ox_attacks1')" style="color: #cc0000">Attacks 1</a>
+    - <a href="#" onclick="loadSprite('ox_attacks2')" style="color: #cc0000">Attacks 2</a>
+</header>
+<main> <div id="workspace-container">
+    <div id="color-controls-container">
+        <table id="color-controls">
+            <caption><button onclick="refreshAllPixels()">Update All</button></caption>
+            <tr>
+                <th>Address (JP)<div id="addressTrunc"></div></th>
+                <th>Color</th>
+                <th>New Color</th>
+                <th>[Zoom]<button onclick="zoom(false)" style="display: inline; margin: auto;">-</button>
+                    <button onclick="zoom(true)" style="display: inline; margin: auto;">+</button></th>
+            </tr>
+        </table>
+        <!---<div id="color-conversion-row">
+            <input type="radio" id="colorRadioHEX" name="colorConvert" value="HEX" oninput="convertAll('hex')">HEX
+            <input type="radio" id="colorRadioRGB" name="colorConvert" value="RGB" oninput="convertAll('rgb')">RGB
+            <input type="radio" id="colorRadioGBA" name="colorConvert" value="GBA" oninput="convertAll('gba')">GBA
+            <button onclick="clearRadio('colorConvert')" style="margin-left: 5px;">Clear</button>
+        </div> --->
+        <!---<div id="color-ranges">
+            R <input type="text" id="colorInput1" name="colorInput" size="1" maxlength="3">
+            <input type="range" id="colorRange1" name="colorRange" min="0" max="31"
+                   oninput="updateColorRange(1)"><br>
+            G <input type="text" id="colorInput2" name="colorInput" size="1" maxlength="3">
+            <input type="range" id="colorRange2" name="colorRange" min="0" max="31"
+                   oninput="updateColorRange(2)"><br>
+            B <input type="text" id="colorInput3" name="colorInput" size="1" maxlength="3">
+            <input type="range" id="colorRange3" name="colorRange" min="0" max="31"
+                   oninput="updateColorRange(3)">
+        </div> --->
+        <hr>
+        <div>Output Codes<br><button id="jp-button" onclick="outputCodes('codes-output', 'jp')" style="display: inline; margin: auto;">JP</button>
+            <button id="en-button" onclick="outputCodes('codes-output', 'en')" style="display: inline; margin: auto;">EN</button></div>
+        <p id="codes-output"></p>
+    </div>
+    <div id="sprite-container"></div>
+</div></main>
+<footer></footer>
 </body>
 
 </html>
