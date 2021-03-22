@@ -2654,7 +2654,7 @@ let sprites = [
         "name": "hx_dash",
         "sprite": hx_sprite,
         "colors": hx_dash_rgb,
-        "addresses": hx_dash_rgb,
+        "addresses": hx_dash_addresses,
         "width": 35,
         "height": 43
     },
