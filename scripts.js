@@ -2811,6 +2811,8 @@ function resetElement(elementId, recreateBool, containerId, elementType, width, 
         element.id = elementId;
         element.style.width = width || '0px';
         element.style.height = height || '0px';
+        let minusHeight = current_addresses.length * 28 + 80 + 64;
+        if (container.id === "codes-output-container") container.style.height = 'calc(100% - ' + minusHeight + 'px)';
         element.style.backgroundColor = bgColor || '';
         container.appendChild(element);
         document.getElementById(containerId).style.width = width;
@@ -2837,6 +2839,8 @@ function loadSprite(name) {
     var canvas = resetElement('sprite-canvas', true, 'sprite-container', 'DIV', width, height, bg);
     show_sprite(canvas);
     if (currentObject.hasOwnProperty("zoom")) zoom(true, currentObject.zoom);
+    let minusHeight = current_addresses.length * 28 + 80 + 64;
+    document.getElementById('codes-output-container').style.height = 'calc(100% - ' + minusHeight + 'px)';
 }
 
 function show_sprite(canvas) {
@@ -2864,6 +2868,8 @@ function show_sprite(canvas) {
 
 function populateColorControls(rgb_colors, color_addresses) {
     resetElement('color-control-row', false, 'color-controls');
+    let containerMinHeight = current_sprite.length * zoomFactor;
+    document.getElementById('color-controls-container').style.minHeight = containerMinHeight + "px";
     var table = document.getElementById('color-controls');
     var rowArr = []; // holds arrays of each row's TDs [row][column]
     var rows = []; // holds actual row elements (TRs)
@@ -3051,10 +3057,12 @@ function zoom(zoomIn, manualFactor) {
         pixels[i].style.height = zoomFactor.toString() + 'px';
     }
     document.getElementById('workspace-container').style.width = 'calc(248px + ' + container.style.width + ')';
+    let containerMinHeight = current_sprite.length * factor;
+    document.getElementById('color-controls-container').style.minHeight = containerMinHeight + "px";
 }
 
 function outputCodes(targetID, region) {
-    var target = resetElement(targetID, true, 'color-controls-container', 'P');
+    var target = resetElement(targetID, true, 'codes-output-container', 'P');
     //var target = document.getElementById(targetID);
     //var colorArr = [];
 

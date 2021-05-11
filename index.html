@@ -43,7 +43,7 @@
     - <a href="#" onclick="loadSprite('lx_dash')" style="color: lightblue">Dash</a>
     - <a href="#" onclick="loadSprite('lx_staff')" style="color: lightblue">Staff</a>
     - <a href="#" onclick="loadSprite('lx_specials')" style="color: lightblue">Specials</a>
-    | <a href="#" onclick="loadSprite('px')" style="color: mediumpurple">PX</a>
+    | <a href="#" onclick="loadSprite('px')" style="color: #9370db">PX</a>
     - <a href="#" onclick="loadSprite('px_dash')" style="color: mediumpurple">Dash</a>
     - <a href="#" onclick="loadSprite('px_attacks')" style="color: mediumpurple">Attacks</a>
     - <a href="#" onclick="loadSprite('px_shield')" style="color: mediumpurple">Shield</a>
@@ -84,7 +84,9 @@
         <hr>
         <div>Output Codes<br><button id="jp-button" onclick="outputCodes('codes-output', 'jp')" style="display: inline; margin: auto;">JP</button>
             <button id="en-button" onclick="outputCodes('codes-output', 'en')" style="display: inline; margin: auto;">EN</button></div>
-        <p id="codes-output"></p>
+        <div id="codes-output-container">
+            <p id="codes-output"></p>
+        </div>
     </div>
     <div id="sprite-container"></div>
 </div></main>

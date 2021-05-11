@@ -61,16 +61,21 @@ a {
 }
 
 #color-conversion-row {
-    //margin-left: 25%;
+//margin-left: 25%;
     display: inline-block;
     margin: auto;
-    //font-weight: ;
+//font-weight: ;
 }
 #color-conversion-row input {
     margin-right: 2px;
 }
 
+#codes-output-container {
+    height: calc(100% - 578px);
+    overflow-y: auto;
+}
 #codes-output {
+    font-family: "Courier New", serif;
     text-align: center;
     display: inline;
 }
