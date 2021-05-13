@@ -65,23 +65,6 @@ let mods = [
     },
     {
         "game": "Z2-4",
-        "name": "Purple Saber",
-        "tags": ["Saber", "Purple"],
-        "img": "images/black_zero_full.png",
-        "type": "Codebreaker",
-        "code": "83002CEE 7EBF\n" +
-            "83002CF0 7D11\n" +
-            "83002CF2 7DBA\n" +
-            "83002CF4 7EBF\n" +
-            "72000030 0000\n" +
-            "83002CF6 7D11\n" +
-            "72000030 0000\n" +
-            "83002CF8 7DBA\n" +
-            "72000030 0000\n" +
-            "83002CFA 7EBF"
-    },
-    {
-        "game": "Z2-4",
         "name": "Nightmare Zero",
         "tags": ["Zero", "Dash", "Saber", "Purple", "Black"],
         "img": "images/nightmare_zero_full.PNG",
@@ -137,7 +120,7 @@ let mods = [
     },
     {
         "game": "Z2-4",
-        "name": "PSX Zero",
+        "name": "PSX-colored Zero",
         "tags": ["Zero", "Dash", "Saber"],
         "img": "",
         "type": "Codebreaker",
@@ -287,6 +270,23 @@ let mods = [
             "83002E5A 085A\n" +
             "83002E5C 084B\n" +
             "83002E5E 0C73"
+    },
+    {
+        "game": "Z2-4",
+        "name": "Purple Saber",
+        "tags": ["Saber", "Purple"],
+        "img": "images/black_zero_full.png",
+        "type": "Codebreaker",
+        "code": "83002CEE 7EBF\n" +
+            "83002CF0 7D11\n" +
+            "83002CF2 7DBA\n" +
+            "83002CF4 7EBF\n" +
+            "72000030 0000\n" +
+            "83002CF6 7D11\n" +
+            "72000030 0000\n" +
+            "83002CF8 7DBA\n" +
+            "72000030 0000\n" +
+            "83002CFA 7EBF"
     },
     {
         "game": "Z2-4",
