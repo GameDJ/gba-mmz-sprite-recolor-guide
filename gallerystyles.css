@@ -1,0 +1,135 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #444;
+    height: calc(100% - 1em);
+}
+header {
+    color: white;
+    padding-bottom: 1px;
+}
+a {
+    color: #cbc;
+}
+
+#notepad-container {
+    display: block;
+    height: calc(100% - 1em - 12px);
+    width: 15em;
+    max-width: calc(100% - 212px);
+    background-color: #aaa;
+    font-family: "Courier Std", serif;
+    padding: 5px;
+    float: left;
+    margin-right: 4px;
+}
+#notepad {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+#notepad-header {
+}
+#notepad-content {
+    padding: 4px;
+    height: calc(100% - 1em - 10px);
+    background-color: #dddddd;
+    overflow-y: auto;
+}
+
+#gallery {
+    list-style-type: none;
+    margin: 0;
+}
+.gallery-item {
+    display: inline-block;
+    background-color: #aaa;
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 100px;
+    max-height: 220px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 3px;
+    border-color: black;
+    padding: 5px;
+    margin-bottom: 4px;
+}
+.gallery-item * {
+    margin: auto;
+}
+.gallery-item-header {
+    font-weight: bold;
+}
+.gallery-item-image-container {
+    //display: block;
+    height: 150px;
+    margin: 2px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.gallery-item img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.gallery-item-button {
+    display: block;
+    margin-top: 4px;
+    background-color: #eee;
+    padding: 3px 6px 3px 6px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 3px;
+    border-width: 1px;
+    width: fit-content;
+    color: black;
+    text-decoration: none;
+}
+.gallery-item-button:hover {
+    background-color: #ddd;
+}
+.gallery-item-button:active {
+    background-color: #ccc;
+}
+
+#theater {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+#theater-image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* copypasted to make the images unhighlightable */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#theater-image {
+    display: block;
+    max-height: 90%;
+    max-width: 90%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
