@@ -275,7 +275,7 @@ let mods = [
         "game": "Z2-4",
         "name": "Purple Saber",
         "tags": ["Saber", "Purple"],
-        "img": "images/black_zero_full.png",
+        "img": "images/black_zero_full.PNG",
         "type": "Codebreaker",
         "code": "83002CEE 7EBF\n" +
             "83002CF0 7D11\n" +
