@@ -56,7 +56,8 @@ a {
     border-radius: 3px;
     border-color: black;
     padding: 5px;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
+    margin-right: 3px;
 }
 .gallery-item * {
     margin: auto;
