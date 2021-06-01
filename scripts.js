@@ -932,14 +932,14 @@ const px_dash_addresses = ['120DA862', // 1 darkdark blue
     '120DA86A', // 5 white
     '120DA86C', // 6 dark red
     '120DA86E', // 7 mid red
-    '120DA860', // 8 light red
-    '120DA862', // 9 dark gem
-    '120DA864', // 10 midlight yellow
-    '120DA866', // 11  light yellow
-    '120DA868', // 12 skin
-    '120DA86A', // 13 middark yellow
-    '120DA86C', // 12 skin
-    '120DA86E' // 13 middark yellow
+    '120DA870', // 8 light red
+    '120DA872', // 9 dark gem
+    '120DA874', // 10 midlight yellow
+    '120DA876', // 11  light yellow
+    '120DA878', // 12 skin
+    '120DA87A', // 13 middark yellow
+    '120DA87C', // 12 skin
+    '120DA87E' // 13 middark yellow
 ];
 
 //OX uses same sprite as Zero
